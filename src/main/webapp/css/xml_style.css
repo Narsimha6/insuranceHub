@@ -1,0 +1,1423 @@
+/*
+*@author avgiri
+*/
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.error {
+color: #ff0000;
+font-style: italic;
+}
+.tdclass
+{
+	font: verdana,arial 
+	
+	
+}
+
+body {
+    height: 100%;
+    font: 11px arial, verdana, helvetica;
+    text-align: left;
+    background-color: #1654AB;
+    background-image: url(/Final/files/images/background.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-attachment: fixed;
+}
+helpbody {
+	
+    font: 11px arial, verdana, helvetica;
+    background-color: #99FFCC;
+	
+}
+/*----------------------------|  S T R U C T U R E  |-------------------------*/
+
+div.container {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    margin: 0px auto;
+    padding: 0px;
+}
+
+div.content {
+    padding: 16px;
+}
+
+div.splashContent {
+    width: 350px;
+    margin: 200px auto;
+    background-color: #fff;
+    border: none;
+    -moz-border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+div.splashContent table {
+    border: 1pt solid #D0D0CD;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+div.splashContent td {
+    border: none;
+}
+
+div.outerContentBorder {
+    padding: 10px;
+    background-color: #E7F9FF;
+}
+
+div.outerDialogueBorder {
+    background-color: #E7F9FF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    padding: 10px;
+    width: 600px;
+}
+
+div.innerContentBorder {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: white;
+    border-color: #D0D0CD;
+    border-width: 1px;
+    border-style: solid;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+div.scrollView {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 0px;
+}
+
+div.scrollView#scrollTable {
+    height: 650px;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+/*------------------------|  N A V I G A T I O N  |-----------------------*/
+
+
+div.nav {
+    border-bottom: 2px solid #22354F;
+    border-right: 2px solid #22354F;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 51px;
+    z-index: 100;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(/Final/files/images/nav_background.png);
+    background-repeat: repeat-x;
+    overflow: hidden;
+    text-align: center;
+}
+
+div.nav ul {
+    list-style: none;
+    float: center;
+    margin-bottom: 0px;
+}
+
+div.nav li {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    height: 51px;
+    width: 145px;
+    vertical-align: middle;
+    background-image: url(/Final/files/images/nav_button.png);
+    background-repeat: no-repeat;
+}
+
+div.nav li.active {
+    color: white;
+    background-image: url(/Final/files/images/nav_button_active.png);
+}
+
+div.nav li:hover {
+    color: white;
+    background-image: url(/Final/files/images/nav_button_active.png);
+}
+
+div.nav li.help {
+    width: 70px;
+    background: url(/Final/files/images/nav_button_help.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+}
+
+div.nav li.help:hover {
+    color: white;
+    background-image: url(/Final/files/images/nav_button_help_active.png);
+}
+
+div.nav a {
+    display: block;
+    margin-top: 0px;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    padding-top: 17px;
+    height: 34px;
+}
+
+div.nav a.wrap {
+    padding-top: 7px;
+}
+
+div.nav .active a {
+    color: white;
+}
+
+div.nav li:hover a {
+    color: white;
+}
+
+div.subNav {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 30px;
+    z-index: 100;
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.subNav ul {
+    list-style: none;
+    float: center;
+    margin-bottom: 0px;
+}
+
+div.subNav li {
+    float: left;
+    height: 30px;
+    width: 120px;
+    vertical-align: middle;
+    background-image: url(/Final/files/images/tab-button.png);
+    background-repeat: no-repeat;
+}
+
+div.subNav li.active {
+    background-image: url(/Final/files/images/tab-button-active.png);
+}
+
+div.subNav li:hover {
+    background-image: url(/Final/files/images/tab-button-hover.png);
+}
+
+div.subNav li.active:hover {
+    background-image: url(/Final/files/images/tab-button-active.png);
+}
+
+div.subNav a {
+    display: block;
+    color: #FFFFFF;
+    padding: 5px 0px 0px 10px;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+div.subNav .configCategoryList a {
+    font-size: 11px;
+    padding-top: 8px;
+    padding-left: 8px;
+    text-align: left;
+}
+
+div.subNav .configCategoryList a.configCategoryWithErrors {
+    background: url(/Final/files/images/error.png) no-repeat 4px 8px;
+    padding-left: 24px;
+}
+
+div.subNavContent {
+    clear: none;
+    padding: 10px;
+    margin: 0px;
+    background-color: #004485;
+}
+
+div.subNavConfig {
+    z-index: 100;
+    padding: 0px;
+    margin: auto;
+    width: 150px;
+    overflow: hidden;
+    float: left;
+    padding: 0 5px 0 0;
+    border-right: 1px solid #34699F;
+}
+
+div.subNavConfig ul {
+    list-style: none;
+    float: center;
+    margin-bottom: 0px;
+}
+
+div.subNavConfig li {
+    height: 30px;
+    width: 150px;
+    vertical-align: middle;
+    background-color: #003062;
+    background-repeat: no-repeat;
+    border-top: 1px solid white;
+}
+
+div.subNavConfig li.active {
+    background-color: #004585;
+}
+
+div.subNavConfig li:hover {
+    background-color: #195692;
+}
+
+div.subNavConfig li.active:hover {
+    background-color: #004585;
+}
+
+div.subNavConfig a {
+    display: block;
+    color: #FFFFFF;
+    padding: 5px 0px 0px 0px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+div.subNavConfig .configCategoryList a {
+    font-size: 11px;
+    padding-top: 8px;
+    padding-left: 8px;
+    text-align: left;
+}
+
+div.subNavConfig .configCategoryList a.configCategoryWithErrors {
+    background: url(/Final/files/images/error.png) no-repeat 4px 8px;
+    padding-left: 24px;
+}
+
+div.subNavConfigContent {
+    clear: none;
+    padding: 10px;
+    margin: 0px;
+    background-color: #004485;
+}
+
+/* Due to a bug in IE 7 we have to use this. */
+img.tabStatus {
+    margin-left: 1px;
+    vertical-align: middle;
+}
+/*
+Once we stop support for IE7 and move on to support IE8 we
+can use this instead, which renders the status icon correctly.
+img.tabStatus {
+    float:right;
+    margin-left:8px;
+    padding-right:5px;
+    vertical-align:middle;
+}
+*/
+
+img.direction {
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/*------------------------|  T Y P E S T Y L E S  |-----------------------*/
+a {
+    color: #34699F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.button, a.buttonCenter, a.buttonLeft, a.buttonRight {
+    display: block;
+    height: 22px;
+    width: 164px;
+    background-image: url(/Final/files/images/button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 0px;
+    margin-left: auto;
+    
+    margin-right: auto;
+}
+
+a.actionBarButton {
+    display: block;
+    height: 22px;
+    width: 164px;
+    background-image: url(/Final/files/images/button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 0px;
+    position: static;
+    top: 0px;
+    float: left;
+    padding-right: 3px;
+}
+
+a.actionBarButtonCenter {
+    display: block;
+    height: 22px;
+    width: 164px;
+    background-image: url(/Final/files/images/button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 0px;
+    position: relative;
+    top: 0px;
+    padding-right: 3px;
+}
+
+a.actionBarButtonDisabled {
+    display: block;
+    height: 22px;
+    width: 164px;
+    background-image: url(/Final/files/images/disabledButton.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #666666;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 0px;
+    position: static;
+    top: 0px;
+    float: left;
+    padding-right: 3px;
+}
+
+a.actionBarButtonDisabled:hover {
+    text-decoration: none;
+}
+
+a.upButton {
+    display: block;
+    height: 22px;
+    width: 35px;
+    background-image: url(/Final/files/images/small-up-button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+a.downButton {
+    display: block;
+    height: 22px;
+    width: 35px;
+    background-image: url(/Final/files/images/small-down-button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+a.rightButton {
+    display: block;
+    height: 22px;
+    width: 35px;
+    background-image: url(/Final/files/images/small-right-button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+a.leftButton {
+    display: block;
+    height: 22px;
+    width: 35px;
+    background-image: url(/Final/files/images/small-left-button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    text-align: center;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+a.buttonCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.buttonRight {
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+}
+
+a.buttonLeft {
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+}
+
+a.button:hover, a.buttonCenter:hover, a.buttonLeft:hover, a.buttonRight:hover, a.actionBarButton:hover {
+    background-image: url(/Final/files/images/button-hover.png);
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a.upButton:hover {
+    background-image: url(/Final/files/images/small-up-button-hover.png);
+    text-decoration: none;
+}
+
+a.downButton:hover {
+    background-image: url(/Final/files/images/small-down-button-hover.png);
+    text-decoration: none;
+}
+
+a.rightButton:hover {
+    background-image: url(/Final/files/images/small-right-button-hover.png);
+    text-decoration: none;
+}
+
+a.leftButton:hover {
+    background-image: url(/Final/files/images/small-left-button-hover.png);
+    text-decoration: none;
+}
+
+a.tabLink {
+    color: white;
+    font-weight: normal;
+}
+
+a.tabLink:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+input.button {
+    border: 0px none transparent;
+    display: block;
+    height: 29px;
+    width: 164px;
+    background-image: url(/Final/files/images/button.png);
+    background-repeat: no-repeat;
+    font-weight: normal;
+    font-size: 13px;
+    color: #F47730;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+input.button:hover {
+    background-image: url(/Final/files/images/button-hover.png);
+    color: #FFFFFF;
+}
+
+img {
+    border: 0px none;
+}
+
+img.followLink {
+    border: 0px none;
+    display: inline;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+img.backLink {
+    border: 0px none;
+    display: inline;
+    margin-right: 5px;
+    position: relative;
+    top: 1px;
+}
+
+img.splashLogo {
+    left: 36%;
+    position: absolute;
+    top: -200px;
+    width: 350px;
+    height: 200px;
+    z-index: -2;
+}
+
+/*------------------------ default table -----------------------*/
+
+table {
+    border: 1pt solid #D0D0CD;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+table.withoutBorder {
+    border: 0;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+table.withoutBorder td {
+    padding: 0;
+}
+
+table.mainTable {
+    border: none;
+}
+
+table.left {
+    text-align: left;
+}
+
+td.mainTableTd {
+    padding: 0;
+}
+
+th {
+    color: #34699F;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px;
+    border-width: 1pt 1pt 1pt 1pt;
+    border-style: solid;
+    border-color: #D0D0CD;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-image: url(/Final/files/images/th-background.bmp);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 25px;
+    background-color: white;
+}
+
+tr {
+    background-color: #E7F9FF;
+}
+
+td {
+    border-top: white solid 1px;
+    border-bottom: white solid 1px;
+    word-wrap: break-word;
+    padding: 5px;
+    background-color: #E7F9FF;
+}
+
+td.left {
+    text-align: left;
+}
+
+td.right {
+    text-align: left;
+}
+
+td.center {
+    text-align: center;
+}
+
+td.halfWidth {
+    width: 50%
+}
+
+/*------------------------ specific tables -----------------------*/
+
+table.pager {
+    border: 1pt solid #D0D0CD;
+    border-collapse: separate;
+    border-spacing: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}
+
+table.transparentTable {
+    width: auto;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.transparentTable th, td, tr {
+    width: auto;
+    border: none;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+}
+
+table.actionBar {
+    width: 100%;
+    height: 57px;
+    border: none;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: none;
+}
+
+table.actionBar th, td, tr {
+    width: auto;
+    border: none;
+    background: none;
+}
+
+table.actionBarInside {
+    border-collapse: separate;
+    width: auto;
+    border: none;
+    background: none;
+    margin: 0px;
+    position: relative;
+    top: -4px;
+}
+
+table.actionBarInside th, td, tr {
+    width: auto;
+    border: none;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.mainTab {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+/*------------------------ grid tables -----------------------*/
+
+table.grid {
+    border: 1pt solid #D0D0CD;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+table.grid th {
+    color: #34699F;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px;
+    border-width: 1pt 1pt 1pt 1pt;
+    border-style: solid;
+    border-color: #D0D0CD;
+    text-align: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-image: url(/Final/files/images/th-background.bmp);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 25px;
+    background-color: white;
+}
+
+table.grid tr {
+    background-color: #FFFFFF;
+}
+
+table.grid tr.OddRow {
+    background-color: #EEF4FE;
+}
+
+table.grid td {
+    word-wrap: break-word;
+    padding: 5px;
+    border-left: #D0D0CD solid 1px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+}
+
+/*------------------------ end of grid tables -----------------------*/
+
+table.summary {
+    table-layout: fixed;
+}
+
+table.summary td.leftcol {
+    table-layout: fixed;
+    width: 300px;
+    font-weight: bold;
+}
+
+tr.transparentTable {
+    background: none;
+}
+
+tr.transparentTable td {
+    background: none;
+}
+
+tr.actionBar {
+    background: none;
+}
+
+tr.actionBar td {
+    background-color: transparent;
+    border: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+tr.mainTab {
+    background: none;
+}
+
+tr.SUCCESS {
+}
+
+tr.FAILED {
+    background-color: #ffd3d3;
+}
+
+td.leftMainTab {
+    background-image: url(/Final/files/images/tab_left.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 13px;
+    padding: 0px;
+}
+
+td.middleMainTab {
+    background-image: url(/Final/files/images/tab_middle.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-color: transparent;
+    color: white;
+    border: none;
+    height: 30px;
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+td.rightMainTab {
+    background-image: url(/Final/files/images/tab_right.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: transparent;
+    border: none;
+    height: 30px; /*width: 20px;*/
+    width: 14px;
+    padding: 0px;
+}
+
+td.secondaryLeftMainTab {
+    background-image: url(/Final/files/images/secondary_tab_left.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+    width: 13px;
+    padding: 0px;
+}
+
+td.secondaryMiddleMainTab {
+    background-image: url(/Final/files/images/secondary_tab_middle.png);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-color: transparent;
+    color: white;
+    border: none;
+    height: 30px;
+    font-size: 14px;
+    vertical-align: middle;
+    padding: 0px;
+}
+
+td.secondaryRightMainTab {
+    background-image: url(/Final/files/images/secondary_tab_right.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-color: transparent;
+    border: none;
+    height: 30px; /*width: 20px;*/
+    width: 14px;
+    padding: 0px;
+}
+
+td.actionBarLeft {
+    background-image: url(/Final/files/images/actionBar_Left.png);
+    width: 14px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: transparent;
+    border: none;
+    width: 23px;
+}
+
+td.actionBarMiddleLeft {
+    background-image: url(/Final/files/images/actionBar_Middle.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    width: 1%;
+    text-align: left;
+}
+
+td.actionBarMiddleLeftWide {
+    background-image: url(/Final/files/images/actionBar_Middle.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    width: auto;
+    text-align: left;
+}
+
+td.actionBarMiddleCenter {
+    background-image: url(/Final/files/images/actionBar_Middle.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    width: auto;
+    text-align: center;
+}
+
+td.actionBarMiddleRight {
+    background-image: url(/Final/files/images/actionBar_Middle.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    width: 1%;
+    text-align: right;
+}
+
+td.actionBarRight {
+    background-image: url(/Final/files/images/actionBar_Right.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    border: none;
+    width: 21px;
+}
+
+.FATAL {
+    background-color: red;
+}
+
+.ERROR {
+    background-color: #ffbaba;
+}
+
+.WARN {
+    background-color: #fdff61;
+}
+
+.INFO {
+    background-color: #a1b4db;
+}
+
+.DEBUG {
+    background-color: #d391d2;
+}
+
+.TRACE {
+    background-color: black;
+}
+
+.WARNING {
+    background-color: #ffd8ab;
+}
+
+td.SUCCESS {
+    color: green;
+}
+
+td.FAILED {
+    background-color: #ffd3d3;
+    color: red;
+}
+
+/*------------ cell color based on SpoolStatus------------------*/
+
+td.spoolStatus_OPEN {
+    background-color: olive;
+}
+
+td.spoolStatus_CLOSED {
+    background-color: silver;
+}
+
+td.spoolStatus_HELD {
+    background-color: #afa6f3;
+}
+
+td.spoolStatus_SORTING {
+    background-color: magenta;
+}
+
+td.spoolStatus_SENT {
+    background-color: green;
+    color: white;
+}
+
+td.spoolStatus_OUTPUT {
+    background-color: purple;
+    color: white
+}
+
+td.spoolStatus_ERRORED {
+    background-color: red;
+    color: white
+}
+
+/*------------ cell color based on EnvelopeStatus------------------*/
+td.envelopeStatus_ADDED_TO_BIN_FILE {
+    background-color: greenyellow;
+}
+
+td.envelopeStatus_DELIVERED {
+    background-color: green;
+    color: white;
+}
+
+td.envelopeStatus_EXCLUDED {
+    background-color: #7199D5;
+}
+
+td.envelopeStatus_STOPPED {
+    background-color: #afa6f3;
+}
+
+td.envelopeStatus_ERRORED {
+    background-color: red;
+    color: white
+}
+
+/*------------ anchor color based on EnvelopeStatus------------------*/
+td.envelopeStatus_DELIVERED a {
+    color: white;
+}
+
+td.envelopeStatus_EXCLUDED a {
+    color: black;
+}
+
+td.envelopeStatus_STOPPED a {
+    color: black;
+}
+
+td.envelopeStatus_ERRORED a {
+    color: white
+}
+
+/*------------ cell color based on ChannelJobStatus------------------*/
+td.channelJobStatus_QUEUED_FOR_ASSEMBLY {
+    background-color: blue;
+    color: white
+}
+
+td.channelJobStatus_ASSEMBLY_PROCESSING {
+    background-color: yellow;
+}
+
+td.channelJobStatus_PROCESSING_COMPLETED {
+    background-color: purple;
+    color: white;
+}
+
+td.channelJobStatus_COMPLETED {
+    background-color: green;
+    color: white
+}
+
+td.channelJobStatus_SENT_FOR_REVIEW {
+    background-color: orange;
+}
+
+td.channelJobStatus_STOPPED {
+    background-color: #afa6f3;
+}
+
+td.channelJobStatus_ERRORED {
+    background-color: red;
+    color: white
+}
+
+/*------------ anchor color based on ChannelJobStatus------------------*/
+td.channelJobStatus_PROCESSING_COMPLETED a {
+    color: white;
+}
+
+td.channelJobStatus_COMPLETED a {
+    color: white;
+}
+
+td.channelJobStatus_SENTFORREVIEW a {
+    color: black;
+}
+
+td.channelJobStatus_STOPPED a {
+    color: black;
+}
+
+td.channelJobStatus_ERRORED a {
+    color: white
+}
+
+/*------------ cell color based on BatchStatus------------------*/
+td.batchStatus_QUEUED_FOR_PARSING {
+    background-color: olive;
+}
+
+td.batchStatus_PARSING {
+    background-color: silver;
+}
+
+td.batchStatus_DOC_PRODUCTION {
+    background-color: magenta;
+}
+
+td.batchStatus_PROCESSING_COMPLETED {
+    background-color: purple;
+    color: white;
+}
+
+td.batchStatus_STORED {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+td.batchStatus_FINISHED {
+    background-color: green;
+    color: white;
+}
+
+td.batchStatus_SENT_FOR_REVIEW {
+    background-color: orange;
+}
+
+td.batchStatus_STOPPED {
+    background-color: #afa6f3;
+}
+
+td.batchStatus_ERRORED {
+    background-color: red;
+    color: white
+}
+
+/*------------ anchor color based on BatchStatus------------------*/
+td.batchStatus_QUEUED_FOR_PARSING a {
+    color: black;
+}
+
+td.batchStatus_PARSING a {
+    color: black;
+}
+
+td.batchStatus_DOC_PRODUCTION a {
+    color: black;
+}
+
+td.batchStatus_PROCESSING_COMPLETED a {
+    color: white;
+}
+
+td.batchStatus_FINISHED a {
+    color: white;
+}
+
+td.batchStatus_SENTFORREVIEW a {
+    color: black;
+}
+
+td.batchStatus_STOPPED a {
+    color: black;
+}
+
+td.batchStatus_ERRORED a {
+    color: white
+}
+
+/*------------------------------------------------------------------*/
+
+td.center {
+    text-align: center;
+}
+
+td.configItemValidity_PASSED {
+    background: url(/Final/files/images/ok2.gif) no-repeat scroll 5px 50%;
+    padding-left: 30px;
+}
+
+td.configItemValidity_FAILED {
+    background: url(/Final/files/images/errorAlert2.gif) no-repeat scroll 5px 50%;
+    padding-left: 30px;
+}
+
+td.configItemValidity_INDETERMINED {
+    background: url(/Final/files/images/warnAlert2.gif) no-repeat scroll 5px 50%;
+    padding-left: 30px;
+}
+
+div.overlay {
+    background-image: url(/Final/files/images/overlay.png);
+    visibility: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 100;
+}
+
+div.overlayInside {
+    margin: 200px auto;
+    background-color: #fff;
+    border: none;
+    -moz-border-radius: 10px 10px 10px 10px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 480px;
+    display: table;
+}
+
+div.overlayInside table {
+    border: 1pt solid #D0D0CD;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+div.overlayInside td {
+    border: none;
+}
+
+div.overlayCaption {
+}
+
+div.overlayMessage {
+    padding-top: 8px;
+    padding-bottom: 24px;
+}
+
+div.overlayButtons {
+    display: inline-block;
+    margin-bottom: 16px;
+    /** IE7 hack to make inline-block work **/
+    zoom: 1;
+    *display: inline;
+}
+
+textbox input {
+    width: 400px;
+}
+
+textboxEnabled input {
+    width: 400px;
+    background: white;
+    border: 1pt solid #cccccc;
+}
+
+textboxDisabled input {
+    width: 400px;
+    background: #736F6E;
+}
+
+h3 {
+    font-size: 14px;
+    color: #34699F;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.copyright {
+    padding-bottom: 16px;
+    text-align: right;
+}
+
+.configStatusSaved {
+    background: url(/Final/files/images/info.png) no-repeat 8px 50%;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    background-color: yellow;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 4px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.configStatusError {
+    background: url(/Final/files/images/error.png) no-repeat 8px 50%;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    background-color: salmon;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 4px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+.configErrorCount {
+    background: url(/Final/files/images/warning.png) no-repeat 8px 50%;
+    padding-left: 30px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    background-color: salmon;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 4px;
+    -moz-border-radius: 10px 10px 10px 10px;
+}
+
+div.configCategory {
+    padding-top: 8px;
+    padding-left: 16px;
+}
+
+.configCategory h3 {
+    font-size: 14px;
+    color: #34699F;
+    padding: 0;
+    border-bottom: solid #34699F 1px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.configProperty {
+    font-size: 12px;
+    padding-bottom: 12px;
+}
+
+.configProperty input {
+    font-size: 12px;
+    margin-top: 6px;
+    margin-right: 6px;
+}
+
+.configProperty select {
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.configError {
+    background: url(/Final/files/images/error.png) no-repeat 0px 50%;
+    padding-left: 20px;
+    font-weight: bold;
+    color: darkred;
+    margin-top: 6px;
+    margin-bottom: 4px;
+}
+
+table.Config {
+    border: none;
+}
+
+td.ConfigNav {
+    text-align: left;
+    vertical-align: Top;
+    width: 1px;
+}
+
+td.ConfigContent {
+    text-align: left;
+    vertical-align: Top;
+    width: 2000px;
+}
+
+p.criteria {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: #34699F;
+    text-align: left;
+}
+
+p.criteria span {
+    padding-left: 8px;
+    padding-right: 8px;
+}

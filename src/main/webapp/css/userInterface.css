@@ -1,0 +1,321 @@
+@CHARSET "ISO-8859-1";
+
+.zoom:hover { 
+			-moz-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+			M11=2, M12=-0, M21=0, M22=2);
+		}
+		.zoom {  
+			-webkit-box-shadow: 1px 1px 2px 2px #C0C0C0;
+			-webkit-transition: all .3s ease-out; 
+			-moz-transition: all .3s ease-out; 
+			-o-transition: all .3s ease-out; 
+			transition: all .3s ease-out;
+		}
+		div.clicklink{
+			width: 315px;
+			cursor:pointer;
+			height: 12px;
+			/*padding: 3px;
+			margin: 2px;
+			margin-left:5px;*/
+			color: black;/*#00CCFF;*/
+			text-decoration: none;
+			text-indent:5px;
+			font-weight: normal;
+			font-family: verdana;
+			font-style: normal;
+			font-size: 10px;
+			nowrap:nowrap;
+			border-bottom-color: #00CCFF;
+			border-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color: #00CCFF;
+		}
+		
+		div.clicklinkAdvance{
+			width: 357px;
+			cursor:pointer;
+			height: 20px;
+			padding: 3px;
+			margin: 2px;
+			margin-left:5px;
+			color: #00CCFF;
+			text-decoration: none;
+			text-indent:20px;
+			font-family:"Times New Roman", Times, serif;
+			font-size: medium;
+		}
+		
+		div.clicklink:hover{
+			/*background-image:url('button_background.png');*/
+			background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, gray), color-stop(80%, gray), color-stop(100%, gray));
+			background-repeat:repeat-x;
+			/*background-color:gray;*/
+			width: 315px;
+			height: 12px;
+			cursor: pointer;
+			color: white;
+			/*padding: 3px;*/
+			/*margin: 2px;*/
+			/*margin-left:5px;*/
+			text-decoration: none;
+			text-indent:3px;
+			font-weight: bold;
+			font-family: verdana;
+			font-style: normal;
+			font-size: 10px;
+			nowrap:nowrap;
+			border-width: 1px;
+			border-bottom-style: solid;
+			border-bottom-color:#0099FF;
+		}
+		
+		div.blankClickLink{
+			background: transparent;
+			width: 357px;
+			cursor:pointer;
+			height: 20px;
+			padding: 3px;
+			margin: 2px;
+			margin-left:5px;
+			color: #00CCFF;
+			text-decoration: none;
+			text-indent:20px;
+			font-family:"Times New Roman", Times, serif;
+		}
+		
+		div.clicklinkTitle{
+			background: -webkit-gradient(linear, left top, right top,color-stop(0%, #045FB4), color-stop(20%, #045FB4), color-stop(100%, #66C2E0));
+			width: 320px;
+			cursor:pointer;
+			height: 20px;
+			/*padding: 3px;*/
+			/*margin: 2px;*/
+			/*margin-left:5px;*/
+			color: black;/*#0099FF;*/
+			text-decoration: none;
+			text-indent:20px;
+			font-weight: bold;
+			font-family: Arial;
+			font-style: normal;
+			font-size: 15px;
+			/*font-family:"Times New Roman", Times, serif;*/
+			/*font-size: large;*/
+			/*font-weight:bold;*/
+			padding-top: 7px;
+			padding-bottom: 7px;
+			text-align:center;
+			color: white;
+			border-width: 1px;
+			border-color: #045FB4;
+			border-style: solid;
+		}
+		div.clicklinkTitle2{
+			background: -webkit-gradient(linear, left top, left bottom,color-stop(0%, #FFFFFF), color-stop(85%, #FFFFFF), color-stop(100%, #0399D4));
+			width: 300px;
+			cursor:pointer;
+			height: 20px;
+			/*padding: 3px;*/
+			/*margin: 2px;*/
+			/*margin-left:5px;*/
+			color: black;/*#0099FF;*/
+			text-decoration: none;
+			text-indent:20px;
+			font-weight: bold;
+			font-family: verdana;
+			font-style: normal;
+			font-size: 12px;
+			/*font-family:"Times New Roman", Times, serif;*/
+			/*font-size: large;*/
+			/*font-weight:bold;*/
+			padding-top: 7px;
+			padding-bottom: 7px;
+			text-align:center;
+			color: navy;
+			nowrap:nowrap;
+			border-width: 4px;
+			border-left-width:10px;
+			border-right-width:10px;
+			border-color: #0399D4;
+			border-style: solid;
+		}
+		.circlediv {
+			-webkit-border-radius: 999px;
+			-moz-border-radius: 999px;
+			border-radius: 999px;
+			width: 8px;
+			height: 8px;
+			background: #00CCFF;
+		}
+		/* div.centerWrapper{
+			background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%, red), color-stop(70%, white), color-stop(100%, white));
+			border-style:solid;
+			border-color: yellow;
+			margin: 1px
+			width: 200px;
+			height:390px;
+			padding:5px;
+			top:150px;
+			left:5px;
+			position: relative;
+			-webkit-box-shadow: 1px 1px 2px 2px #C0C0C0;
+			-webkit-transition: all .3s ease-out; 
+			-moz-transition: all .3s ease-out; 
+			-o-transition: all .3s ease-out; 
+			transition: all .3s ease-out;
+			cursor: pointer;
+		} */
+		div.centerWrapper:hover{
+			background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%, red), color-stop(70%, white), color-stop(100%, white));
+			border-style:solid;
+			border-color: yellow;
+			margin: 1px;
+			width: 200px;
+			height:390px;
+			padding:5px;
+			top:150px;
+			left:6px;
+			position: relative;
+			-moz-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+			M11=2, M12=-0, M21=0, M22=2);
+			cursor: pointer;
+		}
+		div.wrapperLinks{
+			/*background: -webkit-gradient(linear, left top, right top, 
+			color-stop(0%, #58D3F7), color-stop(20%, #58D3F7), color-stop(100%, #FFFFFF));*/
+			background-color:white;
+			border-style:solid;
+			border-color: #58D3F7;
+			/* margin: 1px; */
+			width:320px;
+			height:280px;
+			/*top: 100px;*/
+			/* padding:5px; */
+			/*position: absolute;*/
+			/*-webkit-box-shadow: 1px 1px 2px 2px #C0C0C0;*/
+			-webkit-transition: all .3s ease-out; 
+			-moz-transition: all .3s ease-out; 
+			-o-transition: all .3s ease-out; 
+			transition: all .3s ease-out;
+			cursor: pointer;
+		}
+		div.wrapperLinks:hover{
+			background: -webkit-gradient(linear, left top, right top, 
+			color-stop(0%, #58D3F7), color-stop(20%, #58D3F7), color-stop(100%, #FFFFFF));
+			/*border-style:solid;
+			border-color: #00FFFF;*/
+			/*margin: 1px;*/
+			width:310px;
+			height:280px;
+			padding:5px;
+			/*position: absolute;*/
+			-moz-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+			M11=2, M12=-0, M21=0, M22=2);
+			cursor:pointer;
+		}
+		div.wrapperLinks2{
+			background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%, #58D3F7), color-stop(40%, #58D3F7), color-stop(100%, #FFFFFF));
+			/*border-style:solid;
+			border-color: #00FFFF;*/
+			/*margin: 1px;*/
+			width:320px;
+			height:320px;
+			/*top: 100px;*/
+			/*padding:5px;*/
+			/*position: absolute;*/
+			/*-webkit-box-shadow: 1px 1px 2px 2px #C0C0C0;*/
+			-webkit-transition: all .3s ease-out; 
+			-moz-transition: all .3s ease-out; 
+			-o-transition: all .3s ease-out; 
+			transition: all .3s ease-out;
+			cursor: pointer;
+		}
+		div.wrapperLinks2:hover{
+			background: -webkit-gradient(linear, left top, left bottom, 
+			color-stop(0%, #58D3F7), color-stop(40%, #58D3F7), color-stop(100%, #FFFFFF));
+			/*border-style:solid;
+			border-color: #00FFFF;*/
+			/*margin: 1px;*/
+			width:320px;
+			height:320px;
+			/*padding:5px;*/
+			/*position: absolute;*/
+			-moz-transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand',
+			M11=2, M12=-0, M21=0, M22=2);
+			cursor:pointer;
+		}
+		#wrapperNew {
+    		margin: 0 auto;
+   			width: 1265px;
+    		position:absolute;
+    		top:10px;
+    		left:10px; 
+    		height:100%;
+    		border-style:dotted";
+		}
+
+		#headerwrapNew {
+   			width: 1260px;
+    		height: 85px;
+    		background: #ADD8E6;
+    		border-radius: 10px;
+    		margin: 5px;
+		}
+
+		#navigationwrapNew {
+    		width: 1265px;
+    		margin: 0 auto; 
+    		position:absolute;
+    		top:90px;
+    		left:0px;
+    		width: 1265px;
+		}
+
+		#contentwrapNew {
+    		width: 1256px;
+    		background: #B0C4DE;
+    		border-radius: 10px;
+    		margin: 5px;
+   			position:absolute;
+   			top:90px;
+   			left:0px;
+   			height:700px;
+  		}
+
+		#footerwrapNew {
+    		width: 1255px;
+    		margin: 0 auto;
+    		clear: both;
+    		height: 75px;
+    		background: #B0C4DE;
+    		border-radius: 10px;
+    		border: 1px solid #B0C4DE;
+    		margin: 5px;
+    		position:absolute;
+    		top:800px;
+    		left:0px;
+    		color:#150517   
+		}
