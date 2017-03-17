@@ -19,6 +19,7 @@ h2{
 .fullWidth{
     margin-bottom: 10px;
     margin-top: 10px;
+    left: 50%
 }
 #featureCarousel {
     margin: 0 auto;
