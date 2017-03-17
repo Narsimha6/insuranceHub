@@ -8,13 +8,6 @@
 				.open(url, 'name', 'width=' + x + ',height=' + y + '');
 		pupWindow.focus();
 	}
-	function showMore(id) {
-		if (document.getElementById(id).style.display == 'none')
-			document.getElementById(id).style.display = 'block';
-		else
-			document.getElementById(id).style.display = 'none';
-	}
-
 	function showMoreWorldsReports(id) {
 		if (document.getElementById(id).style.display == 'none')
 			document.getElementById(id).style.display = 'block';
@@ -802,7 +795,6 @@
 							style="border-width: 2px; margin-left: 40px;"></td>
 				</tr>
 			</table>
-			</table>
 			<article
 				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 				style="display: inline-block;">
@@ -917,7 +909,7 @@
 				</a>
 			</div>
 			</article>
-			<div id="tl_part2">
+			<div id="tl_part2" style="display:none;">
 				<article
 					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 					style="display: inline-block;">

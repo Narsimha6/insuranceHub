@@ -8,6 +8,16 @@
 				.open(url, 'name', 'width=' + x + ',height=' + y + '');
 		pupWindow.focus();
 	}
+	function showMoreWorldsReports(id) {
+		if (document.getElementById(id).style.display == 'none')
+			document.getElementById(id).style.display = 'block';
+		else
+			document.getElementById(id).style.display = 'none';
+
+	}
+	function showLessWorldsReports(id) {
+		document.getElementById(id).style.display = 'none';
+	}
 </script>
 </head>
 <body style="text-align: center;">
@@ -385,9 +395,19 @@
 	</table>
 	<div class="hpivideos outer phSlide">
 		<div class="related">
-			<p style="color: black; margin-left: 15px;">Front Office</p>
-			<hr width="10%" align="left"
-				style="border-width: 2px; margin-left: 15px">
+			<table style="width: 100%; text-align: center;">
+				<tr>
+					<td
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 40px">Front Office</td>
+					<td style="width: 50%;">&nbsp;</td>
+					<td style="text-align: right; width: 20%; padding-right: 35px"
+						onclick="showMoreWorldsReports('fo_part2')"></td>
+				</tr>
+				<tr>
+					<td><hr width="40%" align="left"
+							style="border-width: 2px; margin-left: 40px;"></td>
+				</tr>
+			</table>
 			<article
 				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 				style="display: inline-block;">
@@ -502,15 +522,25 @@
 				</a>
 			</div>
 			</article>
-
 		</div>
 
 		<!-- Underwriting & Policy Administration  -->
 		<div class="related">
-			<p style="color: black; margin-left: 15px;">Underwriting & Policy
-				Administration</p>
-			<hr width="10%" align="left"
-				style="border-width: 2px; margin-left: 15px">
+			<table style="width: 100%; text-align: center;">
+				<tr>
+					<td
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 40px">Underwriting & Policy
+				Administration</td>
+					<td style="width: 50%;">&nbsp;</td>
+					<td style="text-align: right; width: 20%; padding-right: 35px"
+						onclick="showMoreWorldsReports('pa_part2')">Show all<img
+						src="../img/asc_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+				</tr>
+				<tr>
+					<td><hr width="40%" align="left"
+							style="border-width: 2px; margin-left: 40px;"></td>
+				</tr>
+			</table>
 			<article
 				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 				style="display: inline-block;">
@@ -624,6 +654,7 @@
 				</a>
 			</div>
 			</article>
+			<div id="pa_part2" style="display:none">
 			<article
 				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 				style="display: inline-block;">
@@ -758,12 +789,33 @@
 				</a>
 			</div>
 			</article>
+			<table style="width: 100%">
+					<tr>
+						<td style="width: 30%;">&nbsp;</td>
+						<td style="width: 50%;">&nbsp;</td>
+						<td style="text-align: right; width: 20%; padding-right: 35px"
+							onclick="showLessWorldsReports('pa_part2')">Show less<img
+							src="../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+					</tr>
+				</table>
+			</div>
 			<!-- Claims Transformation  -->
 			<div class="related">
-				<p style="color: black; margin-left: 15px;">Claims
-					Transformation</p>
-				<hr width="10%" align="left"
-					style="border-width: 2px; margin-left: 15px">
+				<table style="width: 100%; text-align: center;">
+				<tr>
+					<td
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 40px">Claims
+					Transformation</td>
+					<td style="width: 50%;">&nbsp;</td>
+					<td style="text-align: right; width: 20%; padding-right: 35px"
+						onclick="showMoreWorldsReports('ct_part2')">Show all<img
+						src="../img/asc_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+				</tr>
+				<tr>
+					<td><hr width="40%" align="left"
+							style="border-width: 2px; margin-left: 40px;"></td>
+				</tr>
+			</table>
 				<article
 					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 					style="display: inline-block;">
@@ -877,6 +929,7 @@
 					</a>
 				</div>
 				</article>
+				<div id="ct_part2" style="display:none">
 				<article
 					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 					style="display: inline-block;">
@@ -1078,6 +1131,16 @@
 					</a>
 				</div>
 				</article>
+				<table style="width: 100%">
+					<tr>
+						<td style="width: 30%;">&nbsp;</td>
+						<td style="width: 50%;">&nbsp;</td>
+						<td style="text-align: right; width: 20%; padding-right: 35px"
+							onclick="showLessWorldsReports('ct_part2')">Show less<img
+							src="../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+					</tr>
+				</table>
+			</div>
 			</div>
 		</div>
 </body>
