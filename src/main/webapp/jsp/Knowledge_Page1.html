@@ -10,6 +10,8 @@
 <script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
 
 <script type="text/javascript" src="../js/jquery-ui.js"></script>
+<script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../js/jssor.slider-22.2.16.mini.js" type="text/javascript"></script>
 
 <script>
 	function popup(url, x, y) {
@@ -29,50 +31,178 @@
 	};
 
 	
-	jQuery(function($) {
-		
-		$(".touchslider").touchSlider({
-			container : this,
-			duration : 300,
-			delay : 3000, //  
-			margin : 0,
-			mouseTouch : true,
-			namespace : "touchslider",
-			next : ".touchslider-next", // next 
-			pagination : ".touchslider-nav-item",
-			currentClass : "touchslider-nav-item-current", // current 
-			prev : ".touchslider-prev", // prev  
-			//scroller: viewport.children(), 
-			autoplay : true, // 
-			viewport : ".touchslider-viewport"
-		});
-		
-		$(".touchslider").data("touchslider").stop(); // stop the slider 
-		$(".touchslider").data("touchslider").start(); // start the slider 
-		
-	});
+	jQuery(document).ready(function ($) {
+
+        var jssor_html5_AdWords_SlideoTransitions = [
+          [{b:-1,d:1,o:-1,rY:-120},{b:2600,d:500,o:1,rY:120,e:{rY:17}}],
+          [{b:-1,d:1,o:-1},{b:1480,d:20,o:1},{b:1500,d:500,y:-20,e:{y:19}},{b:2300,d:300,x:-20,e:{x:19}},{b:3100,d:300,o:-1,sY:9}],
+          [{b:-1,d:1,o:-1},{b:2300,d:300,x:20,o:1,e:{x:19}},{b:3100,d:300,o:-1,sY:9}],
+          [{b:-1,d:1,sX:-1,sY:-1},{b:0,d:1000,sX:2,sY:2,e:{sX:7,sY:7}},{b:1000,d:500,sX:-1,sY:-1,e:{sX:16,sY:16}},{b:1500,d:500,y:20,e:{y:19}}],
+          [{b:1000,d:1000,r:-30},{b:2000,d:500,r:30,e:{r:2}},{b:2500,d:500,r:-30,e:{r:3}},{b:3000,d:3000,x:70,y:40,rY:-20,tZ:-20}],
+          [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+          [{b:-1,d:1,o:-1,r:30},{b:1000,d:1000,o:1}],
+          [{b:-1,d:1,o:-1},{b:2780,d:20,o:1},{b:2800,d:500,y:-70,e:{y:3}},{b:3300,d:1000,y:180},{b:4300,d:500,y:-40,e:{y:3}},{b:5300,d:500,y:-40,e:{y:3}},{b:6300,d:500,y:-40,e:{y:3}},{b:7300,d:500,y:-40,e:{y:3}},{b:8300,d:400,y:-30}],
+          [{b:-1,d:1,c:{y:200}},{b:4300,d:4400,c:{y:-200},e:{c:{y:1}}}],
+          [{b:-1,d:1,o:-1},{b:4300,d:20,o:1}],
+          [{b:-1,d:1,o:-1},{b:5300,d:20,o:1}],
+          [{b:-1,d:1,o:-1},{b:6300,d:20,o:1}],
+          [{b:-1,d:1,o:-1},{b:7300,d:20,o:1}],
+          [{b:-1,d:1,o:-1},{b:8300,d:20,o:1}],
+          [{b:2000,d:1000,o:-0.5,r:180,sX:4,sY:4,e:{r:5,sX:5,sY:5}},{b:3000,d:1000,o:-0.5,r:180,sX:-4,sY:-4,e:{r:6,sX:6,sY:6}}],
+          [{b:-1,d:1,o:-1,c:{m:-35.0}},{b:0,d:1500,x:150,o:1,e:{x:6}}],
+          [{b:-1,d:1,o:-1,c:{y:35.0}},{b:0,d:1500,x:-150,o:1,e:{x:6}}],
+          [{b:-1,d:1,o:-1},{b:6500,d:2000,o:1}],
+          [{b:-1,d:1,o:-1},{b:2000,d:1000,o:0.5,r:180,sX:4,sY:4,e:{r:5,sX:5,sY:5}},{b:3000,d:1000,o:0.5,r:180,sX:-4,sY:-4,e:{r:6,sX:6,sY:6}},{b:4500,d:1500,x:-45,y:60,e:{x:12,y:3}}],
+          [{b:-1,d:1,o:-1},{b:4500,d:1500,o:1,e:{o:5}},{b:6500,d:2000,o:-1,r:10,rX:30,rY:20,e:{rY:6}}]
+        ];
+
+        var jssor_html5_AdWords_options = {
+          $AutoPlay: false,
+          $Idle: 1600,
+          $SlideDuration: 400,
+          $SlideEasing: $Jease$.$InOutSine,
+          $CaptionSliderOptions: {
+            $Class: $JssorCaptionSlideo$,
+            $Transitions: jssor_html5_AdWords_SlideoTransitions
+          },
+          $ArrowNavigatorOptions: {
+            $Class: $JssorArrowNavigator$,
+            $ChanceToShow: 1
+          },
+          $BulletNavigatorOptions: {
+            $Class: $JssorBulletNavigator$,
+            $ActionMode: 2
+          }
+        };
+
+        var jssor_html5_AdWords_slider = new $JssorSlider$("jssor_html5_AdWords", jssor_html5_AdWords_options);
+    });
+	
+	function scrollWin() {
+	    window.scrollTo(0, 100);
+	}
 </script>
 <style type="text/css">
-
 ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
+	padding: 10px 16px;
+	list-style: none;
+	background-color: #eee;
+	font-size: 17px;
 }
-ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li {
+	display: inline;
+}
+
 ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
 }
+
 ul.breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+	color: #0275d8;
+	text-decoration: none;
 }
+
 ul.breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+	color: #01447e;
+	text-decoration: underline;
+}
+/* jssor slider bullet navigator skin 05 css */
+/*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+.jssorb05 {
+	position: absolute;
+}
+
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+	position: absolute;
+	/* size of bullet elment */
+	width: 16px;
+	height: 16px;
+	background: url('../img/b05.png') no-repeat;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.jssorb05 div {
+	background-position: -7px -7px;
+}
+
+.jssorb05 div:hover, .jssorb05 .av:hover {
+	background-position: -37px -7px;
+}
+
+.jssorb05 .av {
+	background-position: -67px -7px;
+}
+
+.jssorb05 .dn, .jssorb05 .dn:hover {
+	background-position: -97px -7px;
+}
+
+/* jssor slider arrow navigator skin 12 css */
+/*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        .jssora12l.jssora12lds      (disabled)
+        .jssora12r.jssora12rds      (disabled)
+        */
+.jssora12l, .jssora12r {
+	display: block;
+	position: absolute;
+	/* size of arrow element */
+	width: 30px;
+	height: 46px;
+	cursor: pointer;
+	background: url('../img/a12.png') no-repeat;
+	overflow: hidden;
+}
+
+.jssora12l {
+	background-position: -16px -37px;
+}
+
+.jssora12r {
+	background-position: -75px -37px;
+}
+
+.jssora12l:hover {
+	background-position: -136px -37px;
+}
+
+.jssora12r:hover {
+	background-position: -195px -37px;
+}
+
+.jssora12l.jssora12ldn {
+	background-position: -256px -37px;
+}
+
+.jssora12r.jssora12rdn {
+	background-position: -315px -37px;
+}
+
+.jssora12l.jssora12lds {
+	background-position: -16px -37px;
+	opacity: .3;
+	pointer-events: none;
+}
+
+.jssora12r.jssora12rds {
+	background-position: -75px -37px;
+	opacity: .3;
+	pointer-events: none;
 }
 </style>
 </head>
@@ -82,11 +212,17 @@ ul.breadcrumb li a:hover {
 			<td
 				style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat;">
 				<div>
-					<img src="../image/insurancehub_logo.png" align="left" style="padding-top:3px;padding-left:20px;">
-					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:3px;padding-right:40px;">
-					<br><br><br>
-					<a style="color: #FFFFFF; font-family:Avenir; padding-left: 220px; " target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a><span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<a style="color: #FFFFFF; font-family:Avenir; target="_blank" rel="nofollow" href="http://www.capgemini.com">Our Solution</a>
+					<img src="../image/insurancehub_logo.png" align="left"
+						style="padding-top: 3px; padding-left: 20px;"> <img
+						src="../image/capgemini logo.png" alt="" align="right"
+						style="padding-top: 3px; padding-right: 40px;"> <br> <br>
+					<br> <a
+						style="color: #FFFFFF; font-family: Avenir; padding-left: 220px;"
+						target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a><span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a
+						style="color: #FFFFFF; font-family: Avenir;"
+						_blank" rel="nofollow" href="http://www.capgemini.com">Our
+						Solution</a>
 
 				</div>
 			</td>
@@ -97,10 +233,10 @@ ul.breadcrumb li a:hover {
 			</td>
 		</tr>
 	</table>
-	<table width="82%" >
+	<table width="100%">
 		<tr>
 			<td>
-				<div style="padding-left:260px;">
+				<div style="padding-left: 260px;">
 					<ul class="breadcrumb">
 						<li><a href="http://localhost:8080/iHub">Home</a></li>
 						<li class="active">Knowledge Hub</li>
@@ -110,351 +246,45 @@ ul.breadcrumb li a:hover {
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<div class="fullWidth" style="padding-left:260px;">	
-					<div id="featureCarousel">
-						<div class="touchslider">
-							<div class="touchslider-viewport"
-								style="overflow: hidden; height: 350px; position: relative;">
-								<div
-									style="position: absolute; left: -996000px; height: 350px; width: 100000px;">
-									<!-- Implementation of ordering of featured image inside slider By Iffort 03-Jan-2017 -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure> <a
-													href="http://www.lonelyplanet.in/articles/14018/dubai-airport-launches-the-worlds-fastest-free-airport-wi-fi">
-													<img
-													src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/Dubai_International_Airport_Concourse_A_Duty_Free-copy-750x350.jpg"
-													title="" alt="" class="heroFeature">
-												</a> </figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Wikipedia/èŒ¶å£º å‘¨ from
-																Narita, Chiba, Japan/CC BY-SA 2.0
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-												<h3>Dubai Airport launches the worldâ€™s fastest free
-													airport Wi-Fi</h3>
-												<p>Killing time in an airport can be tedious, but Dubai
-													International has just found a way to keep travellers
-													entertained by launching the worldâ€™s fastest free airport
-													Wi-Fi connection. The new service â€“ called WOW-Fi â€“ will
-													provide millions ofâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/14018/dubai-airport-launches-the-worlds-fastest-free-airport-wi-fi">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure> <a
-													href="http://www.lonelyplanet.in/articles/14005/mumbais-best-health-cafes">
-													<img
-													src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/IMG_9869-copy-750x350.jpg"
-													title="" alt="" class="heroFeature">
-												</a> </figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Bombay Salad Co.
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-												<h3>Mumbaiâ€™s best health cafes</h3>
-												<p>This is the day and age when diets are evolving and
-													foods are trending. People are gluten-free, vegan,
-													lactose-free, refined sugar-free, nut-free (no pun
-													intended) and old terms like vegetarian and non-vegetarian
-													are outdated. We bring to you a listâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/14005/mumbais-best-health-cafes">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: 996000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure> <a
-													href="http://www.lonelyplanet.in/articles/13975/in-pics-hola-mohalla-celebrations-in-punjab">
-													<img
-													src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/man-leaps-to-safety-from-the-speeding-horse-2-750x350.jpg"
-													title="" alt="" class="heroFeature">
-												</a> </figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Abhishek Hajela
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-												<h3>In Pics: Hola Mohalla celebrations in Punjab</h3>
-												<p>An unusual twist to Holi is the festival of Hola
-													Mohalla celebrated at Anandpur Sahib in Punjab. An annual
-													Sikh festival held a day after Holi, it has the drama, the
-													sweat and the incredible colours that Indian festivals areâ€¦
-												</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13975/in-pics-hola-mohalla-celebrations-in-punjab">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure> <a
-													href="http://www.lonelyplanet.in/articles/13955/a-new-exhibition-at-the-colosseum-in-rome">
-													<img
-													src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/shutterstock_433413835-copy-750x350.jpg"
-													title="" alt="" class="heroFeature">
-												</a> </figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Â©prochasson
-																frederic/Shutterstock
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-												<h3>A new exhibition at the Colosseum in Rome</h3>
-												<p>A new exhibition at the Colosseum in Rome will take
-													travellers through the lesser-known history of the cityâ€™s
-													most iconic attraction. â€œColosseo unâ€™iconaâ€�, or â€œColosseum,
-													an iconâ€�, opens on 8 March on the middle floor of the
-													amphitheatre. It runsâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13955/a-new-exhibition-at-the-colosseum-in-rome">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure> <a
-													href="http://www.lonelyplanet.in/articles/13917/in-pics-holi-trail-in-north-india">
-													<img
-													src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-750x350.jpg"
-													title="" alt="" class="heroFeature">
-												</a> </figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Abhishek Hajela
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-												<h3>In Pics: Holi trail in North India</h3>
-												<p>For years I kept wondering which is that one
-													particular festival captures the sheer essence, excitement
-													and enthusiasm of the festivities that take place in India.
-													This question led me to go on the Holi trail in North India
-													lastâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13917/in-pics-holi-trail-in-north-india">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure> <a
-													href="http://www.lonelyplanet.in/articles/4868/holi-celebrations-in-varanasi-india">
-													<img
-													src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/BW528a70845114f-copy-750x350.jpg"
-													title="" alt="" class="heroFeature">
-												</a> </figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Â©Porus Khareghat/Lonely
-																Planet
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-												<h3>Holi celebrations in Varanasi, India</h3>
-												<p>As nervous as this may make you feel, celebrating
-													Holi in the holy city of Varanasi is something that should
-													make you throw caution to the wind and book your tickets!
-													Menacing, threatening, ruthless are words that one often
-													hearsâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/4868/holi-celebrations-in-varanasi-india">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure> <a
-													href="http://www.lonelyplanet.in/articles/13895/the-indian-festival-calendar-march-april-2017">
-													<img
-													src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/GettyRF_555748445-1-copy-750x350.jpg"
-													title="" alt="" class="heroFeature">
-												</a> </figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Â©Nigel Killeen/Getty
-																Images
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-												<h3>The Indian festival calendar: March â€“ April 2017</h3>
-												<p>As the curtains come down on winter, itâ€™s time for
-													the festivals that bring in the joys of spring. The coming
-													months unfold an unusual fare of events from the Matho
-													Nagrang monastery celebrations in Leh to the grand
-													Arattupuzhaâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13895/the-indian-festival-calendar-march-april-2017">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-								</div>
-							</div>
-
-							<div id="ts-prevnext" class="featuredNav">
-								<span class="touchslider-prev"></span> <span
-									class="touchslider-next"></span>
-							</div>
-
-							<div id="ts-nav" class="featuredNav">
-								<span class="touchslider-nav-item">1</span> <span
-									class="touchslider-nav-item">2</span> <span
-									class="touchslider-nav-item touchslider-nav-item-current">3</span>
-								<span class="touchslider-nav-item">4</span> <span
-									class="touchslider-nav-item">5</span> <span
-									class="touchslider-nav-item">6</span> <span
-									class="touchslider-nav-item">7</span> <span
-									class="touchslider-nav-item">8</span> <span
-									class="touchslider-nav-item last">9</span>
-							</div>
+			<td style="width: 100%">
+				<div id="jssor_html5_AdWords"
+					style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 350px; overflow: hidden; visibility: hidden;">
+					<!-- Loading Screen -->
+					<div data-u="loading"
+						style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
+						<div
+							style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+						<div
+							style="position: absolute; display: block; background: url('../img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					</div>
+					<div data-u="slides"
+						style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 350px; overflow: hidden;">
+						<div>
+							<img data-u="image" src="../img/KM_image1.jpg" />
 
 						</div>
+						<a data-u="any" href="http://www.jssor.com" style="display: none">HTML5
+							Ad for AdWords - Powered by Jssor Slider Maker</a>
+						<div data-p="68.75" data-po="70% 50%">
+							<img data-u="image" src="../img/slide2.jpg" />
+						</div>
+						<div data-p="68.75">
+							<img data-u="image" src="../img/slide3.jpg" />
+						</div>
 					</div>
-					<!-- /#featureCarousel -->
+					<!-- Bullet Navigator -->
+					<div data-u="navigator" class="jssorb05"
+						style="bottom: 16px; right: 16px;" data-autocenter="1">
+						<!-- bullet navigator item prototype -->
+						<div data-u="prototype" style="width: 16px; height: 16px;"></div>
+					</div>
+					<!-- Arrow Navigator -->
+					<span data-u="arrowleft" class="jssora12l"
+						style="top: 0px; left: 0px; width: 30px; height: 46px;"
+						data-autocenter="2"></span> <span data-u="arrowright"
+						class="jssora12r"
+						style="top: 0px; right: 0px; width: 30px; height: 46px;"
+						data-autocenter="2"></span>
 				</div>
 			</td>
 		</tr>
@@ -464,9 +294,10 @@ ul.breadcrumb li a:hover {
 			<table style="width: 100%; text-align: center;">
 				<tr>
 					<td
-						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Worlds Reports</td>
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Worlds
+						Reports</td>
 					<td style="width: 50%;">&nbsp;</td>
-					<td style="text-align: right; width: 20%; padding-right: 35px"
+					<td style="text-align: right; width: 20%; padding-right: 214px"
 						onclick="showMoreWorldsReports('wi_part2')">Show all<img
 						src="../img/asc_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
 				</tr>
@@ -734,7 +565,7 @@ ul.breadcrumb li a:hover {
 					<tr>
 						<td style="width: 30%;">&nbsp;</td>
 						<td style="width: 50%;">&nbsp;</td>
-						<td style="text-align: right; width: 20%; padding-right: 35px"
+						<td style="text-align: right; width: 20%; padding-right: 203px"
 							onclick="showLessWorldsReports('tl_part2')">Show less<img
 							src="../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
 					</tr>
@@ -748,7 +579,8 @@ ul.breadcrumb li a:hover {
 		<table style="width: 100%; text-align: center;">
 			<tr>
 				<td
-					style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Insurance Trends</td>
+					style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Insurance
+					Trends</td>
 				<td style="width: 70%;">&nbsp;</td>
 			</tr>
 			<tr>
@@ -848,9 +680,10 @@ ul.breadcrumb li a:hover {
 			<table style="width: 100%; text-align: center;">
 				<tr>
 					<td
-						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Thought Leadership</td>
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Thought
+						Leadership</td>
 					<td style="width: 50%;">&nbsp;</td>
-					<td style="text-align: right; width: 20%; padding-right: 35px"
+					<td style="text-align: right; width: 20%; padding-right: 214px"
 						onclick="showMoreWorldsReports('tl_part2')">Show all<img
 						src="../img/asc_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
 				</tr>
@@ -973,7 +806,7 @@ ul.breadcrumb li a:hover {
 				</a>
 			</div>
 			</article>
-			<div id="tl_part2" style="display:none;">
+			<div id="tl_part2" style="display: none;">
 				<article
 					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
 					style="display: inline-block;">
@@ -1390,7 +1223,7 @@ ul.breadcrumb li a:hover {
 					<tr>
 						<td style="width: 30%;">&nbsp;</td>
 						<td style="width: 50%;">&nbsp;</td>
-						<td style="text-align: right; width: 20%; padding-right: 35px"
+						<td style="text-align: right; width: 20%; padding-right: 203px"
 							onclick="showLessWorldsReports('tl_part2')">Show less<img
 							src="../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
 					</tr>
@@ -1403,7 +1236,7 @@ ul.breadcrumb li a:hover {
 						<td
 							style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Trainings</td>
 						<td style="width: 50%;">&nbsp;</td>
-						<td style="text-align: right; width: 20%; padding-right: 35px"
+						<td style="text-align: right; width: 20%; padding-right: 214px"
 							onclick="showMoreWorldsReports('tr_part2')">Show all<img
 							src="../img/asc_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
 					</tr>
@@ -1622,13 +1455,18 @@ ul.breadcrumb li a:hover {
 						<tr>
 							<td style="width: 30%;">&nbsp;</td>
 							<td style="width: 50%;">&nbsp;</td>
-							<td style="text-align: right; width: 20%; padding-right: 35px"
+							<td style="text-align: right; width: 20%; padding-right: 203px"
 								onclick="showLessWorldsReports('tr_part2')">Show less<img
 								src="../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
 						</tr>
 					</table>
 				</div>
 			</div>
+			<table style="width: 100%;text-align: right">
+				<tr>
+					<td style="width: 100%; padding-right: 203px"><button onclick="scrollWin()">Scroll to Top</button></td>
+				</tr>
+			</table>
 		</div>
 </body>
 </html>
