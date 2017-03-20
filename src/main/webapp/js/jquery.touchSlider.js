@@ -39,6 +39,7 @@
 	$.fn.touchSlider = function (settings) {
 		
 		$.fn.touchSlider.defaults = {
+			
 			roll : true,
 			flexible : true,
 			resize : true,
