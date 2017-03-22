@@ -27,25 +27,13 @@ public class ArtifactServiceImpl implements ArtifactService {
 	@Override
 	public ArtifactsMaster getAllArtifacts(Long artifactId) {
 		ArtifactsMaster artifact = null;
-		Query query = entityManager.createNativeQuery("SELECT Artifact_Data, Artifact_Type"
-				+ ", Artifact_Name from artifacts_master_test where Artifact_ID ='"+artifactId+"'  order by Artifact_ID");
 		try{
-			Object[] data = (Object[]) query.getSingleResult();
-			if(data!=null && data.length>0){
-				Object[] dataObjArr = (Object[])data;
-				if(dataObjArr!=null && dataObjArr.length>0){
-					artifact = new ArtifactsMaster();
-					artifact.setArtifactData(dataObjArr[0]!=null?(byte[])dataObjArr[0]:null);
-					artifact.setArtifactType(dataObjArr[1]!=null?(String)dataObjArr[1]:null);
-					artifact.setArtifactName(dataObjArr[2]!=null?(String)dataObjArr[2]:null);
-				}
-			}
+			artifact = entityManager.find(ArtifactsMaster.class, artifactId);
 		}catch(NoResultException e){
 			logger.warn("No results to the query executed :"+e.getMessage());
 		}
 		entityManager.close();
 		return artifact;
-		//		return artifactsDao.findArtifactById(artifactId);
 	}
 
 	@Override

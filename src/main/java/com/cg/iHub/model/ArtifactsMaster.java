@@ -8,6 +8,7 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 
@@ -54,7 +55,7 @@ public class ArtifactsMaster implements Serializable{
 	private String isActive;
 	
 	@Column(name="ARTIFACT_DATA")
-	@Basic(fetch=LAZY)
+	@Lob @Basic(fetch=LAZY)
 	private byte[] artifactData;
 	
 	@Transient
