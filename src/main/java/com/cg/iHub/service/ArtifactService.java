@@ -1,11 +1,12 @@
 package com.cg.iHub.service;
 
 import java.util.List;
+import java.util.Map;
 
 import com.cg.iHub.model.ArtifactsMaster;
 
 public interface ArtifactService {
 	ArtifactsMaster getAllArtifacts(Long artifactId);
 
-	List<ArtifactsMaster> getCategoryContents(String categoryName);
+	Map<String, List<ArtifactsMaster>> getCategoryContents(String categoryName);
 }

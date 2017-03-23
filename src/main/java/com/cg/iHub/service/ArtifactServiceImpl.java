@@ -1,7 +1,9 @@
 package com.cg.iHub.service;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
@@ -37,7 +39,7 @@ public class ArtifactServiceImpl implements ArtifactService {
 	}
 
 	@Override
-	public List<ArtifactsMaster> getCategoryContents(String categoryName) {
+	public Map<String, List<ArtifactsMaster>> getCategoryContents(String categoryName) {
 		List<ArtifactsMaster> artifactList = null;
 		Integer menuId = getMenuIdForCategoryName(categoryName);
 		String queryStr = "SELECT Artifact_ID, Artifact_Name, Artifact_Type, IMAGE_URL, am.ARTIFACT_COMMENT, am.menu_id, am.section_id, menu.MENU_name, sec.SECTION_NAME "  
@@ -45,12 +47,14 @@ public class ArtifactServiceImpl implements ArtifactService {
 				+"inner join izone.IHUB_menu menu on am.menu_id = menu.menu_id "
 				+"inner join izone.IHUB_section sec on sec.menu_id = menu.menu_id "
 				+"where sec.SECTION_ID = am.section_id "
-				+"AND am.is_active= 'Y' AND am.menu_id = "+ menuId +" order by Artifact_ID";
+				+"AND am.is_active= 'Y' AND am.menu_id = "+ menuId +" order by am.section_ID, am.ARTIFACT_ID ";
 		Query query = entityManager.createNativeQuery(queryStr);
+		Map<String, List<ArtifactsMaster>> dataMap = null;
 		try{
 			List dataList = query.getResultList();
 			if(dataList!=null && dataList.size()>0){
 				artifactList = new ArrayList<ArtifactsMaster>();
+				dataMap = new LinkedHashMap<String, List<ArtifactsMaster>>();
 				for (Object obj : dataList) {
 					Object[] dataObjArr = (Object[]) obj;
 					if(dataObjArr!=null && dataObjArr.length>0){
@@ -63,8 +67,17 @@ public class ArtifactServiceImpl implements ArtifactService {
 						artifact.setMenuId(dataObjArr[5]!=null?Long.valueOf(dataObjArr[5].toString()):null);
 						artifact.setSectionId(dataObjArr[6]!=null?Long.valueOf(dataObjArr[6].toString()):null);
 						artifact.setMenuName(dataObjArr[7]!=null?(String)dataObjArr[7]:null);
+						String sectionName = dataObjArr[8]!=null?(String)dataObjArr[8]:null;
 						artifact.setSectionName(dataObjArr[8]!=null?(String)dataObjArr[8]:null);
-						artifactList.add(artifact);
+//						artifactList.add(artifact);
+						List<ArtifactsMaster> tempList = null;
+						if(dataMap.containsKey(sectionName)){
+							tempList = dataMap.get(sectionName);
+						} else {
+							tempList = new ArrayList<ArtifactsMaster>();
+						}
+						tempList.add(artifact);
+						dataMap.put(sectionName, tempList);
 					}
 				}
 			}
@@ -72,7 +85,7 @@ public class ArtifactServiceImpl implements ArtifactService {
 			logger.warn("No results to the query executed :"+e.getMessage());
 		}
 		entityManager.close();
-		return artifactList;
+		return dataMap;
 	}
 
 	private Integer getMenuIdForCategoryName(String categoryName) {
