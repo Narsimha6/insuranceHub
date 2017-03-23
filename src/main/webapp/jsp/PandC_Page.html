@@ -31,6 +31,26 @@
 		document.getElementById(id2).style.display = 'block';
 		document.getElementById(id1).style.display = 'none';
 	}
+	function scrollWin() {
+	    window.scrollTo(0, 100);
+	}
+	jQuery(document).ready(function() {
+		var offset = 220;
+		var duration = 500;
+		jQuery(window).scroll(function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.back-to-top').fadeIn(duration);
+			} else {
+				jQuery('.back-to-top').fadeOut(duration);
+			}
+		});
+		
+		jQuery('.back-to-top').click(function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+	});
 </script>
 <style type="text/css">
 ul.breadcrumb {
@@ -62,6 +82,21 @@ ul.breadcrumb li a:hover {
 tr.border_bottom td {
   border-bottom:1pt solid black;
 }
+.back-to-top {
+			position: fixed;
+			bottom: 2em;
+			right: 0px;
+			text-decoration: none;
+			color: #000000;
+			/* background-color: rgba(235, 235, 235, 0.80); */
+			font-size: 12px;
+			padding: 1em;
+			display: none;
+		}
+
+		.back-to-top:hover {	
+			/* background-color: rgba(135, 135, 135, 0.50); */
+		}	
 </style>
 </head>
 <body style="text-align: center;">
@@ -534,6 +569,9 @@ tr.border_bottom td {
 					</table>
 				</div>
 			</td>
+		</tr>
+		<tr style="text-align: right;">
+			<td style="width: 100%; padding-right: 203px"><a href="#" class="back-to-top"><img style="width: 50px; height:50px" src="../img/btop.png" ></a></td>
 		</tr>
 	</table>
 </body>
