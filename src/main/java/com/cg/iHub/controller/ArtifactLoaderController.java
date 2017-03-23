@@ -47,9 +47,9 @@ public class ArtifactLoaderController {
 		}
 	}
 
-	@RequestMapping(value="/iHub/getArtifactsByType/{menuType}",method = RequestMethod.GET)
-    public List<ArtifactsMaster> getArtifactsByType(@PathVariable String menuType) {
-		return artifactsService.getArtifactsByType(menuType);
+	@RequestMapping(value="/iHub/getCategoryContents/{categoryName}",method = RequestMethod.GET)
+    public List<ArtifactsMaster> getCategoryContents(@PathVariable String categoryName) {
+		return artifactsService.getCategoryContents(categoryName);
     }
 	/**
 	 * To get content type by artifact type

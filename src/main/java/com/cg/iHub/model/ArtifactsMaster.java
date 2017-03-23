@@ -1,6 +1,7 @@
 package com.cg.iHub.model;
 import static javax.persistence.FetchType.LAZY;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Basic;
@@ -9,39 +10,37 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
-
-import oracle.sql.BLOB;
 
 @Configuration
 @Component
 
 @Entity
-@Table(name = "ARTIFACTS_MASTER_TEST")
-public class ArtifactsMaster {
+@Table(name = "IHUB_ARTIFACT_MASTER")
+public class ArtifactsMaster implements Serializable{
 	@Id
 	@Column(name="ARTIFACT_ID")
 	private Long artifactId;
-	
 	@Column(name="ARTIFACT_NAME")
 	private String artifactName;
 	
 	@Column(name="ARTIFACT_TYPE")
 	private String artifactType;
-	
+
 	@Column(name="MENU_ID")
 	private Long menuId;
 	
-	@Column(name="ARTIFACT_STATUS_CODE")
-	private String artifactStatusCode;
+	@Column(name="SECTION_ID")
+	private Long sectionId;
 	
 	@Column(name="ARTIFACT_COMMENT")
-	private String artifactComment;
+	private String artifactDescription;
 	
-	@Column(name="LASTMODIFIEDTS")
-	private Date lastModifieDts;
+	@Column(name="IMAGE_URL")
+	private String artifactImageURL;
 	
 	@Column(name="UPLOADEDTS")
 	private Date uploadeDts;
@@ -49,28 +48,21 @@ public class ArtifactsMaster {
 	@Column(name="UPLOADED_BY_USERID")
 	private Long uploadedByUserid;
 	
-	@Column(name="UPLOADED_FROM_IP")
-	private String uploadedFromIp;
-	
 	@Column(name="ARTIFACT_SIZE")
 	private Long artifactSize;
 	
-	@Column(name="DOCAVAILABLESTATUS")
-	private String docAvailableStatus;
-	
-	@Column(name="REJECT_COMMENT")
-	private String rejectComment;
-	
-	@Column(name="ZONE_ID")
-	private Long zoneId;
-	
-	@Column(name="SUB_MENU_ID")
-	private String subMenuId;
+	@Column(name="IS_ACTIVE")
+	private String isActive;
 	
 	@Column(name="ARTIFACT_DATA")
-	@Basic(fetch=LAZY)
-	@Lob
+	@Lob @Basic(fetch=LAZY)
 	private byte[] artifactData;
+	
+	@Transient
+	private String menuName;
+	
+	@Transient
+	private String sectionName;
 
 	public Long getArtifactId() {
 		return artifactId;
@@ -104,30 +96,6 @@ public class ArtifactsMaster {
 		this.menuId = menuId;
 	}
 
-	public String getArtifactStatusCode() {
-		return artifactStatusCode;
-	}
-
-	public void setArtifactStatusCode(String artifactStatusCode) {
-		this.artifactStatusCode = artifactStatusCode;
-	}
-
-	public String getArtifactComment() {
-		return artifactComment;
-	}
-
-	public void setArtifactComment(String artifactComment) {
-		this.artifactComment = artifactComment;
-	}
-
-	public Date getLastModifieDts() {
-		return lastModifieDts;
-	}
-
-	public void setLastModifieDts(Date lastModifieDts) {
-		this.lastModifieDts = lastModifieDts;
-	}
-
 	public Date getUploadeDts() {
 		return uploadeDts;
 	}
@@ -144,14 +112,6 @@ public class ArtifactsMaster {
 		this.uploadedByUserid = uploadedByUserid;
 	}
 
-	public String getUploadedFromIp() {
-		return uploadedFromIp;
-	}
-
-	public void setUploadedFromIp(String uploadedFromIp) {
-		this.uploadedFromIp = uploadedFromIp;
-	}
-
 	public Long getArtifactSize() {
 		return artifactSize;
 	}
@@ -160,53 +120,68 @@ public class ArtifactsMaster {
 		this.artifactSize = artifactSize;
 	}
 
-	public String getDocAvailableStatus() {
-		return docAvailableStatus;
-	}
-
-	public void setDocAvailableStatus(String docAvailableStatus) {
-		this.docAvailableStatus = docAvailableStatus;
-	}
-
-	public String getRejectComment() {
-		return rejectComment;
-	}
-
-	public void setRejectComment(String rejectComment) {
-		this.rejectComment = rejectComment;
-	}
-
-	public Long getZoneId() {
-		return zoneId;
-	}
-
-	public void setZoneId(Long zoneId) {
-		this.zoneId = zoneId;
-	}
-
-	public String getSubMenuId() {
-		return subMenuId;
-	}
-
-	public void setSubMenuId(String subMenuId) {
-		this.subMenuId = subMenuId;
-	}
-
-	@Override
-	public String toString() {
-		return "ArtifactsMaster [artifactId=" + artifactId + ", artifactName=" + artifactName + ", artifactType="
-				+ artifactType + ", menuId=" + menuId + ", artifactStatusCode=" + artifactStatusCode
-				+ ", artifactComment=" + artifactComment + ", lastModifieDts=" + lastModifieDts + ", uploadeDts="
-				+ uploadeDts + ", uploadedByUserid=" + uploadedByUserid + ", uploadedFromIp=" + uploadedFromIp
-				+ ", artifactSize=" + artifactSize + ", docAvailableStatus=" + docAvailableStatus + ", rejectComment="
-				+ rejectComment + ", zoneId=" + zoneId + ", subMenuId=" + subMenuId + "]";
-	}
-
 	public byte[] getArtifactData() {
 		return artifactData;
 	}
 
 	public void setArtifactData(byte[] artifactData) {
 		this.artifactData = artifactData;
+	}
+
+	public String getArtifactDescription() {
+		return artifactDescription;
+	}
+
+	public void setArtifactDescription(String artifactDescription) {
+		this.artifactDescription = artifactDescription;
+	}
+
+	public String getArtifactImageURL() {
+		return artifactImageURL;
+	}
+
+	public void setArtifactImageURL(String artifactImageURL) {
+		this.artifactImageURL = artifactImageURL;
+	}
+
+	public String getIsActive() {
+		return isActive;
+	}
+
+	public void setIsActive(String isActive) {
+		this.isActive = isActive;
+	}
+
+	@Override
+	public String toString() {
+		return "ArtifactsMaster [artifactId=" + artifactId + ", artifactName=" + artifactName + ", artifactType="
+				+ artifactType + ", menuId=" + menuId + ", artifactDescription="
+				+ artifactDescription + ", artifactImageURL=" + artifactImageURL + ", uploadeDts=" + uploadeDts
+				+ ", uploadedByUserid=" + uploadedByUserid + ", artifactSize="
+				+ artifactSize + ", isActive=" + isActive + "]";
+	}
+
+	public Long getSectionId() {
+		return sectionId;
+	}
+
+	public void setSectionId(Long sectionId) {
+		this.sectionId = sectionId;
+	}
+
+	public String getMenuName() {
+		return menuName;
+	}
+
+	public void setMenuName(String menuName) {
+		this.menuName = menuName;
+	}
+
+	public String getSectionName() {
+		return sectionName;
+	}
+
+	public void setSectionName(String sectionName) {
+		this.sectionName = sectionName;
 	}
 }
