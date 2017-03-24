@@ -59,19 +59,19 @@ ul.breadcrumb li a:hover {
 }
 </style>
 </head>
-<body style="text-align: center;">
+<body>
+	<!-- <div w3-include-html="../jsp/Corossal.html"></div> -->
 	<table width="100%">
+
 		<tr>
 			<td
-				style="background-image: url(../../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat;">
+				style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat;">
 				<div>
-					<img src="../../image/insurancehub_logo.png" align="left"
-						style="padding-top: 0px; padding-left: 20px;"> <img
-						src="../../image/capgemini logo.png" alt="" align="right"
-						style="padding-top: 8px; padding-right: 40px;"> <br> <br>
-					<a
-						style="color: #FFFFFF; font-family: Avenir; padding-left: 350px; padding-bottom: 10px; padding-top: 10px;"
-						target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
+					<img src="../image/insurancehub_logo.png" align="left" style="padding-top:0px;padding-left:20px;">
+					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">
+					<br><br>
+					<a style="color: #FFFFFF; font-family:Avenir; padding-left: 350px; padding-bottom:10px; padding-top:10px;" target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
+
 				</div>
 			</td>
 		</tr>
@@ -84,7 +84,7 @@ ul.breadcrumb li a:hover {
 	<table width="82%">
 		<tr>
 			<td>
-				<div style="padding-left: 260px;">
+				<div style="padding-left:260px;">
 					<ul class="breadcrumb">
 						<li><a href="http://localhost:8080/iHub">Home</a></li>
 						<li class="active">Life & Pensions</li>
@@ -95,420 +95,788 @@ ul.breadcrumb li a:hover {
 		</tr>
 		<tr>
 			<td>
-				<div class="fullWidth" style="padding-left: 260px;">
-					<div id="featureCarousel">
-						<div class="touchslider">
-							<div class="touchslider-viewport"
-								style="overflow: hidden; height: 350px; position: relative;">
-								<div
-									style="position: absolute; left: -996000px; height: 350px; width: 100000px;">
-									<!-- Implementation of ordering of featured image inside slider By Iffort 03-Jan-2017 -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure>
-													<a
-														href="http://www.lonelyplanet.in/articles/14018/dubai-airport-launches-the-worlds-fastest-free-airport-wi-fi">
-														<img
-														src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/Dubai_International_Airport_Concourse_A_Duty_Free-copy-750x350.jpg"
-														title="" alt="" class="heroFeature">
-													</a>
-												</figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Wikipedia/èŒ¶å£º å‘¨ from
-																Narita, Chiba, Japan/CC BY-SA 2.0
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-													<h3>Dubai Airport launches the worldâ€™s fastest free
-														airport Wi-Fi</h3>
-													<p>Killing time in an airport can be tedious, but Dubai
-														International has just found a way to keep travellers
-														entertained by launching the worldâ€™s fastest free
-														airport Wi-Fi connection. The new service â€“ called
-														WOW-Fi â€“ will provide millions ofâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/14018/dubai-airport-launches-the-worlds-fastest-free-airport-wi-fi">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure>
-													<a
-														href="http://www.lonelyplanet.in/articles/14005/mumbais-best-health-cafes">
-														<img
-														src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/IMG_9869-copy-750x350.jpg"
-														title="" alt="" class="heroFeature">
-													</a>
-												</figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Bombay Salad Co.
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-													<h3>Mumbaiâ€™s best health cafes</h3>
-													<p>This is the day and age when diets are evolving and
-														foods are trending. People are gluten-free, vegan,
-														lactose-free, refined sugar-free, nut-free (no pun
-														intended) and old terms like vegetarian and non-vegetarian
-														are outdated. We bring to you a listâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/14005/mumbais-best-health-cafes">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: 996000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure>
-													<a
-														href="http://www.lonelyplanet.in/articles/13975/in-pics-hola-mohalla-celebrations-in-punjab">
-														<img
-														src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/man-leaps-to-safety-from-the-speeding-horse-2-750x350.jpg"
-														title="" alt="" class="heroFeature">
-													</a>
-												</figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Abhishek Hajela
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-													<h3>In Pics: Hola Mohalla celebrations in Punjab</h3>
-													<p>An unusual twist to Holi is the festival of Hola
-														Mohalla celebrated at Anandpur Sahib in Punjab. An annual
-														Sikh festival held a day after Holi, it has the drama, the
-														sweat and the incredible colours that Indian festivals
-														areâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13975/in-pics-hola-mohalla-celebrations-in-punjab">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure>
-													<a
-														href="http://www.lonelyplanet.in/articles/13955/a-new-exhibition-at-the-colosseum-in-rome">
-														<img
-														src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/shutterstock_433413835-copy-750x350.jpg"
-														title="" alt="" class="heroFeature">
-													</a>
-												</figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Â©prochasson
-																frederic/Shutterstock
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-													<h3>A new exhibition at the Colosseum in Rome</h3>
-													<p>A new exhibition at the Colosseum in Rome will take
-														travellers through the lesser-known history of the
-														cityâ€™s most iconic attraction. â€œColosseo
-														unâ€™iconaâ€�, or â€œColosseum, an iconâ€�, opens on 8
-														March on the middle floor of the amphitheatre. It runsâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13955/a-new-exhibition-at-the-colosseum-in-rome">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure>
-													<a
-														href="http://www.lonelyplanet.in/articles/13917/in-pics-holi-trail-in-north-india">
-														<img
-														src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-750x350.jpg"
-														title="" alt="" class="heroFeature">
-													</a>
-												</figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Abhishek Hajela
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-													<h3>In Pics: Holi trail in North India</h3>
-													<p>For years I kept wondering which is that one
-														particular festival captures the sheer essence, excitement
-														and enthusiasm of the festivities that take place in
-														India. This question led me to go on the Holi trail in
-														North India lastâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13917/in-pics-holi-trail-in-north-india">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure>
-													<a
-														href="http://www.lonelyplanet.in/articles/4868/holi-celebrations-in-varanasi-india">
-														<img
-														src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/BW528a70845114f-copy-750x350.jpg"
-														title="" alt="" class="heroFeature">
-													</a>
-												</figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Â©Porus Khareghat/Lonely
-																Planet
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-													<h3>Holi celebrations in Varanasi, India</h3>
-													<p>As nervous as this may make you feel, celebrating
-														Holi in the holy city of Varanasi is something that should
-														make you throw caution to the wind and book your tickets!
-														Menacing, threatening, ruthless are words that one often
-														hearsâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/4868/holi-celebrations-in-varanasi-india">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-									<div class="touchslider-item"
-										style="position: absolute; left: -10000px;">
-										<ul class="featuredItem articleFeature">
-											<li class="featuredImg"><figure>
-													<a
-														href="http://www.lonelyplanet.in/articles/13895/the-indian-festival-calendar-march-april-2017">
-														<img
-														src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/GettyRF_555748445-1-copy-750x350.jpg"
-														title="" alt="" class="heroFeature">
-													</a>
-												</figure>
-												<div class="imageInfo">
-													<div class="infoWrap bgFade">
-														<span class="info icon-ts_info"></span>
-														<div class="opfade">
-															<p class="description"></p>
-															<p class="location"></p>
-															<p class="author">
-																<strong>Photographer: </strong>Â©Nigel Killeen/Getty
-																Images
-															</p>
-														</div>
-													</div>
-												</div></li>
-											<li class="featuredContent cards"><span class="arrow"></span>
-												<article>
-													<h3>The Indian festival calendar: March â€“ April 2017</h3>
-													<p>As the curtains come down on winter, itâ€™s time for
-														the festivals that bring in the joys of spring. The coming
-														months unfold an unusual fare of events from the Matho
-														Nagrang monastery celebrations in Leh to the grand
-														Arattupuzhaâ€¦</p>
-												</article>
-												<div class="view">
-													<div class="button orange angle">
-														<a class="btn-whiteMain"
-															href="http://www.lonelyplanet.in/articles/13895/the-indian-festival-calendar-march-april-2017">
-
-															<span class="btn btn--linkblue btn--medium">Read
-																More</span>
-														</a>
-													</div>
-												</div></li>
-										</ul>
-										<!-- /.featuredItem -->
-									</div>
-									<!-- /.touchslider-item -->
-								</div>
-							</div>
-
-							<div id="ts-prevnext" class="featuredNav">
-								<span class="touchslider-prev"></span> <span
-									class="touchslider-next"></span>
-							</div>
-
-							<div id="ts-nav" class="featuredNav">
-								<span class="touchslider-nav-item">1</span> <span
-									class="touchslider-nav-item">2</span> <span
-									class="touchslider-nav-item touchslider-nav-item-current">3</span>
-								<span class="touchslider-nav-item">4</span> <span
-									class="touchslider-nav-item">5</span> <span
-									class="touchslider-nav-item">6</span> <span
-									class="touchslider-nav-item">7</span> <span
-									class="touchslider-nav-item">8</span> <span
-									class="touchslider-nav-item last">9</span>
-							</div>
-
+				<div id="jssor_html5_AdWords" style="position: relative; margin: 0 auto; top: 0px; left: 120px; width: 800px; height: 350px; overflow: hidden; visibility: hidden;">
+					<!-- Loading Screen -->
+					<div data-u="loading" style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
+						<div style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+						<div style="position: absolute; display: block; background: url('../img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					</div>
+					<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 350px; overflow: hidden;">
+						<div>
+							<img data-u="image" src="../img/Life - Producer KPI monitor.JPG" />
+						</div>
+						<div data-p="68.75" data-po="70% 50%">
+							<img data-u="image" src="../img/slide2.jpg" />
+						</div>
+						<div data-p="68.75">
+							<img data-u="image" src="../img/slide3.jpg" />
 						</div>
 					</div>
-					<!-- /#featureCarousel -->
+					<!-- Bullet Navigator -->
+					<table style="width: 100%">
+						<tr>
+							<td> 
+								<div data-u="navigator" class="jssorb05"  data-autocenter="1">
+									<!-- bullet navigator item prototype -->
+									<div data-u="prototype"></div>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<!-- Arrow Navigator -->
+					<span data-u="arrowleft" class="jssora12l" data-autocenter="2"></span>
+					<span data-u="arrowright" class="jssora12r" data-autocenter="2"></span>
 				</div>
 			</td>
 		</tr>
 	</table>
-	<c:if test="${not empty artifactDataMap}">
-		<div class="hpivideos outer phSlide">
-			<c:forEach var="data" items="${artifactDataMap}">
-				<div class="related">
-					<table style="width: 100%; text-align: center;">
-						<tr>
-							<td
-								style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">${data.key}</td>
-							<td style="width: 50%;">&nbsp;</td>
-							<td style="text-align: right; width: 20%; padding-right: 35px"
-								onclick="showMoreWorldsReports('fo_part2')"></td>
-						</tr>
-						<tr>
-							<td><hr width="40%" align="left"
-									style="border-top: 5px solid #e9258e; margin-left: 245px;"></td>
-						</tr>
-					</table>
-					<c:forEach var="listValue" items="${data.value}">
-						<article
-							class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
-							style="display: inline-block;">
-							<div class="card__mask">
-								<a class=""
-									href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
-									<figure class="card__figure">
-										<img width="192" height="185"
-											src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/man-leaps-to-safety-from-the-speeding-horse-2-192x185.jpg"
-											class="cardImg"
-											alt="man leaps to safety from the speeding horse 2">
-									</figure>
-									<div class="card__content">
-										<h1 class="card__content__title">${listValue.artifactName}</h1>
-										<div class="card__content__desc">
-											<p>${listValue.artifactDescription}</p>
-										</div>
-									</div>
-								</a>
-							</div>
-						</article>
-					</c:forEach>
-				</div>
-			</c:forEach>
+	<div class="hpivideos outer phSlide">
+		<div class="related">
+			<table style="width: 100%; text-align: center;">
+				<tr>
+					<td
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Front Office</td>
+					<td style="width: 50%;">&nbsp;</td>
+					<td style="text-align: right; width: 20%; padding-right: 35px"
+						onclick="showMoreWorldsReports('fo_part2')"></td>
+				</tr>
+				<tr>
+					<td><hr width="40%" align="left"
+							style="border-top: 5px solid #e9258e; margin-left: 245px;"></td>
+				</tr>
+			</table>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/767')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/man-leaps-to-safety-from-the-speeding-horse-2-192x185.jpg"
+						class="cardImg"
+						alt="man leaps to safety from the speeding horse 2"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Agent Portal</h1>
+						<div class="card__content__desc">
+							<p>An unusual twist to Holi is the festival of Hola Mohalla
+								celebrated at Anandpur Sahib in Punjab. An annual Sikh festival
+								held a day after Holi, it has the drama, the sweat and the
+								incredible colours that Indian festivals areÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/773')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2015/03/2353942082_908377384f_b-copy-192x185.jpg"
+						class="cardImg" alt="2353942082_908377384f_b copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Front Office Benchmarking
+							Tool</h1>
+						<div class="card__content__desc">
+							<p>When we talk about festivals in India, due attention must
+								also be given to the plates and plates of scrumptious food
+								available during this time. The riot of colours called Holi, is
+								no different. Here we venture a look atÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/774')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/BW528a70845114f-copy-192x185.jpg"
+						class="cardImg" alt="COLORFULL HOLI"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Product Wireframe
+							Configurator</h1>
+						<div class="card__content__desc">
+							<p>As nervous as this may make you feel, celebrating Holi in
+								the holy city of Varanasi is something that should make you
+								throw caution to the wind and book your tickets! Menacing,
+								threatening, ruthless are words that one often hearsÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/770')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Insurance Performance
+							Dashboard</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/772')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Producer KPI Monitor</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
 		</div>
-	</c:if>
-	<table style="width: 100%">
-		<tr>
-			<td style="width: 30%;">&nbsp;</td>
-			<td style="width: 50%;">&nbsp;</td>
-			<td style="text-align: right; width: 20%; padding-right: 203px"
-				onclick="showLessWorldsReports('ct_part2')">Show less<img
-				src="../../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
-		</tr>
-	</table>
+
+		<!-- Underwriting & Policy Administration  -->
+		<div class="related">
+			<table style="width: 100%; text-align: center;">
+				<tr>
+					<td
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Underwriting & Policy Administration</td>
+					<td style="width: 50%;">&nbsp;</td>
+					<td style="text-align: right; width: 20%; padding-right: 214px"
+						onclick="showMoreWorldsReports('pa_part2')">Show all<img
+						src="../img/asc_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+				</tr>
+				<tr>
+					<td><hr width="40%" align="left"
+							style="border-top: 5px solid #e9258e; margin-left: 245px;"></td>
+				</tr>
+			</table>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/813')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/man-leaps-to-safety-from-the-speeding-horse-2-192x185.jpg"
+						class="cardImg"
+						alt="man leaps to safety from the speeding horse 2"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Mobile Solution</h1>
+						<div class="card__content__desc">
+							<p>An unusual twist to Holi is the festival of Hola Mohalla
+								celebrated at Anandpur Sahib in Punjab. An annual Sikh festival
+								held a day after Holi, it has the drama, the sweat and the
+								incredible colours that Indian festivals areÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/812')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2015/03/2353942082_908377384f_b-copy-192x185.jpg"
+						class="cardImg" alt="2353942082_908377384f_b copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Insurance Business Rules
+							Management</h1>
+						<div class="card__content__desc">
+							<p>When we talk about festivals in India, due attention must
+								also be given to the plates and plates of scrumptious food
+								available during this time. The riot of colours called Holi, is
+								no different. Here we venture a look atÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/799')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/BW528a70845114f-copy-192x185.jpg"
+						class="cardImg" alt="COLORFULL HOLI"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Guidewire Policy and Billing
+							Center Assets</h1>
+						<div class="card__content__desc">
+							<p>As nervous as this may make you feel, celebrating Holi in
+								the holy city of Varanasi is something that should make you
+								throw caution to the wind and book your tickets! Menacing,
+								threatening, ruthless are words that one often hearsÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/811')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Premium Matching Tool</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/780')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Customer Insight Into Action</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<div id="pa_part2" style="display:none">
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/779')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Forms Factory</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/743')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Guidewire On The Go</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/744')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Homeowners Solution</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/814')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Insurance Insights</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/745')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Traverse - Travel Management
+							Solution</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<article
+				class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+				style="display: inline-block;">
+			<div class="card__mask">
+				<a class=""
+					href="javascript:popup('http://localhost:8080/iHub/getArtifact/747')">
+					<figure class="card__figure"> <img width="192"
+						height="185"
+						src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+						class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+					<div class="card__content">
+						<h1 class="card__content__title">Usage Based Insurance (UBI)
+							- Automobile Solution</h1>
+						<div class="card__content__desc">
+							<p>For years I kept wondering which is that one particular
+								festival captures the sheer essence, excitement and enthusiasm
+								of the festivities that take place in India. This question led
+								me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+						</div>
+					</div>
+				</a>
+			</div>
+			</article>
+			<table style="width: 100%">
+					<tr>
+						<td style="width: 30%;">&nbsp;</td>
+						<td style="width: 50%;">&nbsp;</td>
+						<td style="text-align: right; width: 20%; padding-right: 203px"
+							onclick="showLessWorldsReports('pa_part2')">Show less<img
+							src="../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+					</tr>
+				</table>
+			</div>
+			<!-- Claims Transformation  -->
+			<div class="related">
+				<table style="width: 100%; text-align: center;">
+				<tr>
+					<td
+						style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 260px;">Claims Transformation</td>
+					<td style="width: 50%;">&nbsp;</td>
+					<td style="text-align: right; width: 20%; padding-right: 214px"
+						onclick="showMoreWorldsReports('ct_part2')">Show all<img
+						src="../img/asc_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+				</tr>
+				<tr>
+					<td><hr width="40%" align="left"
+							style="border-top: 5px solid #e9258e; margin-left: 245px;"></td>
+				</tr>
+			</table>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/253')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/man-leaps-to-safety-from-the-speeding-horse-2-192x185.jpg"
+							class="cardImg"
+							alt="man leaps to safety from the speeding horse 2"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Claims Benchmarking</h1>
+							<div class="card__content__desc">
+								<p>An unusual twist to Holi is the festival of Hola Mohalla
+									celebrated at Anandpur Sahib in Punjab. An annual Sikh festival
+									held a day after Holi, it has the drama, the sweat and the
+									incredible colours that Indian festivals areÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/800')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2015/03/2353942082_908377384f_b-copy-192x185.jpg"
+							class="cardImg" alt="2353942082_908377384f_b copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Capgemini Insurance Connect</h1>
+							<div class="card__content__desc">
+								<p>When we talk about festivals in India, due attention must
+									also be given to the plates and plates of scrumptious food
+									available during this time. The riot of colours called Holi, is
+									no different. Here we venture a look atÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/802')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/BW528a70845114f-copy-192x185.jpg"
+							class="cardImg" alt="COLORFULL HOLI"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Claims Analytics and
+								Reporting Solution</h1>
+							<div class="card__content__desc">
+								<p>As nervous as this may make you feel, celebrating Holi in
+									the holy city of Varanasi is something that should make you
+									throw caution to the wind and book your tickets! Menacing,
+									threatening, ruthless are words that one often hearsÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/803')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Claims Data Mart Reporting
+								Solution</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/809')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Guidewire Product Assets</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<div id="ct_part2" style="display:none">
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/766')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Claims Solution</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/657')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Guidewire Code Review Tool</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/809')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Guidewire Product Assets</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/810')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Integrated Document
+								Management Solution</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/743')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Guidewire On The Go</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/744')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Homeowners Solution</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/814')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Insurance Insights</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/745')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Traverse - Travel
+								Management Solution</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastÃ¢â‚¬Â¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<article
+					class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+					style="display: inline-block;">
+				<div class="card__mask">
+					<a class=""
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/747')">
+						<figure class="card__figure"> <img width="192"
+							height="185"
+							src="http://www.lonelyplanet.in/wp-content/uploads/2017/03/DSC9352-Edit-copy-192x185.jpg"
+							class="cardImg" alt="_DSC9352-Edit copy"> </figure>
+						<div class="card__content">
+							<h1 class="card__content__title">Usage Based Insurance (UBI)
+								- Automobile Solution</h1>
+							<div class="card__content__desc">
+								<p>For years I kept wondering which is that one particular
+									festival captures the sheer essence, excitement and enthusiasm
+									of the festivities that take place in India. This question led
+									me to go on the Holi trail in North India lastsÂ¦</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				</article>
+				<table style="width: 100%">
+					<tr>
+						<td style="width: 30%;">&nbsp;</td>
+						<td style="width: 50%;">&nbsp;</td>
+						<td style="text-align: right; width: 20%; padding-right: 203px"
+							onclick="showLessWorldsReports('ct_part2')">Show less<img
+							src="../img/dec_icon.png" class="cardImg" alt="COLORFULL HOLI"></td>
+					</tr>
+				</table>
+			</div>
+			</div>
+		</div>
 </body>
 </html>

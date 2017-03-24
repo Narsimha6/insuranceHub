@@ -27,7 +27,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <style type="text/css">
 html {
-	background: url(../image/Home_background_img.jpg);
+	background: url(../image/iHub_Landing_Page.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -128,7 +128,8 @@ function loadCategoryPage(screenName) {
 			</td>
 			<td>
 				 <div style="padding-left: 80px;">
-				  <a href="/iHub/getCategoryContents/PROPERTY_CASUALITY">	<img src="../image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:25px;"/></a>	
+				 <!-- <a href="/iHub/getCategoryContents/PROPERTY_CASUALITY"> -->
+				  <a href="../jsp/PandC_Page.html">	<img src="../image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:25px;"/></a>	
 				 </div>
 			</td>
 			<td>

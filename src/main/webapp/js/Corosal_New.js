@@ -27,7 +27,7 @@ jQuery(document).ready(function ($) {
             var jssor_html5_AdWords_options = {
               $AutoPlay: true,
               $Idle: 1600,
-              $SlideDuration: 400,
+              $SlideDuration: 3000,
               $SlideEasing: $Jease$.$InOutSine,
               $CaptionSliderOptions: {
                 $Class: $JssorCaptionSlideo$,
