@@ -35,6 +35,18 @@
 	    window.scrollTo(0, 100);
 	}
 </script>
+<script>
+$(document).ready(function(){
+    $(window).resize();
+});
+$(window).resize(function{
+    // your code
+    var windowWidth=$(window).width();
+    var mainContainerWidth=windowWidth-100; // For example
+    $("#body").css({"width":mainContainerWidth+"px"});
+});
+
+</script>
 <style type="text/css">
 ul.breadcrumb {
 	padding: 10px 16px;
@@ -65,18 +77,19 @@ ul.breadcrumb li a:hover {
 </style>
 </head>
 <body style="text-align: center;">
-	<table width="100%">
+	<table width="100%" style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat; padding-top:10px; padding-bottom:15px;">
 		<tr>
-			<td
-				style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat;">
-				<div>
+			<td width="30%">
 					<img src="../image/insurancehub_logo.png" align="left" style="padding-top:0px;padding-left:20px;">
-					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">
-					<br><br>
-					<a style="color: #FFFFFF; font-family:Avenir; padding-left: 350px; padding-bottom:10px; padding-top:10px;" target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
-
-				</div>
 			</td>
+			<td align="center" >
+				<br>
+				<a style="color: #FFFFFF; font-family:Avenir; padding-bottom:10px; padding-top:10px;" target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
+			</td>
+			<td align="right" width="30%">
+					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">
+			</td>
+			
 		</tr>
 		<tr>
 			<td>

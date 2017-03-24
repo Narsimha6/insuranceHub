@@ -36,6 +36,18 @@
 		document.getElementById(id).style.display = 'none';
 	}
 </script>
+<script>
+$(document).ready(function(){
+    $(window).resize();
+});
+$(window).resize(function{
+    // your code
+    var windowWidth=$(window).width();
+    var mainContainerWidth=windowWidth-100; // For example
+    $("#body").css({"width":mainContainerWidth+"px"});
+});
+
+</script>
 <style type="text/css">
 
 ul.breadcrumb {
@@ -61,19 +73,19 @@ ul.breadcrumb li a:hover {
 </style>
 </head>
 <body style="text-align: center;">
-	<table width="100%">
-		<tr>
-			<td
-				style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat;">
-				<div>
-					<img src="../image/insurancehub_logo.png" align="left" style="padding-top:3px;padding-left:20px;">
-					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:3px;padding-right:40px;">
-					<br><br><br>
-					<a style="color: #FFFFFF; font-family:Avenir; padding-left: 220px; " target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a><span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<a style="color: #FFFFFF; font-family:Avenir; target="_blank" rel="nofollow" href="http://www.capgemini.com">Our Solution</a>
-
-				</div>
+	<table width="100%" style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat; padding-top:10px; padding-bottom:15px;">
+		<tr  >
+			<td width="30%">
+					<img src="../image/insurancehub_logo.png" align="left" style="padding-top:0px;padding-left:20px;">
 			</td>
+			<td align="center" >
+				<br>
+				<a style="color: #FFFFFF; font-family:Avenir; padding-bottom:10px; padding-top:10px;" target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
+			</td>
+			<td align="right" width="30%">
+					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">
+			</td>
+			
 		</tr>
 		<tr>
 			<td>

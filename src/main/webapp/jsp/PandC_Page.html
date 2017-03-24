@@ -34,9 +34,19 @@
 	function scrollWin() {
 		window.scrollTo(0, 100);
 	}
-	jQuery(document).ready(function() {
+	
+</script>
+<script>
+$(document).ready(function(){
+    $(window).resize();
+});
+$(window).resize(function{
+    // your code
+    var windowWidth=$(window).width();
+    var mainContainerWidth=windowWidth-100; // For example
+    $("#body").css({"width":mainContainerWidth+"px"});
+});
 
-	});
 </script>
 <style type="text/css">
 ul.breadcrumb {
@@ -72,20 +82,19 @@ tr.border_bottom td {
 </style>
 </head>
 <body >
-	<table width="100%">
-		<tr>
-			<td
-				style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat;">
-				<div>
-					<img src="../image/insurancehub_logo.png" align="left"
-						style="padding-top: 0px; padding-left: 20px;"> <img
-						src="../image/capgemini logo.png" alt="" align="right"
-						style="padding-top: 8px; padding-right: 40px;"> <br> <br>
-					<a
-						style="color: #FFFFFF; font-family: Avenir; padding-left: 350px; padding-bottom: 10px; padding-top: 10px;"
-						target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
-				</div>
+	<table width="100%" style="background-image: url(../image/header_image.jpg); background-size: 100%; background-repeat: no-repeat; padding-top:10px; padding-bottom:15px;">
+		<tr  >
+			<td width="30%">
+					<img src="../image/insurancehub_logo.png" align="left" style="padding-top:0px;padding-left:20px;">
 			</td>
+			<td align="center" >
+				<br>
+				<a style="color: #FFFFFF; font-family:Avenir; padding-bottom:10px; padding-top:10px;" target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
+			</td>
+			<td align="right" width="30%">
+					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">
+			</td>
+			
 		</tr>
 		<tr>
 			<td>
@@ -167,13 +176,13 @@ tr.border_bottom td {
 						<table style="width: 100%; text-align: center;">
 							<tr>
 								<td
-									style="color: black; text-align: left; margin-left: 15px; width: 30%;">Front
+									style="color: black; text-align: left; margin-left: 15px; width: 40%;">Front
 									Office</td>
 								<td style="width: 70%;">&nbsp;</td>
 							</tr>
 							<tr>
 								<td><hr width="40%" align="left"
-										style="border-top: 5px solid #FFFF00;"></td>
+										style="border-top: 5px solid #FFC000;"></td>
 							</tr>
 						</table>
 						<article
@@ -383,14 +392,14 @@ tr.border_bottom td {
 					<table >
 						<tr>
 							<td
-								style="color: black; text-align: left; margin-left: 15px; width: 30%;">Life</td>
+								style="color: black; text-align: left; margin-left: 15px; width: 40%;">Life</td>
 							<td style="width: 70%;">&nbsp;</td>
-							<td style="text-align: right; width: 20%; padding-right: 35px"
+							<td style="text-align: right; width: 40%; padding-right: 35px"
 								onclick="showMoreWorldsReports('pa_part2')"></td>
 						</tr>
 						<tr>
 							<td><hr width="40%" align="left"
-									style="border-top: 5px solid #FFFF00;"></td>
+									style="border-top: 5px solid #FFC000;"></td>
 						</tr>
 					</table>
 					<article
@@ -536,14 +545,14 @@ tr.border_bottom td {
 					<table style="width: 100%; text-align: center;">
 						<tr>
 							<td
-								style="color: black; text-align: left; margin-left: 15px; width: 30%;">Health</td>
+								style="color: black; text-align: left; margin-left: 15px; width:40%;">Health</td>
 							<td style="width: 70%;">&nbsp;</td>
-							<td style="text-align: right; width: 20%; padding-right: 35px"
+							<td style="text-align: right; width: 40%; padding-right: 35px"
 								onclick="showMoreWorldsReports('ct_part2')"></td>
 						</tr>
 						<tr>
-							<td><hr width="70%" align="left"
-									style="border-top: 5px solid #FFFF00;"></td>
+							<td><hr width="40%" align="left"
+									style="border-top: 5px solid #FFC000;"></td>
 						</tr>
 					</table>
 					<table style="width: 100%">
