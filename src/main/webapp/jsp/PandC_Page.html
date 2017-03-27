@@ -97,6 +97,8 @@ div.header {
 	background-repeat: no-repeat;
 	height: 105px;
 }
+
+
 </style>
 </head>
 <body>
@@ -114,11 +116,11 @@ div.header {
 			<li class="active">Property & Casualty</li>
 		</ul>
 	</div>
-	<div style="width: 65%; margin: auto; background-color: #ffffff; margin-top:2px;" >
+	<div style="width: 65%; margin: auto; background-color: #ffffff; margin-top:2px;overflow: hidden;" >
 
 		<div>&nbsp;</div>
 		<div id="jssor_html5_AdWords"
-			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 979px; height: 350px;">
+			style="position: relative; margin: auto; top: 0px; left: 0px; overflow:auto; visibility; width: 820px; height: 350px;">
 			<!-- Loading Screen -->
 			<div data-u="loading"
 				style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
@@ -128,7 +130,7 @@ div.header {
 					style="position: absolute; display: block; background: url('../img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 			</div>
 			<div data-u="slides"
-				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 979px; height: 350px;">
+				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 820px; height: 350px;">
 				<div>
 					<img data-u="image" src="../img/Homeowners_Solution_Slide1.PNG" />
 				</div>
@@ -370,7 +372,7 @@ div.header {
 					</article>
 					<div id="tblFrontOffice" align="right">
 						<span style="padding-right: 10px;"
-							onclick="showMoreWorldsReports('fo_part2','tblFrontOffice')">Show
+							onclick="showLessWorldsReports('fo_part2','tblFrontOffice')">Show
 							less <img src="../img/asc_icon.png" class="cardImg"
 							alt="Show less">
 						</span>
@@ -502,7 +504,7 @@ div.header {
 					</article>
 					<div id="tblLife" align="right">
 						<span style="padding-right: 10px;"
-							onclick="showMoreWorldsReports('life_part2','tblLife')">Show
+							onclick="showLessWorldsReports('life_part2','tblLife')">Show
 							less <img src="../img/asc_icon.png" class="cardImg"
 							alt="Show less">
 						</span>
