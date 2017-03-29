@@ -314,10 +314,10 @@ aside .sideContent .locations--inner .wp-place-title{
     overflow: hidden;
 }
 .related{
-    padding-top: 30px;
+    padding-top: 10px;
     background: #FFFFF;
     overflow: hidden;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .related .copy--h1{
     color: #fff!important;
