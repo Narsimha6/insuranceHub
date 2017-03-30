@@ -34,7 +34,25 @@ html {
 	background-attachment: fixed;
 }
 </style>
-
+<script>
+	function callDashboard() {
+		$.ajax({
+			type : "GET",
+			url : "/iHub/home",
+			//data: "name=" + name + "&education=" + education,
+			success : function(response) {
+				console.log(response);
+				// we have the response
+				$('#info').html(response);
+				$('#name').val('');
+				$('#education').val('');
+			},
+			error : function(e) {
+				alert('Error: ' + e);
+			}
+		});
+	}
+</script>
 </head>
 <body>
 <%@include file="../jsp/InsuranceHub_Home.html"%>

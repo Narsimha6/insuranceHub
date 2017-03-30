@@ -42,12 +42,12 @@ public class ArtifactServiceImpl implements ArtifactService {
 	public Map<String, List<ArtifactsMaster>> getCategoryContents(String categoryName) {
 		List<ArtifactsMaster> artifactList = null;
 		Integer menuId = getMenuIdForCategoryName(categoryName);
-		String queryStr = "SELECT Artifact_ID, Artifact_Name, Artifact_Type, IMAGE_URL, am.ARTIFACT_COMMENT, am.menu_id, am.section_id, menu.MENU_name, sec.SECTION_NAME "  
+		String queryStr = "SELECT am.Artifact_ID, am.Artifact_Name, am.Artifact_Type, am.IMAGE_URL, am.ARTIFACT_COMMENT, am.menu_id, am.section_id, menu.MENU_name, sec.SECTION_NAME "  
 				+"from izone.IHUB_ARTIFACT_MASTER am "
 				+"inner join izone.IHUB_menu menu on am.menu_id = menu.menu_id "
 				+"inner join izone.IHUB_section sec on sec.menu_id = menu.menu_id "
 				+"where sec.SECTION_ID = am.section_id "
-				+"AND am.is_active= 'Y' AND am.menu_id = "+ menuId +" order by am.section_ID, am.ARTIFACT_ID ";
+				+"AND am.is_active= 'Y' AND am.menu_id = "+ menuId +" order by am.section_ID, am.ARTIFACT_Name ";
 		Query query = entityManager.createNativeQuery(queryStr);
 		Map<String, List<ArtifactsMaster>> dataMap = null;
 		try{

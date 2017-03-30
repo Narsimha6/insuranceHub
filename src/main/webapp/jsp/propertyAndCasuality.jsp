@@ -46,43 +46,44 @@
 </head>
 <body>
 	<div class="header">
-		<img src="../image/insurancehub_logo.png" align="left"
-			style="padding-left: 20px;"> <a
-			style="color: #FFFFFF; font-family: Avenir; padding-left: 320px; position: absolute; top: 30px; padding-top: 20px;"
-			target="_blank" href="http://www.capgemini.com">About</a> <img
-			src="../image/capgemini logo.png"
-			style="padding-top: 15px; padding-right: 40px;" align="right">
+		<img src="../../image/insurancehub_logo.png" align="left"
+			style="padding-left: 20px;"> 
+		<img src="../../image/capgemini logo.png"
+			style="padding-top: 25px; padding-right: 40px;" align="right">
 	</div>
-	<div>
+	<div style="postion:fixed;">
 		<ul class="breadcrumb">
 			<li><a href="http://localhost:8080/iHub">Home</a></li>
 			<li class="active">Property & Casualty</li>
 		</ul>
 	</div>
 	<div
-		style="width: 67%; margin: auto; background-color: #ffffff; margin-top: 2px; overflow: hidden; min-width: 920px;">
+		style="width: 67%; margin: auto; background-color: #EDEDED; margin-top: 2px; overflow: hidden; min-width: 950px;">
 
 		<div>&nbsp;</div>
 		<div id="jssor_html5_AdWords"
-			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: auto; visibility; width: 920px; height: 350px;">
+			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: auto; visibility; width: 950px; height: 350px;">
 			<!-- Loading Screen -->
 			<div data-u="loading"
 				style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
 				<div
 					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 				<div
-					style="position: absolute; display: block; background: url('../img/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					style="position: absolute; display: block; background: url('../../image/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 			</div>
 			<div data-u="slides"
-				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 920px; height: 350px;">
+				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 950px; height: 350px;">
 				<div>
-					<img data-u="image" src="../img/Homeowners_Solution_Slide1.PNG" />
+					<img data-u="image" src="../../image/Scroll_images/Agent Portal.png" />
 				</div>
 				<div data-p="68.75" data-po="70% 50%">
-					<img data-u="image" src="../img/Traverse_slide2.PNG" />
+					<img data-u="image" src="../../image/Scroll_images/UBI.png" />
 				</div>
 				<div data-p="68.75">
-					<img data-u="image" src="../img/Insights_Slide3.PNG" />s
+					<img data-u="image" src="../../image/Scroll_images/Traverse.png" />
+				</div>
+				<div data-p="68.75">
+					<img data-u="image" src="../../image/Scroll_images/SmartHome Solution.png" />
 				</div>
 			</div>
 			<!-- Bullet Navigator -->
@@ -112,12 +113,10 @@
 				<c:forEach var="data" items="${artifactDataMap}">
 					<div class="related">
 
-						<span
-							style="color: black; text-align: left; margin-left: 15px; width: 30%; padding-left: 240px;">${data.key}</span>
+						<span style="color: black; font-size:20px; text-align: left; margin-left: 15px; width: 40%;">${data.key}</span>
 
 						<div>
-							<hr width="20%" align="left"
-								style="border-top: 5px solid #FFC000; margin-left: 10px;">
+							<hr width="22%" align="left" style="border-top: 5px solid #FFC000; margin-left: 10px;">
 						</div>
 						<c:forEach var="listValue" items="${data.value}">
 							<article
@@ -128,8 +127,7 @@
 										href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
 										<figure class="card__figure">
 											<img width="192" height="185"
-												src="../../image/common/Agent Portal.jpg" class="cardImg"
-												alt="Agent Portal">
+												src="${listValue.artifactImageURL}" class="cardImg">
 										</figure>
 										<div class="card__content">
 											<h1 class="card__content__title">${listValue.artifactName}</h1>
@@ -150,7 +148,7 @@
 	<div style="text-align: right;">
 		<span style="width: 100%; padding-right: 203px"><a href="#"
 			class="back-to-top"><img style="width: 50px; height: 50px"
-				src="../img/btop.png"></a></span>
+				src="../../image/btop.png"></a></span>
 	</div>
 </body>
 </html>

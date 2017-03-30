@@ -1,4 +1,5 @@
 ul.breadcrumb {
+	position: static;
 	padding: 10px 16px;
 	list-style: none;
 	background-color: #ffffff;

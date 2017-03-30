@@ -26,11 +26,15 @@
 <script src="../js/javascript.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <style type="text/css">
-html {
+html, body {
 	background: url(../image/iHub_Landing_Page.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	min-width: 950px;
+	max-width:2000px;
 }
 </style>
 <script>
@@ -51,30 +55,22 @@ function loadCategoryPage(screenName) {
     }
     });
     }
+    
+
+
     </script>
 </head>
-<body style="max-width: 100%;">
-	<table width="100%">
+<body>
+	<table width="100%" style="padding-top: 10px;">
+
 		<tr>
-			<td>
-				<div style="padding-top:5px;">
-					<img src="../image/insurancehub_logo.png" align="left" style="padding-top:0px;padding-left:20px;">
-					<img src="../image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">
-					<br><br>
-					<a style="color: #FFFFFF; font-family:Avenir; padding-left: 350px; padding-bottom:10px; padding-top:10px;" target="_blank" rel="nofollow" href="http://www.capgemini.com">About</a>
-				</div>
-			</td>
+			<td width="30%"><img src="../image/insurancehub_logo.png"
+				align="left" style="padding-top: 0px; padding-left: 20px; postion:static;"></td>
+			<td align="right" width="30%"><img
+				src="../image/capgemini logo.png" alt="" align="right"
+				style="padding-top: 8px; padding-right: 40px; postion:static;"></td>
 		</tr>
-		<tr>
-			<td>
-				<div>&nbsp;</div>
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<div>&nbsp;</div>
-			</td>
-		</tr>
+
 		<tr>
 			<td>
 				<div>&nbsp;</div>
@@ -89,14 +85,14 @@ function loadCategoryPage(screenName) {
 				<span> &nbsp;</span>
 			</td>
 			<td>
-				 <div style="padding-left: 100px;">
+				 <div style="padding-left: 100px;  postion:static;">
 				 	 <a href="/iHub/getCategoryContents/LIFE_PENSION"><img src="../image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:00px;"/></a>	
 				 </div>
 			</td>
 			<td>
 				
-				<div style="padding-left: 90px;">
-				  <a href="/iHub/getCategoryContents/HEALTH">	<img src="../image/health_image.png" align="middle" style="padding-top:20px;padding-left:90px;"/></a>	
+				<div style="padding-left: 90px;  postion:static;">
+				  <a href="/iHub/getCategoryContents/HEALTH">	<img src="../image/health_image.png" align="middle" style="padding-top:20px;padding-left:90px; margin-bottom:5px;"/></a>	
 				 </div>
 			
 			</td>
@@ -107,7 +103,7 @@ function loadCategoryPage(screenName) {
 		<tr>
 			<td>
 				<span >
-					 <a href="/iHub"> <img src="../image/previous.png" alt="" align="left" style="padding-top:15px;"/></a>
+					 <a href="/iHub"> <img src="../image/previous.png" alt="" align="left" style="padding-top:15px;  postion:fixed;"/></a>
 				</span>	
 			</td>
 			
@@ -129,13 +125,14 @@ function loadCategoryPage(screenName) {
 			<td>
 				 <div style="padding-left: 80px;">
 				 <!-- <a href="/iHub/getCategoryContents/PROPERTY_CASUALITY"> -->
-				  <a href="../jsp/PandC_Page.html">	<img src="../image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:25px;"/></a>	
+				  <!-- <a href="../jsp/PandC_Page.html"> -->
+				  <a href="/iHub/getCategoryContents/PROPERTY_CASUALITY">	<img src="../image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:25px; postion:static;"/></a>	
 				 </div>
 			</td>
 			<td>
 				
 				<div style="padding-left: 70px;">
-				 <a href="/iHub/getCategoryContents/KNOWLEDGE_HUB"> <img src="../image/knowledgehub_image.png" align="middle" style="padding-bottom:4px;padding-left:70px;"/></a>	
+				 <a href="/iHub/getCategoryContents/KNOWLEDGE_HUB"> <img src="../image/knowledgehub_image.png" align="middle" style="padding-bottom:4px;padding-left:70px;  postion:static;  margin-bottom:5px;"/></a>	
 				 </div>
 			
 			</td>
@@ -155,10 +152,15 @@ function loadCategoryPage(screenName) {
 				<div>&nbsp;</div>
 			</td>
 		</tr>
+		<tr>
+			<td>
+				<div>&nbsp;</div>
+			</td>
+		</tr>
 		
 		<tr>
 			<td align="center" >
-				<div align="center">
+				<div align="center" style="postion:static;">
 					
 					<a href="https://www.facebook.com/CapgeminiIndia/"
 							target="_blank" rel="nofollow"> <img src="../image/facebook_logo.png"/> </a>
