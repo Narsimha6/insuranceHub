@@ -1332,7 +1332,7 @@ ul.contactDetails, ul.contactDetails li{
             /* size of bullet elment */
             width: 16px;
             height: 16px;
-            background: url('../img/b05.png') no-repeat;
+            background: url('../image/b05.png') no-repeat;
             overflow: hidden;
             cursor: pointer;
         }
@@ -1359,7 +1359,7 @@ ul.contactDetails, ul.contactDetails li{
             width: 30px;
             height: 46px;
             cursor: pointer;
-            background: url('../img/a12.png') no-repeat;
+            background: url('../image/a12.png') no-repeat;
             overflow: hidden;
         }
         .jssora12l { background-position: -16px -37px; top: 0px; left: 0px; width: 30px; height: 46px; }
