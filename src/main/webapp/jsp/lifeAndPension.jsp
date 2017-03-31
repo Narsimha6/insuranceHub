@@ -24,24 +24,20 @@
 		pupWindow.focus();
 	}
 	function showMoreWorldsReports(id1, id2, id3) {
-			document.getElementById(id1).style.display = 'block';
-			document.getElementById(id2).style.display = 'none';
-			document.getElementById(id3).style.display = 'block';
-			
-		
+		document.getElementById(id1).style.display = 'block';
+		document.getElementById(id2).style.display = 'none';
+		document.getElementById(id3).style.display = 'block';
+
 	}
 	function showLessWorldsReports(id1, id2, id3) {
 		document.getElementById(id1).style.display = 'none';
 		document.getElementById(id2).style.display = 'block';
 		document.getElementById(id3).style.display = 'none';
-		
+
 	}
 	function scrollWin() {
 		window.scrollTo(0, 100);
 	}
-	jQuery(document).ready(function() {
-
-	});
 </script>
 
 </head>
@@ -49,18 +45,19 @@
 <body>
 	<div class="header">
 		<img src="../../image/insurancehub_logo.png" align="left"
-			style="padding-left: 20px;"> 
-		<img src="../../image/capgemini logo.png"
+			style="padding-left: 20px;"> <img
+			src="../../image/capgemini logo.png"
 			style="padding-top: 25px; padding-right: 40px;" align="right">
 	</div>
-	
+
 	<div
 		style="width: 67%; margin: auto; background-color: #EDEDED; margin-top: 2px; overflow: hidden; min-width: 950px;">
 		<div>
-		<ul style="background-color: white;height: 35px">
-			<li style="padding-top: 0.5%; position:relative;"><a href="http://localhost:8080/iHub">Home&nbsp;&nbsp;</a>/&nbsp;&nbsp;Life & Pensions</li>
-		</ul>
-	</div>
+			<ul class="breadcrumb">
+				<li><a href="http://localhost:8080/iHub">Home</a></li>
+				<li class="active">Life & Pensions</li>
+			</ul>
+		</div>
 		<div>&nbsp;</div>
 		<div id="jssor_html5_AdWords"
 			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: auto; visibility; width: 950px; height: 350px;">
@@ -75,13 +72,25 @@
 			<div data-u="slides"
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 950px; height: 350px;">
 				<div>
-					<a href="javascript:popup('http://localhost:8080/iHub/getArtifact/767')"> <img data-u="image" src="../../image/Scroll_images/Agent Portal.png" /> </a>
+					<a
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/767')">
+						<img data-u="image"
+						src="../../image/Scroll_images/Agent Portal.png" />
+					</a>
 				</div>
 				<div data-p="68.75" data-po="70% 50%">
-				 <a href="javascript:popup('http://localhost:8080/iHub/getArtifact/780')">	<img data-u="image" src="../../image/Scroll_images/Customer Insights Into Action.png" /> </a>
+					<a
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/780')">
+						<img data-u="image"
+						src="../../image/Scroll_images/Customer Insights Into Action.png" />
+					</a>
 				</div>
 				<div data-p="68.75">
-					<a href="javascript:popup('http://localhost:8080/iHub/getArtifact/697')"> <img data-u="image" src="../../image/Scroll_images/Appeals Greivances.png" /> </a>
+					<a
+						href="javascript:popup('http://localhost:8080/iHub/getArtifact/697')">
+						<img data-u="image"
+						src="../../image/Scroll_images/Appeals Greivances.png" />
+					</a>
 				</div>
 			</div>
 			<!-- Bullet Navigator -->
@@ -105,13 +114,13 @@
 		</div>
 
 		<!--  Start of Artifacts  -->
-	<c:if test="${not empty artifactDataMap}">
+		<c:if test="${not empty artifactDataMap}">
 			<div class="hpivideos outer phSlide">
 				<c:forEach var="data" items="${artifactDataMap}">
 					<div class="related">
 
-						<span> &nbsp;</span>
-						<span style="color: black; font-size:20px;  text-align: left;">${data.key}</span>
+						<span> &nbsp;</span> <span
+							style="color: black; font-size: 20px; text-align: left;">${data.key}</span>
 
 						<div>
 							<hr width="21%" align="left"
@@ -138,41 +147,44 @@
 								</div>
 							</article>
 						</c:forEach>
-							<div id="div_${data.key}_MoreData" style="display: none;">
-								<c:forEach var="listValue" items="${data.value}" begin="5">
-										<article
-											class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
-											style="display: inline-block;">
-											<div class="card__mask">
-												<a
-													href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
-													<figure class="card__figure">
-														<img width="192" height="185"
-															src="${listValue.artifactImageURL}" class="cardImg">
-													</figure>
-													<div class="card__content">
-														<h1 class="card__content__title">${listValue.artifactName}</h1>
-														<div class="card__content__desc">
-															<p>${listValue.artifactDescription}</p>
-														</div>
-													</div>
-												</a>
+						<div id="div_${data.key}_MoreData" style="display: none;">
+							<c:forEach var="listValue" items="${data.value}" begin="5">
+								<article
+									class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
+									style="display: inline-block;">
+									<div class="card__mask">
+										<a
+											href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
+											<figure class="card__figure">
+												<img width="192" height="185"
+													src="${listValue.artifactImageURL}" class="cardImg">
+											</figure>
+											<div class="card__content">
+												<h1 class="card__content__title">${listValue.artifactName}</h1>
+												<div class="card__content__desc">
+													<p>${listValue.artifactDescription}</p>
+												</div>
 											</div>
-										</article>
-								</c:forEach>
-							</div>
+										</a>
+									</div>
+								</article>
+							</c:forEach>
+						</div>
 						<c:forEach var="listValue" items="${data.key}">
-							<c:if test="${(data.value).size()>4}">
+							<c:if test="${(data.value).size()>5}">
 								<div id="div_${data.key}_ShowMore" align="right">
 									<span style="padding-right: 10px;"
 										onclick="showMoreWorldsReports('div_${data.key}_MoreData','div_${data.key}_ShowMore','div_${data.key}_Less')">Show
-										all <img src="../../img/asc_icon.png" class="cardImg" alt="Show all">
+										all <img src="../../image/asc_icon.png" class="cardImg"
+										alt="Show all">
 									</span>
 								</div>
-								<div id="div_${data.key}_Less" align="right" style="display: none;">
+								<div id="div_${data.key}_Less" align="right"
+									style="display: none;">
 									<span style="padding-right: 10px;"
 										onclick="showLessWorldsReports('div_${data.key}_MoreData','div_${data.key}_ShowMore','div_${data.key}_Less')">Show
-										Less <img src="../../img/asc_icon.png" class="cardImg" alt="Show all">
+										Less <img src="../../image/dec_icon.png" class="cardImg"
+										alt="Show less">
 									</span>
 								</div>
 							</c:if>
@@ -183,7 +195,9 @@
 		</c:if>
 	</div>
 	<div style="text-align: right;">
-		<span style="width: 100%; padding-right: 203px"><a href="#" class="back-to-top"><img style="width: 50px; height: 50px" src="../../image/btop.png"></a></span>
+		<span style="width: 100%; padding-right: 203px"><a href="#"
+			class="back-to-top"><img style="width: 50px; height: 50px"
+				src="../../image/btop.png"></a></span>
 	</div>
 </body>
 </html>

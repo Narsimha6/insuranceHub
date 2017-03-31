@@ -4,7 +4,6 @@ ul.breadcrumb {
 	list-style: none;
 	background-color: #ffffff;
 	font-size: 17px;
-	padding-left: 254px;
 }
 
 ul.breadcrumb li {
@@ -35,8 +34,8 @@ html, body {
 	width: 100%;
 	height: auto;
 	min-height: 100%;
-	
-	min-width: 70%;
+	background-color: #EDEDED;
+	min-width: 67%;
 	max-width: 100%;
 	margin: auto;
 }
