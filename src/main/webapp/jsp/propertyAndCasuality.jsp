@@ -52,13 +52,14 @@
 		<img src="../../image/capgemini logo.png"
 			style="padding-top: 25px; padding-right: 40px;" align="right">
 	</div>
-	<div>
-		<ul style="background-color: white;height: 35px">
-			<li style="padding-left: 13.5%;padding-top: 0.5%"><a href="http://localhost:8080/iHub">Home&nbsp;&nbsp;</a>/&nbsp;&nbsp;Property & Casualty</li>
-		</ul>
-	</div>
+	
 	<div
 		style="width: 67%; margin: auto; background-color: #EDEDED; margin-top: 2px; overflow: hidden; min-width: 950px;">
+		<div>
+		<ul style="background-color: white;height: 35px;">
+			<li style="padding-top: 0.5%; position:relative;"><a href="http://localhost:8080/iHub">Home&nbsp;&nbsp;</a>/&nbsp;&nbsp;Property & Casualty</li>
+		</ul>
+	</div>
 
 		<div>&nbsp;</div>
 		<div id="jssor_html5_AdWords"
@@ -74,16 +75,16 @@
 			<div data-u="slides"
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 950px; height: 350px;">
 				<div>
-					<img data-u="image" src="../../image/Scroll_images/Agent Portal.png" />
+				<a href="javascript:popup('http://localhost:8080/iHub/getArtifact/767')">	<img data-u="image" src="../../image/Scroll_images/Agent Portal.png" /> </a>
 				</div>
 				<div data-p="68.75" data-po="70% 50%">
-					<img data-u="image" src="../../image/Scroll_images/UBI.png" />
+					<a href="javascript:popup('http://localhost:8080/iHub/getArtifact/747')"> <img data-u="image" src="../../image/Scroll_images/UBI.png" /> </a>
 				</div>
 				<div data-p="68.75">
-					<img data-u="image" src="../../image/Scroll_images/Traverse.png" />
+					<a href="javascript:popup('http://localhost:8080/iHub/getArtifact/745')"> <img data-u="image" src="../../image/Scroll_images/Traverse.png" /> </a>
 				</div>
 				<div data-p="68.75">
-					<img data-u="image" src="../../image/Scroll_images/SmartHome Solution.png" />
+				<a href="javascript:popup('http://localhost:8080/iHub/getArtifact/744')">	<img data-u="image" src="../../image/Scroll_images/SmartHome Solution.png" /> </a>
 				</div>
 			</div>
 			<!-- Bullet Navigator -->
@@ -112,12 +113,11 @@
 			<div class="hpivideos outer phSlide">
 				<c:forEach var="data" items="${artifactDataMap}">
 					<div class="related">
-
-						<span
-							style="color: black; text-align: left;">${data.key}</span>
+						<span> &nbsp;</span>
+						<span style="color: black; font-size:20px;  text-align: left;">${data.key}</span>
 
 						<div>
-							<hr width="20%" align="left"
+							<hr width="21%" align="left"
 								style="border-top: 5px solid #FFC000;">
 						</div>
 						<c:forEach var="listValue" items="${data.value}" begin="0" end="4">
@@ -129,8 +129,7 @@
 										href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
 										<figure class="card__figure">
 											<img width="192" height="185"
-												src="${listValue.artifactImageURL}" class="cardImg"
-												alt="Agent Portal">
+												src="${listValue.artifactImageURL}" class="cardImg">
 										</figure>
 										<div class="card__content">
 											<h1 class="card__content__title">${listValue.artifactName}</h1>
@@ -152,8 +151,7 @@
 													href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
 													<figure class="card__figure">
 														<img width="192" height="185"
-															src="${listValue.artifactImageURL}" class="cardImg"
-															alt="Agent Portal">
+															src="${listValue.artifactImageURL}" class="cardImg">
 													</figure>
 													<div class="card__content">
 														<h1 class="card__content__title">${listValue.artifactName}</h1>
