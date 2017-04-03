@@ -123,9 +123,18 @@
 						<span> &nbsp;</span> <span
 							style="color: black; font-size: 20px; text-align: left;">${data.key}</span>
 
+						
 						<div>
-							<hr width="21%" align="left"
-								style="border-top: 5px solid #FFC000;">
+							<c:if test="${(data.key).contains('Front')}">
+								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
+							</c:if>
+							<c:if test="${(data.key).contains('Front')}">
+								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
+							</c:if>
+							<c:if test="${(data.key).contains('Front')}">
+								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
+							</c:if>
+							
 						</div>
 						<c:forEach var="listValue" items="${data.value}" begin="0" end="4">
 							<article

@@ -71,13 +71,7 @@
 			</div>
 			<div data-u="slides"
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 950px; height: 350px;">
-				<div>
-					<a
-						href="javascript:popup('${context}/getArtifact/767')">
-						<img data-u="image"
-						src="${context}/image/Scroll_images/Agent Portal.png" />
-					</a>
-				</div>
+				
 				<div data-p="68.75" data-po="70% 50%">
 					<a
 						href="javascript:popup('${context}/getArtifact/747')">
@@ -129,8 +123,19 @@
 							style="color: black; font-size: 20px; text-align: left;">${data.key}</span>
 
 						<div>
-							<hr width="21%" align="left"
-								style="border-top: 5px solid #FFC000;">
+							<c:if test="${(data.key).contains('World')}">
+								<hr width="15%" align="left" style="border-top: 5px solid #9c33ff;">
+							</c:if>
+							<c:if test="${(data.key).contains('Thought')}">
+								<hr width="20%" align="left" style="border-top: 5px solid #9c33ff;">
+							</c:if>
+							<c:if test="${(data.key).contains('Framework')}">
+								<hr width="28%" align="left" style="border-top: 5px solid #9c33ff;">
+							</c:if>
+							<c:if test="${(data.key).contains('Trainings')}">
+								<hr width="10%" align="left" style="border-top: 5px solid #9c33ff;">
+							</c:if>
+							
 						</div>
 						<c:forEach var="listValue" items="${data.value}" begin="0" end="4">
 							<article
