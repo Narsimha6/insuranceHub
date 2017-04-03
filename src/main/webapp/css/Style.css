@@ -34,14 +34,14 @@ tr.border_bottom td {
    font-weight:bold;
   font-size:45px;	
   font-family: 'joglekar65';
-  src: URL('../../css/fonts/regular/avenir65.ttf') format('ttf');
+  src: URL('/iHub/css/fonts/regular/avenir65.ttf') format('ttf');
 }
 
 @font-face {
   font-weight:bold;
   font-size:45px;
   font-family: 'joglekar45';
-  src: URL('../../css/fonts/regular/avenir45.ttf') format('ttf');
+  src: URL('/iHub/css/fonts/regular/avenir45.ttf') format('ttf');
 }
 
 html, body {
@@ -1215,12 +1215,12 @@ html.mobile .slide-wrapper {
 }
 
 .theme-blue-header {
-	background: url(../../assets/media/images/theme-blue-header.jpg)
+	background: url(/iHub/assets/media/images/theme-blue-header.jpg)
 		no-repeat
 }
 
 .theme-blue .sidebar-wrapper {
-	background: url(../../assets/media/images/eapply-sidebar-blue-bg.jpg)
+	background: url(/iHub/assets/media/images/eapply-sidebar-blue-bg.jpg)
 		no-repeat
 }
 
@@ -1229,12 +1229,12 @@ html.mobile .slide-wrapper {
 }
 
 .theme-golden-header {
-	background: url(../../assets/media/images/theme-golden-header.jpg)
+	background: url(/iHub/assets/media/images/theme-golden-header.jpg)
 		no-repeat
 }
 
 .theme-golden .sidebar-wrapper {
-	background: url(../../assets/media/images/eapply-sidebar-golden-bg.jpg)
+	background: url(/iHub/assets/media/images/eapply-sidebar-golden-bg.jpg)
 		no-repeat
 }
 

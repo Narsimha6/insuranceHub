@@ -30,14 +30,14 @@ public class WelcomeController {
 	@Value("${application.message:Hello World}")
 	private String message = "Hello World";
 
-	@GetMapping("/iHub")
+	@GetMapping("/")
 	public String welcome(Map<String, Object> model) {
 		model.put("time", new Date());
 		model.put("message", this.message);
 		return "welcome";
 	}
 
-	@RequestMapping("/iHub/foo")
+	@RequestMapping("/foo")
 	public String foo(Map<String, Object> model) {
 		throw new RuntimeException("Foo");
 	}

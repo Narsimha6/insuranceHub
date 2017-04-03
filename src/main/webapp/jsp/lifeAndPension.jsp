@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-
+<c:set var="context" value="${pageContext.request.contextPath}" />
 <html lang="en">
 <head>
 <title>insurancehub:Life&Pensions</title>
-<link href="../../css/Style.css" rel="stylesheet" type="text/css" />
-<link href="../../css/new-10.css" rel="stylesheet" type="text/css" />
+<link href="${context}/css/Style.css" rel="stylesheet" type="text/css" />
+<link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
 <script language="javascript"
 	src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
-<script src="../../js/jquery.touchSlider.js" type="text/javascript"></script>
-<script type="text/javascript" src="../../js/jquery.smartmenus.js"></script>
-<script type="text/javascript" src="../../js/jquery-1.12.4.js"></script>
-<script src="../../js/jquery-1.11.3.min.js" type="text/javascript"></script>
-<script src="../../js/jssor.slider-22.2.16.mini.js"
+<script src="${context}/js/jquery.touchSlider.js" type="text/javascript"></script>
+<script type="text/javascript" src="${context}/js/jquery.smartmenus.js"></script>
+<script type="text/javascript" src="${context}/js/jquery-1.12.4.js"></script>
+<script src="${context}/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="${context}/js/jssor.slider-22.2.16.mini.js"
 	type="text/javascript"></script>
-<script src="../../js/Corosal_New.js" type="text/javascript"></script>
+<script src="${context}/js/Corosal_New.js" type="text/javascript"></script>
 
-<script type="text/javascript" src="../../js/jquery-ui.js"></script>
+<script type="text/javascript" src="${context}/js/jquery-ui.js"></script>
 <script>
 	function popup(url, x, y) {
 		pupWindow = window
@@ -45,9 +45,9 @@
 </head>
 <body>
 	<div class="header">
-		<img src="../../image/insurancehub_logo.png" align="left"
+		<img src="${context}/image/insurancehub_logo.png" align="left"
 			style="padding-left: 20px;"> <img
-			src="../../image/capgemini logo.png"
+			src="${context}/image/capgemini logo.png"
 			style="padding-top: 25px; padding-right: 40px;" align="right">
 	</div>
 
@@ -55,7 +55,7 @@
 		style="width: 67%; margin: auto; background-color: #EDEDED; margin-top: 2px; overflow: hidden; min-width: 950px;">
 		<div>
 			<ul class="breadcrumb">
-				<li><a href="http://localhost:8080/iHub">Home</a></li>
+				<li><a href="${context}/">Home</a></li>
 				<li class="active">Life & Pensions</li>
 			</ul>
 		</div>
@@ -68,29 +68,29 @@
 				<div
 					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 				<div
-					style="position: absolute; display: block; background: url('../../image/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					style="position: absolute; display: block; background: url('${context}/image/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 			</div>
 			<div data-u="slides"
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 950px; height: 350px;">
 				<div>
 					<a
-						href="javascript:popup('http://localhost:8080/iHub/getArtifact/767')">
+						href="javascript:popup('${context}/getArtifact/767')">
 						<img data-u="image"
-						src="../../image/Scroll_images/Agent Portal.png" />
+						src="${context}/image/Scroll_images/Agent Portal.png" />
 					</a>
 				</div>
 				<div data-p="68.75" data-po="70% 50%">
 					<a
-						href="javascript:popup('http://localhost:8080/iHub/getArtifact/780')">
+						href="javascript:popup('${context}/getArtifact/780')">
 						<img data-u="image"
-						src="../../image/Scroll_images/Customer Insights Into Action.png" />
+						src="${context}/image/Scroll_images/Customer Insights Into Action.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('http://localhost:8080/iHub/getArtifact/697')">
+						href="javascript:popup('${context}/getArtifact/697')">
 						<img data-u="image"
-						src="../../image/Scroll_images/Appeals Greivances.png" />
+						src="${context}/image/Scroll_images/Appeals Greivances.png" />
 					</a>
 				</div>
 			</div>
@@ -133,7 +133,7 @@
 								style="display: inline-block;">
 								<div class="card__mask">
 									<a
-										href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
+										href="javascript:popup('${context}/getArtifact/${listValue.artifactId}')">
 										<figure class="card__figure">
 											<img width="192" height="185"
 												src="${listValue.artifactImageURL}" class="cardImg">
@@ -155,7 +155,7 @@
 									style="display: inline-block;">
 									<div class="card__mask">
 										<a
-											href="javascript:popup('http://localhost:8080/iHub/getArtifact/${listValue.artifactId}')">
+											href="javascript:popup('${context}/getArtifact/${listValue.artifactId}')">
 											<figure class="card__figure">
 												<img width="192" height="185"
 													src="${listValue.artifactImageURL}" class="cardImg">
@@ -176,7 +176,7 @@
 								<div id="div_${data.key}_ShowMore" align="right">
 									<span style="padding-right: 10px;"
 										onclick="showMoreWorldsReports('div_${data.key}_MoreData','div_${data.key}_ShowMore','div_${data.key}_Less')">Show
-										all <img src="../../image/asc_icon.png" class="cardImg"
+										all <img src="${context}/image/asc_icon.png" class="cardImg"
 										alt="Show all">
 									</span>
 								</div>
@@ -184,7 +184,7 @@
 									style="display: none;">
 									<span style="padding-right: 10px;"
 										onclick="showLessWorldsReports('div_${data.key}_MoreData','div_${data.key}_ShowMore','div_${data.key}_Less')">Show
-										Less <img src="../../image/dec_icon.png" class="cardImg"
+										Less <img src="${context}/image/dec_icon.png" class="cardImg"
 										alt="Show less">
 									</span>
 								</div>
@@ -198,7 +198,7 @@
 	<div style="text-align: right;">
 		<span style="width: 100%; padding-right: 203px"><a href="#"
 			class="back-to-top"><img style="width: 50px; height: 50px"
-				src="../../image/btop.png"></a></span>
+				src="${context}/image/btop.png"></a></span>
 	</div>
 </body>
 </html>

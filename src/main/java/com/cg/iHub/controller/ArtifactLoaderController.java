@@ -34,14 +34,14 @@ public class ArtifactLoaderController {
 	@Autowired
 	private ArtifactService artifactsService;
 
-	@RequestMapping(value="/iHub/home",method = RequestMethod.GET)
+	@RequestMapping(value="/home",method = RequestMethod.GET)
 	public ModelAndView home(Map<String, Object> model) {
 		ModelAndView modelAndView = new ModelAndView("dashboard");
 		modelAndView.addObject("dashboard", "Welcome to ProjectOne!");
 		return modelAndView;
 	}
 
-	@RequestMapping(value="/iHub/getArtifact/{artifactId}",method = RequestMethod.GET)
+	@RequestMapping(value="/getArtifact/{artifactId}",method = RequestMethod.GET)
 	public void  getArtifact(HttpServletResponse response, @PathVariable Long artifactId) {
 		ArtifactsMaster artifact = artifactsService.getAllArtifacts(artifactId);
 		if(artifact==null ) return;
@@ -57,7 +57,7 @@ public class ArtifactLoaderController {
 		}
 	}
 
-	@RequestMapping(value="/iHub/getCategoryContents/{categoryName}",method = RequestMethod.GET)
+	@RequestMapping(value="/getCategoryContents/{categoryName}",method = RequestMethod.GET)
 	public ModelAndView getCategoryContents(@PathVariable String categoryName) {
 		Map<String, List<ArtifactsMaster>> artifactDataMap = artifactsService.getCategoryContents(categoryName);
 		ModelAndView modelAndView = null;
