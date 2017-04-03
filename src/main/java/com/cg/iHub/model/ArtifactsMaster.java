@@ -58,6 +58,9 @@ public class ArtifactsMaster implements Serializable{
 	@Lob @Basic(fetch=LAZY)
 	private byte[] artifactData;
 	
+	@Column(name="SORT_ORDER")
+	private Long sortOrder;
+	
 	@Transient
 	private String menuName;
 	
@@ -152,15 +155,6 @@ public class ArtifactsMaster implements Serializable{
 		this.isActive = isActive;
 	}
 
-	@Override
-	public String toString() {
-		return "ArtifactsMaster [artifactId=" + artifactId + ", artifactName=" + artifactName + ", artifactType="
-				+ artifactType + ", menuId=" + menuId + ", artifactDescription="
-				+ artifactDescription + ", artifactImageURL=" + artifactImageURL + ", uploadeDts=" + uploadeDts
-				+ ", uploadedByUserid=" + uploadedByUserid + ", artifactSize="
-				+ artifactSize + ", isActive=" + isActive + "]";
-	}
-
 	public Long getSectionId() {
 		return sectionId;
 	}
@@ -183,5 +177,22 @@ public class ArtifactsMaster implements Serializable{
 
 	public void setSectionName(String sectionName) {
 		this.sectionName = sectionName;
+	}
+
+	public Long getSortOrder() {
+		return sortOrder;
+	}
+
+	public void setSortOrder(Long sortOrder) {
+		this.sortOrder = sortOrder;
+	}
+	
+	@Override
+	public String toString() {
+		return "ArtifactsMaster [artifactId=" + artifactId + ", artifactName=" + artifactName + ", artifactType="
+				+ artifactType + ", menuId=" + menuId + ", artifactDescription="
+				+ artifactDescription + ", artifactImageURL=" + artifactImageURL + ", uploadeDts=" + uploadeDts
+				+ ", uploadedByUserid=" + uploadedByUserid + ", artifactSize="
+				+ artifactSize + ", isActive=" + isActive + "]";
 	}
 }
