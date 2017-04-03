@@ -129,10 +129,10 @@
 								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
 							</c:if>
 							<c:if test="${(data.key).contains('Policy')}">
-								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
+								<hr width="21%" align="left" style="border-top: 5px solid #ff336e;">
 							</c:if>
 							<c:if test="${(data.key).contains('Claims')}">
-								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
+								<hr width="22%" align="left" style="border-top: 5px solid #ff336e;">
 							</c:if>
 							
 						</div>
