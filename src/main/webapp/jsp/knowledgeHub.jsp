@@ -4,6 +4,7 @@
 
 <html lang="en">
 <head>
+<title>insurancehub:Knowledge Hub</title>
 <link href="../../css/Style.css" rel="stylesheet" type="text/css" />
 <link href="../../css/new-10.css" rel="stylesheet" type="text/css" />
 <script language="javascript"

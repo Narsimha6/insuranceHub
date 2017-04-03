@@ -30,6 +30,20 @@ tr.border_bottom td {
 	border-bottom: 1pt solid black;
 }
 
+@font-face {
+   font-weight:bold;
+  font-size:45px;	
+  font-family: 'joglekar65';
+  src: URL('../../css/fonts/regular/avenir65.ttf') format('ttf');
+}
+
+@font-face {
+  font-weight:bold;
+  font-size:45px;
+  font-family: 'joglekar45';
+  src: URL('../../css/fonts/regular/avenir45.ttf') format('ttf');
+}
+
 html, body {
 	width: 100%;
 	height: auto;
@@ -38,6 +52,7 @@ html, body {
 	min-width: 67%;
 	max-width: 100%;
 	margin: auto;
+	font-family:Avenir;
 }
 
 div.header {
