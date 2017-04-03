@@ -47,7 +47,7 @@ public class ArtifactServiceImpl implements ArtifactService {
 				+"inner join izone.IHUB_menu menu on am.menu_id = menu.menu_id "
 				+"inner join izone.IHUB_section sec on sec.menu_id = menu.menu_id "
 				+"where sec.SECTION_ID = am.section_id "
-				+"AND am.is_active= 'Y' AND am.menu_id = "+ menuId +" order by am.section_ID, am.ARTIFACT_Name ";
+				+"AND am.is_active= 'Y' AND am.menu_id = "+ menuId +" order by am.section_ID, am.sortOrder ";
 		Query query = entityManager.createNativeQuery(queryStr);
 		Map<String, List<ArtifactsMaster>> dataMap = null;
 		try{
@@ -62,7 +62,8 @@ public class ArtifactServiceImpl implements ArtifactService {
 						artifact.setArtifactId(dataObjArr[0]!=null?Long.valueOf(dataObjArr[0].toString()):null);
 						artifact.setArtifactName(dataObjArr[1]!=null?(String)dataObjArr[1]:null);
 						artifact.setArtifactType(dataObjArr[2]!=null?(String)dataObjArr[2]:null);
-						artifact.setArtifactImageURL(dataObjArr[3]!=null?(String)dataObjArr[3]:null);
+						String imageURL = dataObjArr[3]!=null?(String)dataObjArr[3]:null;
+						artifact.setArtifactImageURL(imageURL!=null && imageURL.contains("../../")?imageURL.replace("../../", ""):imageURL);
 						artifact.setArtifactDescription(dataObjArr[4]!=null?(String)dataObjArr[4]:null);
 						artifact.setMenuId(dataObjArr[5]!=null?Long.valueOf(dataObjArr[5].toString()):null);
 						artifact.setSectionId(dataObjArr[6]!=null?Long.valueOf(dataObjArr[6].toString()):null);
