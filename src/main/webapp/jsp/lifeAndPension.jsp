@@ -128,10 +128,10 @@
 							<c:if test="${(data.key).contains('Front')}">
 								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
 							</c:if>
-							<c:if test="${(data.key).contains('Front')}">
+							<c:if test="${(data.key).contains('Policy')}">
 								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
 							</c:if>
-							<c:if test="${(data.key).contains('Front')}">
+							<c:if test="${(data.key).contains('Claims')}">
 								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
 							</c:if>
 							
