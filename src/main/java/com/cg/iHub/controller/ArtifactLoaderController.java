@@ -72,10 +72,11 @@ public class ArtifactLoaderController {
 		} else if(categoryName.equals(CategoryENUM.PROPERTY_CASUALITY.getDescription())){
 			modelAndView = new ModelAndView("propertyAndCasuality");
 		} else if(categoryName.equals(CategoryENUM.THOUGHT_LEADERSHIP.getDescription())){
-			modelAndView = new ModelAndView("ThoughtLeadership");
+			modelAndView = new ModelAndView("knowledgeHub");
 		}
 		modelAndView.addObject("artifactDataMap", artifactDataMap);
 		modelAndView.addObject("sectionNames", artifactDataMap.keySet());
+		System.out.println(artifactDataMap.get("sessionWidth"));
 		return modelAndView;
 	}
 	/**

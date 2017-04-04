@@ -70,6 +70,17 @@ public class ArtifactsMaster implements Serializable{
 	
 	@Transient
 	private String sectionName;
+	
+	@Transient
+	private String sectionWidth;
+
+	public String getSectionWidth() {
+		return sectionWidth;
+	}
+
+	public void setSectionWidth(String sectionWidth) {
+		this.sectionWidth = sectionWidth;
+	}
 
 	public Long getArtifactId() {
 		return artifactId;

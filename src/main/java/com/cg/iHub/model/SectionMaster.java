@@ -16,6 +16,11 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name = "IHUB_SECTION")
 public class SectionMaster implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8470513427263792157L;
+
 	@Id
 	@Column(name="SECTION_ID")
 	private Long sectionId;
@@ -34,6 +39,17 @@ public class SectionMaster implements Serializable{
 	
 	@Column(name="IS_ACTIVE")
 	private String isActive;
+
+	@Column(name="SECTION_WIDTH")
+	private String sectionWidth;
+	
+	public String getSectionWidth() {
+		return sectionWidth;
+	}
+
+	public void setSectionWidth(String sectionWidth) {
+		this.sectionWidth = sectionWidth;
+	}
 
 	public Long getSectionId() {
 		return sectionId;
@@ -86,6 +102,6 @@ public class SectionMaster implements Serializable{
 	@Override
 	public String toString() {
 		return "SectionMaster [sectionId=" + sectionId + ", menuId=" + menuId + ", sectionName=" + sectionName
-				+ ", createdDate=" + createdDate + ", createdBy=" + createdBy + ", isActive=" + isActive + "]";
+				+ ", createdDate=" + createdDate + ", createdBy=" + createdBy + ", isActive=" + isActive + ", SectionWidth=" + sectionWidth +  "]";
 	}
 }

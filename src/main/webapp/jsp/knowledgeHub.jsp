@@ -55,7 +55,7 @@
 		<div>
 			<ul class="breadcrumb">
 				<li><a href="${context}/home">Home</a></li>
-				<li class="active">Knowledge Hub</li>
+				<li class="active">Thought Leadership</li>
 			</ul>
 		</div>
 		<div>&nbsp;</div>
@@ -123,19 +123,7 @@
 							style="color: black; font-size: 20px; text-align: left;">${data.key}</span>
 
 						<div>
-							<c:if test="${(data.key).contains('World')}">
-								<hr width="15%" align="left" style="border-top: 5px solid #9c33ff;">
-							</c:if>
-							<c:if test="${(data.key).contains('Thought')}">
-								<hr width="20%" align="left" style="border-top: 5px solid #9c33ff;">
-							</c:if>
-							<c:if test="${(data.key).contains('Framework')}">
-								<hr width="28%" align="left" style="border-top: 5px solid #9c33ff;">
-							</c:if>
-							<c:if test="${(data.key).contains('Trainings')}">
-								<hr width="10%" align="left" style="border-top: 5px solid #9c33ff;">
-							</c:if>
-							
+							<hr width="${data.value[0].sectionWidth}" align="left" style="border-top: 5px solid #9c33ff;">
 						</div>
 						<c:forEach var="listValue" items="${data.value}" begin="0" end="4">
 							<article

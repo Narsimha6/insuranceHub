@@ -119,16 +119,7 @@
 
 						
 						<div>
-							<c:if test="${(data.key).contains('Front')}">
-								<hr width="12%" align="left" style="border-top: 5px solid #ff336e;">
-							</c:if>
-							<c:if test="${(data.key).contains('Policy')}">
-								<hr width="21%" align="left" style="border-top: 5px solid #ff336e;">
-							</c:if>
-							<c:if test="${(data.key).contains('Claims')}">
-								<hr width="22%" align="left" style="border-top: 5px solid #ff336e;">
-							</c:if>
-							
+							<hr width="${data.value[0].sectionWidth}" align="left" style="border-top: 5px solid #ff336e;">
 						</div>
 						<c:forEach var="listValue" items="${data.value}" begin="0" end="4">
 							<article
