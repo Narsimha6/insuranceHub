@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
-<head>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="context" value="${pageContext.request.contextPath}" />
+<html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>insurancehub</title>
@@ -49,7 +51,7 @@ html, body {
 			</td>
 			<td align="center" >
 				<br>
-				<a style="color: #FFFFFF; font-family:Avenir; padding-bottom:10px; padding-top:10px;"  href="/iHub/jsp/ContactUS.html">About</a>
+				<a style="color: #FFFFFF; font-family:Avenir; padding-bottom:10px; padding-top:10px;"  href=${context}/ContactUS.jsp">About</a>
 			</td>
 			<td align="right" width="30%">
 					<img src="/iHub/image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">
@@ -209,8 +211,8 @@ html, body {
 			</td>
 		</tr>
 		<tr>
-			<td align="center" colspan="3">
-				&#169; &nbsp; Capgemini Confidential. Best viewed in Chrome.
+			<td align="center" colspan="3" style="color: #ffffff;">
+				&#169;&nbsp;Capgemini Confidential. Best viewed in Chrome.
 			</td>
 		</tr>
 	</table>

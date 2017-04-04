@@ -71,8 +71,8 @@ public class ArtifactLoaderController {
 			modelAndView = new ModelAndView("health");
 		} else if(categoryName.equals(CategoryENUM.PROPERTY_CASUALITY.getDescription())){
 			modelAndView = new ModelAndView("propertyAndCasuality");
-		} else if(categoryName.equals(CategoryENUM.KNOWLEDGE_HUB.getDescription())){
-			modelAndView = new ModelAndView("knowledgeHub");
+		} else if(categoryName.equals(CategoryENUM.THOUGHT_LEADERSHIP.getDescription())){
+			modelAndView = new ModelAndView("ThoughtLeadership");
 		}
 		modelAndView.addObject("artifactDataMap", artifactDataMap);
 		modelAndView.addObject("sectionNames", artifactDataMap.keySet());

@@ -55,7 +55,7 @@
 		style="width: 67%; margin: auto; background-color: #EDEDED; margin-top: 2px; overflow: hidden; min-width: 950px;">
 		<div>
 			<ul class="breadcrumb">
-				<li><a href="${context}/">Home</a></li>
+				<li><a href="${context}/home">Home</a></li>
 				<li class="active">Life & Pensions</li>
 			</ul>
 		</div>
@@ -74,25 +74,19 @@
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 950px; height: 350px;">
 				<div>
 					<a
-						href="javascript:popup('${context}/getArtifact/767')">
+						href="javascript:popup('${context}/getArtifact/767', 900, 700)">
 						<img data-u="image"
 						src="${context}/image/Scroll_images/Agent Portal.png" />
 					</a>
 				</div>
 				<div data-p="68.75" data-po="70% 50%">
 					<a
-						href="javascript:popup('${context}/getArtifact/780')">
+						href="javascript:popup('${context}/getArtifact/780', 900, 700)">
 						<img data-u="image"
 						src="${context}/image/Scroll_images/Customer Insights Into Action.png" />
 					</a>
 				</div>
-				<div data-p="68.75">
-					<a
-						href="javascript:popup('${context}/getArtifact/697')">
-						<img data-u="image"
-						src="${context}/image/Scroll_images/Appeals Greivances.png" />
-					</a>
-				</div>
+				
 			</div>
 			<!-- Bullet Navigator -->
 			<table style="width: 100%">
@@ -142,7 +136,7 @@
 								style="display: inline-block;">
 								<div class="card__mask">
 									<a
-										href="javascript:popup('${context}/getArtifact/${listValue.artifactId}')">
+										href="javascript:popup('${context}/getArtifact/${listValue.artifactId}',900,700)">
 										<figure class="card__figure">
 											<img width="192" height="185"
 												src="${listValue.artifactImageURL}" class="cardImg">
@@ -164,7 +158,7 @@
 									style="display: inline-block;">
 									<div class="card__mask">
 										<a
-											href="javascript:popup('${context}/getArtifact/${listValue.artifactId}')">
+											href="javascript:popup('${context}/getArtifact/${listValue.artifactId}',900,700)">
 											<figure class="card__figure">
 												<img width="192" height="185"
 													src="${listValue.artifactImageURL}" class="cardImg">

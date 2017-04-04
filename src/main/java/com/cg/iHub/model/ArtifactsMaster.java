@@ -21,6 +21,10 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name = "IHUB_ARTIFACT_MASTER")
 public class ArtifactsMaster implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 7959420361417763713L;
 	@Id
 	@Column(name="ARTIFACT_ID")
 	private Long artifactId;

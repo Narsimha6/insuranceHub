@@ -54,7 +54,8 @@ html {
 </script>
 </head>
 <body>
-<%@include file="../jsp/InsuranceHub_Home.html"%>
+
+<jsp:include page="${context}/jsp/InsuranceHub_Home.jsp"></jsp:include>
 </body>
 
 </html>

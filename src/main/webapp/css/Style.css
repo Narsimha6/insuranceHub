@@ -4,6 +4,7 @@ ul.breadcrumb {
 	list-style: none;
 	background-color: #ffffff;
 	font-size: 17px;
+	font-family: Avenir;
 }
 
 ul.breadcrumb li {

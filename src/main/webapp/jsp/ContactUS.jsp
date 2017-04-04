@@ -1,5 +1,8 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="context" value="${pageContext.request.contextPath}" />
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>insurancehub:About</title>
@@ -25,7 +28,7 @@
 	
 		<div>
 			<ul class="breadcrumb">
-				<li><a href="/iHub/">Home</a></li>
+				<li><a href="${context}/home">Home</a></li>
 				<li class="active">About</li>
 			</ul>
 		</div>

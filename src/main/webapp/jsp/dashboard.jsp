@@ -86,13 +86,13 @@ function loadCategoryPage(screenName) {
 			</td>
 			<td>
 				 <div style="padding-left: 100px;  postion:static;">
-				 	 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:00px;"/></a>	
+				   <a href="${context}/getCategoryContents/PROPERTY_CASUALITY">	<img src="${context}/image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:25px; postion:static;"/></a>	
 				 </div>
 			</td>
 			<td>
 				
 				<div style="padding-left: 90px;  postion:static;">
-				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:20px;padding-left:90px; margin-bottom:5px;"/></a>	
+				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:20px;padding-left:90px; margin-bottom:15px;"/></a>	
 				 </div>
 			
 			</td>
@@ -126,13 +126,13 @@ function loadCategoryPage(screenName) {
 				 <div style="padding-left: 80px;">
 				 <!-- <a href="${context}/getCategoryContents/PROPERTY_CASUALITY"> -->
 				  <!-- <a href="${context}/jsp/PandC_Page.html"> -->
-				  <a href="${context}/getCategoryContents/PROPERTY_CASUALITY">	<img src="${context}/image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:25px; postion:static;"/></a>	
+				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:00px;"/></a>
 				 </div>
 			</td>
 			<td>
 				
 				<div style="padding-left: 70px;">
-				 <a href="${context}/getCategoryContents/KNOWLEDGE_HUB"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:4px;padding-left:70px;  postion:static;  margin-bottom:5px;"/></a>	
+				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:4px;padding-left:85px;  postion:static;  margin-bottom:5px;"/></a>	
 				 </div>
 			
 			</td>

@@ -54,7 +54,7 @@
 		style="width: 67%; margin: auto; background-color: #EDEDED; margin-top: 2px; overflow: hidden; min-width: 950px;">
 		<div>
 			<ul class="breadcrumb">
-				<li><a href="${context}/">Home</a></li>
+				<li><a href="${context}/home">Home</a></li>
 				<li class="active">Knowledge Hub</li>
 			</ul>
 		</div>
@@ -74,19 +74,19 @@
 				
 				<div data-p="68.75" data-po="70% 50%">
 					<a
-						href="javascript:popup('${context}/getArtifact/747')">
+						href="javascript:popup('${context}/getArtifact/747',900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/UBI.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/745')">
+						href="javascript:popup('${context}/getArtifact/745', 900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/Traverse.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/744')">
+						href="javascript:popup('${context}/getArtifact/744', 900, 700)">
 						<img data-u="image"
 						src="${context}/image/Scroll_images/SmartHome Solution.png" />
 					</a>
@@ -143,7 +143,7 @@
 								style="display: inline-block;">
 								<div class="card__mask">
 									<a
-										href="javascript:popup('${context}/getArtifact/${listValue.artifactId}')">
+										href="javascript:popup('${context}/getArtifact/${listValue.artifactId}', 900, 700)">
 										<figure class="card__figure">
 											<img width="192" height="185"
 												src="${listValue.artifactImageURL}" class="cardImg">
@@ -165,7 +165,7 @@
 									style="display: inline-block;">
 									<div class="card__mask">
 										<a
-											href="javascript:popup('${context}/getArtifact/${listValue.artifactId}')">
+											href="javascript:popup('${context}/getArtifact/${listValue.artifactId}', 900, 700)">
 											<figure class="card__figure">
 												<img width="192" height="185"
 													src="${listValue.artifactImageURL}" class="cardImg">
