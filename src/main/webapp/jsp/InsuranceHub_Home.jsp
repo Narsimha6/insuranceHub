@@ -51,7 +51,7 @@ html, body {
 			</td>
 			<td align="center" >
 				<br>
-				<a style="color: #FFFFFF; font-family:Avenir; padding-bottom:10px; padding-top:10px;"  href=${context}/ContactUS.jsp">About</a>
+				<a style="color: #FFFFFF; font-family:Avenir; padding-bottom:10px; padding-top:10px;"  href="${context}/jsp/ContactUS.jsp">About</a>
 			</td>
 			<td align="right" width="30%">
 					<img src="${context}/image/capgemini logo.png" alt="" align="right" style="padding-top:8px;padding-right:40px;">

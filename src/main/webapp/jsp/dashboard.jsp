@@ -126,11 +126,11 @@ function loadCategoryPage(screenName) {
 				 <div style="padding-left: 80px;">
 				 <!-- <a href="${context}/getCategoryContents/PROPERTY_CASUALITY"> -->
 				  <!-- <a href="${context}/jsp/PandC_Page.html"> -->
-				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:00px;"/></a>
+				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:35px; position:statics; padding-bottom:18px;"/></a>
 				 </div>
 			</td>
 			<td>
-				
+					
 				<div style="padding-left: 70px;">
 				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:4px;padding-left:85px;  postion:static;  margin-bottom:5px;"/></a>	
 				 </div>
