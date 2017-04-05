@@ -27,24 +27,40 @@ function popup(url, x, y) {
 }
 </script>
 <style type="text/css">
-
 html, body {
 	background: url(${context}/image/Home_background_img.jpg);
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	width:100%;
-    height:auto;
-    background-color: #EDEDED;
-    min-height: auto;
-    min-width: 950px;
-	max-width:2000px;
-   }
+	width: 100%;
+	height: auto;
+	background-color: #EDEDED;
+	min-height: auto;
+	min-width: 950px;
+	max-width: 2000px;
+}
+
+@font-face {
+	font-family: avenir65;
+	src: url('/css/fonts/regular/avenir65.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: avenir45;
+	src: url('/css/fonts/regular/avenir45.ttf') format('truetype');
+}
+
+div {
+	font-family: avenir65
+}
+td{
+	font-family: avenir45;
+}
 
 </style>
 </head>
 <body >
-	<table width="100%" style="padding-top:10px;">
+	<table  style="width:100%;padding-top:10px;">
 		<tr >
 				<td width="30%">
 					<img src="${context}/image/insurancehub_logo.png" align="left" style="padding-top:0px;padding-left:20px;">
@@ -106,7 +122,7 @@ html, body {
 		<tr>
 			<td colspan="3">
 				<div >
-					<span style="font-family:Avenir; font-size:55px; COLOR: #ffffff; padding-left:50px; padding-bottom:200px" >Capgemini Insurance Hub</span>
+					<span style=" font-size:50px; COLOR: #ffffff; padding-left:50px; padding-bottom:200px" >Capgemini Insurance Hub</span>
 					
 				<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->	
 					 
@@ -117,9 +133,7 @@ html, body {
 		</tr>		
 
 		<tr>
-			<td>
-				<div style="font-family:Avenir; font-size:20px; color:#42b6f4; padding-left:55px;"> Engage. Explore.</div>
-			</td>
+			<td style="font-size:20px; color:#42b6f4; padding-left:55px;">Engage. Explore.</td>
 			
 		</tr>
 		
@@ -194,7 +208,7 @@ html, body {
 		
 		<tr>
 			<td align="center" colspan="3">
-				<div align="center">
+				<div  style="bottom: 10px ;position: fixed; align: center; padding-left: 45%">
 					
 					<a href="https://www.facebook.com/CapgeminiIndia/"
 							target="_blank" rel="nofollow"> <img src="${context}/image/facebook_logo.png"/> </a>
@@ -210,11 +224,11 @@ html, body {
 				</div>
 			</td>
 		</tr>
-		<tr>
+		<!-- <tr>
 			<td align="center" colspan="3" style="color: #ffffff;">
 				&#169;&nbsp;Capgemini Confidential. Best viewed in Chrome.
 			</td>
-		</tr>
+		</tr> -->
 	</table>
 </body>
 </html>

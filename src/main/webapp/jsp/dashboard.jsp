@@ -141,28 +141,25 @@ function loadCategoryPage(screenName) {
 		<tr>
 		
 		</table>
-		<table width="100%">
-	
-		
-		<tr>
-			<td align="center" >
-				<div align="center" style="postion:static;">
-					
-					<a href="https://www.facebook.com/CapgeminiIndia/"
-							target="_blank" rel="nofollow"> <img src="${context}/image/facebook_logo.png"/> </a>
-					<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<a href="https://twitter.com/Capgemini"
-							 target="_blank" rel="nofollow"> <img src="${context}/image/twitter_logo.png"/></a>
-					<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<a href="https://www.linkedin.com/company-beta/157240?pathWildcard=157240"
-							target="_blank" rel="nofollow"> <img src="${context}/image/linkedin_logo.jpg"/></a>
-					<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
-					<a href="https://www.instagram.com/capgemini/ "
-							target="_blank" rel="nofollow"> <img src="${context}/image/instgram_logo.png"/></a>
-				</div>
-			</td>
-		</tr>
-	
+		<table style="width: 100%">
+			<tr>
+				<td align="center" >
+					<div style="bottom: 10px ;position: fixed; align: center; padding-left: 45%">
+						
+						<a href="https://www.facebook.com/CapgeminiIndia/"
+								target="_blank" rel="nofollow"> <img src="${context}/image/facebook_logo.png"/> </a>
+						<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<a href="https://twitter.com/Capgemini"
+								 target="_blank" rel="nofollow"> <img src="${context}/image/twitter_logo.png"/></a>
+						<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<a href="https://www.linkedin.com/company-beta/157240?pathWildcard=157240"
+								target="_blank" rel="nofollow"> <img src="${context}/image/linkedin_logo.jpg"/></a>
+						<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<a href="https://www.instagram.com/capgemini/ "
+								target="_blank" rel="nofollow"> <img src="${context}/image/instgram_logo.png"/></a>
+					</div>
+				</td>
+			</tr>
 	</table>
 </body>
 </html>
