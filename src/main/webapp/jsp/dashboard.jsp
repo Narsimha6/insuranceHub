@@ -71,11 +71,6 @@ function loadCategoryPage(screenName) {
 				style="padding-top: 8px; padding-right: 40px; postion:static;"></td>
 		</tr>
 
-		<tr>
-			<td>
-				<div>&nbsp;</div>
-			</td>
-		</tr>
 	</table>
 	
 	<table>
@@ -86,20 +81,17 @@ function loadCategoryPage(screenName) {
 			</td>
 			<td>
 				 <div style="padding-left: 100px;  postion:static;">
-				   <a href="${context}/getCategoryContents/PROPERTY_CASUALITY">	<img src="${context}/image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:25px; postion:static;"/></a>	
+				   <a href="${context}/getCategoryContents/PROPERTY_CASUALITY">	<img src="${context}/image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:0px; postion:static;"/></a>	
 				 </div>
 			</td>
 			<td>
 				
 				<div style="padding-left: 90px;  postion:static;">
-				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:20px;padding-left:90px; margin-bottom:35px;"/></a>	
+				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:30px;padding-left:70px; margin-bottom:35px;"/></a>	
 				 </div>
 			
 			</td>
-			
 		</tr>
-		
-		
 		<tr>
 			<td>
 				<span >
@@ -116,30 +108,24 @@ function loadCategoryPage(screenName) {
 			</td>
 			
 		</tr>
-		
 		<tr>
 			<td>
-					
 				<span> &nbsp;</span>
 			</td>
 			<td>
 				 <div style="padding-left: 80px;">
 				 <!-- <a href="${context}/getCategoryContents/PROPERTY_CASUALITY"> -->
 				  <!-- <a href="${context}/jsp/PandC_Page.html"> -->
-				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:42px; position:statics; padding-bottom:22px;"/></a>
+				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:18px; position:statics; padding-bottom:21px;"/></a>
 				 </div>
 			</td>
 			<td>
-					
 				<div style="padding-left: 70px;">
 				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:4px;padding-left:85px;  postion:static;  margin-bottom:5px;"/></a>	
 				 </div>
-			
 			</td>
-			
 		</tr>
 		<tr>
-		
 		</table>
 		<table style="width: 100%">
 			<tr>

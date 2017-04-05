@@ -32,17 +32,17 @@ tr.border_bottom td {
 }
 
 @font-face {
-   font-weight:bold;
-  font-size:45px;	
-  font-family: 'joglekar65';
-  src: URL('/iHub/css/fonts/regular/avenir65.ttf') format('ttf');
+   font-family: 'joglekar65';
+   src: URL(''fonts/regular/avenir65.ttf'') format('truetype');
+   font-size:65px;
 }
+  
 
 @font-face {
   font-weight:bold;
   font-size:45px;
-  font-family: 'joglekar45';
-  src: URL('/iHub/css/fonts/regular/avenir45.ttf') format('ttf');
+  font-family: joglekar45;
+  src: URL(D:/insuranceHub/insuranceHub/src/main/webapp/css/fonts/regular/avenir45.ttf) format('ttf');
 }
 
 html, body {
@@ -53,7 +53,7 @@ html, body {
 	min-width: 67%;
 	max-width: 100%;
 	margin: auto;
-	font-family:Avenir;
+	font-family:joglekar65;
 }
 
 div.header {
@@ -63,7 +63,14 @@ div.header {
 	height: 105px;
 }
 
+.joglekar65 {
+	font-family: 'joglekar65';
+	font-size:65px;
+}
 
+.joglekar45 {
+	font-family: joglekar45
+}
 
 
 
