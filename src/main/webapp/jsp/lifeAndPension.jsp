@@ -81,11 +81,20 @@
 				</div>
 				<div data-p="68.75" data-po="70% 50%">
 					<a
-						href="javascript:popup('${context}/getArtifact/780', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/813', 900, 700)">
 						<img data-u="image"
-						src="${context}/image/Scroll_images/Customer Insights Into Action.png" />
+						src="${context}/image/Scroll_images/Mobile Insurance.png" />
 					</a>
 				</div>
+				<div data-p="68.75" data-po="70% 50%">
+					<a
+						href="javascript:popup('${context}/getArtifact/751', 900, 700)">
+						<img data-u="image"
+						src="${context}/image/Scroll_images/Policy Process Maturity Assesment.png" />
+					</a>
+				</div>
+				
+				
 				
 			</div>
 			<!-- Bullet Navigator -->

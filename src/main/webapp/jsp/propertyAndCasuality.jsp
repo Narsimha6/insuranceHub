@@ -74,15 +74,15 @@
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px;">
 				<div>
 					<a
-						href="javascript:popup('${context}/getArtifact/767', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/747', 900, 700)">
 						<img data-u="image"
-						src="${context}/image/Scroll_images/Agent Portal.png" />
+						src="${context}/image/Scroll_images/UBI.png" />
 					</a>
 				</div>
 				<div data-p="68.75" data-po="70% 30%">
 					<a
-						href="javascript:popup('${context}/getArtifact/747', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/UBI.png" />
+						href="javascript:popup('${context}/getArtifact/744', 900, 700)">
+						<img data-u="image" src="${context}/image/Scroll_images/Smart Home.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
@@ -93,11 +93,19 @@
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/744', 900, 700s)">
+						href="javascript:popup('${context}/getArtifact/743', 900, 700s)">
 						<img data-u="image"
-						src="${context}/image/Scroll_images/SmartHome Solution.png" />
+						src="${context}/image/Scroll_images/Insurance on the go.png" />
 					</a>
 				</div>
+				<div data-p="68.75">
+					<a
+						href="javascript:popup('${context}/getArtifact/814', 900, 700s)">
+						<img data-u="image"
+						src="${context}/image/Scroll_images/Insurance Insights.png" />
+					</a>
+				</div>
+				
 			</div>
 			<!-- Bullet Navigator -->
 			<table style="width: 90%">

@@ -84,13 +84,7 @@
 						<img data-u="image" src="${context}/image/Scroll_images/Traverse.png" />
 					</a>
 				</div>
-				<div data-p="68.75">
-					<a
-						href="javascript:popup('${context}/getArtifact/744', 900, 700)">
-						<img data-u="image"
-						src="${context}/image/Scroll_images/SmartHome Solution.png" />
-					</a>
-				</div>
+				
 			</div>
 			<!-- Bullet Navigator -->
 			<table style="width: 100%">

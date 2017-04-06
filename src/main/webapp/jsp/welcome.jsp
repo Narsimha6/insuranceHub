@@ -26,12 +26,6 @@
 <script src="${context}/js/javascript.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <style type="text/css">
-html {
-	background: url(${context}/image/Home_background_img.jpg);
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
 </style>
 <script>
 	function callDashboard() {

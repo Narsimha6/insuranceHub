@@ -75,9 +75,10 @@
 					<a
 						href="javascript:popup('${context}/getArtifact/697', 900, 700)">
 						<img data-u="image"
-						src="${context}/image/Scroll_images/Appeals Greivances.png" />
+						src="${context}/image/Scroll_images/WARM.png" />
 					</a>
 				</div>
+				
 			</div>
 			<!-- Bullet Navigator -->
 			<table style="width: 100%">

@@ -64,9 +64,9 @@ function loadCategoryPage(screenName) {
 	<table width="100%" style="padding-top: 10px;">
 
 		<tr>
-			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="height: 71%;width: 83%;padding-left: 7%;padding-top: 10px"  ></td>
+			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 7%;padding-top: 10px"  ></td>
 			<td align="left"><br>&nbsp;</td>
-			<td align="right" width="30%"><img src="${context}/image/capgemini logo.png" style="height: 74%;width: 58%;padding-right: 10%;margin-top: 12px"></td>
+			<td align="right" width="30%"><img src="${context}/image/capgemini logo.png" style="padding-right: 10%;margin-top: 12px"></td>
 		</tr>
 		<tr>
 			<td>

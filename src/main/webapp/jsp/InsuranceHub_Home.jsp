@@ -10,7 +10,7 @@
 	src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
 <script language="javascript"
 	src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<link href="${context}/css/style1.css" rel="stylesheet" type="text/css" />
+<link href="${context}/css/Style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="${context}/js/jquery-loader.js"></script>
 <script type="text/javascript" src="${context}/js/jssor.js"></script>
 <script type="text/javascript" src="${context}/js/jssor.slider.js"></script>
@@ -34,7 +34,7 @@ html, body {
 	background-attachment: fixed;
 	width: 100%;
 	height: auto;
-	background-color: #EDEDED;
+	
 	min-height: auto;
 	min-width: 950px;
 	max-width: 2000px;
@@ -42,12 +42,12 @@ html, body {
 
 @font-face {
 	font-family: avenir65;
-	src: url('/css/fonts/regular/avenir65.ttf') format('truetype');
+	src: url(${context}/css/fonts/regular/avenir65.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: avenir45;
-	src: url('/css/fonts/regular/avenir45.ttf') format('truetype');
+	src: url(${context}/css/fonts/regular/avenir45.ttf) format('truetype');
 }
 
 div {
@@ -63,9 +63,9 @@ td {
 	<table style="width: 100%; padding-top: 10px;">
 
 		<tr>
-			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="height: 71%;width: 83%;padding-left: 7%;padding-top: 10px"  ></td>
+			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 7%;padding-top: 10px"  ></td>
 			<td align="left"><br> <a style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;padding-left: 58px ;font-size: 13px" href="${context}/jsp/ContactUS.jsp">About</a></td>
-			<td align="right" width="30%"><img src="${context}/image/capgemini logo.png" style="height: 74%;width: 58%;padding-right: 10%;margin-top: 12px"></td>
+			<td align="right" width="30%"><img src="${context}/image/capgemini logo.png" style="padding-right: 10%;margin-top: 12px"></td>
 		</tr>
 
 		<tr>
