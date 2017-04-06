@@ -51,7 +51,7 @@ html, body {
 }
 
 div {
-	font-family: avenir65
+	font-family: avenir65;
 }
 
 td {

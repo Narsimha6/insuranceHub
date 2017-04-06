@@ -51,7 +51,7 @@
 	</div>
 
 	<div
-		style="width: 56%; margin: auto; background-color: #EDEDED; margin-top: 2px; overflow: hidden; min-width: 865px;">
+		style="width: 56%; margin: auto; background-color: #f5f5f5; margin-top: 2px; overflow: hidden; min-width: 865px;">
 		<div>
 			<ul class="breadcrumb">
 				<li><a href="${context}/home">Home</a></li>
@@ -61,17 +61,17 @@
 
 		<div>&nbsp;</div>
 		<div id="jssor_html5_AdWords"
-			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:800px; height: 300px;">
+			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px; margin-bottom:20px;">
 			<!-- Loading Screen -->
 			<div data-u="loading"
 				style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
 				<div
-					style="filter: alpha(opacity = 40); opacity: 0.4; position: absolute; display: block; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
+					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
 				<div
 					style="position: absolute; display: block; background: url('\${context}/image/loading.gif\') no-repeat center center; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
 			</div>
 			<div data-u="slides"
-				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:800px; height: 300px;">
+				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px;">
 				<div>
 					<a
 						href="javascript:popup('${context}/getArtifact/767', 900, 700)">
@@ -100,7 +100,7 @@
 				</div>
 			</div>
 			<!-- Bullet Navigator -->
-			<table style="width: 100%">
+			<table style="width: 90%">
 				<tr>
 					<td>
 						<div data-u="navigator" class="jssorb05" data-autocenter="1">
@@ -126,11 +126,9 @@
 				<c:forEach var="data" items="${artifactDataMap}">
 					<div class="related">
 						<span> &nbsp;</span> <span
-							style="color: black; font-size: 20px; text-align: left;">${data.key}</span>
-
-						<div>
-							<hr width="${data.value[0].sectionWidth}" align="left" style="border-top: 5px solid #FFC000; margin-left:7px;">
-						</div>
+							style="color: black; font-size: 20px; text-align: left; margin-top:20px;">${data.key}</span>
+							<hr width="${data.value[0].sectionWidth}" align="left" style="border-top: 5px solid #FFC000; margin-left:7px; margin-bottom:20px; margin-top:0px;">
+						
 						<c:forEach var="listValue" items="${data.value}" begin="0" end="4">
 							<article
 								class="wp--article--card card js-card card--article card--tall card--fixed card--standard card--single card--has-img card--no-tags card--has-footer"
