@@ -28,7 +28,7 @@ function popup(url, x, y) {
 </script>
 <style type="text/css">
 html, body {
-	background: url(${context}/image/Home_background_img.jpg);
+	background: url('/image/Home_background_img.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -42,12 +42,12 @@ html, body {
 
 @font-face {
 	font-family: avenir65;
-	src: url('/css/fonts/regular/avenir65.ttf') format('truetype');
+	src: url(${context}/css/fonts/regular/avenir65.ttf) format('truetype');
 }
 
 @font-face {
 	font-family: avenir45;
-	src: url('/css/fonts/regular/avenir45.ttf') format('truetype');
+	src: url(${context}/css/fonts/regular/avenir45.ttf) format('truetype');
 }
 
 div {
