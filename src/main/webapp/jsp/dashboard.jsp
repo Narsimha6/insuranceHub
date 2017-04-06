@@ -64,11 +64,9 @@ function loadCategoryPage(screenName) {
 	<table width="100%" style="padding-top: 10px;">
 
 		<tr>
-			<td width="30%"><img src="${context}/image/insurancehub_logo.png"
-				align="left" style="padding-top: 0px; padding-left: 20px; postion:static;"></td>
-			<td align="right" width="30%"><img
-				src="${context}/image/capgemini logo.png" alt="" align="right"
-				style="padding-top: 8px; padding-right: 40px; postion:static;"></td>
+			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="height: 71%;width: 83%;padding-left: 7%;padding-top: 10px"  ></td>
+			<td align="left"><br>&nbsp;</td>
+			<td align="right" width="30%"><img src="${context}/image/capgemini logo.png" style="height: 74%;width: 58%;padding-right: 10%;margin-top: 12px"></td>
 		</tr>
 		<tr>
 			<td>
@@ -100,7 +98,7 @@ function loadCategoryPage(screenName) {
 		<tr>
 			<td>
 				<span >
-					 <a href="${context}"> <img src="${context}/image/previous.png" alt="" align="left" style="padding-top:15px;  postion:fixed;"/></a>
+					 <a href="${context}"> <img src="${context}/image/previous.png" alt="" align="left" style="padding-top:15px;  postion:fixed;height: 50px;width: 50px"/></a>
 				</span>	
 			</td>
 			
@@ -134,23 +132,25 @@ function loadCategoryPage(screenName) {
 		</table>
 		<table style="width: 100%">
 			<tr>
-				<td align="center" >
-					<div style="bottom: 10px ;position: fixed; align: center; padding-left: 45%">
-						
-						<a href="https://www.facebook.com/CapgeminiIndia/"
-								target="_blank" rel="nofollow"> <img src="${context}/image/facebook_logo.png"/> </a>
-						<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
-						<a href="https://twitter.com/Capgemini"
-								 target="_blank" rel="nofollow"> <img src="${context}/image/twitter_logo.png"/></a>
-						<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
-						<a href="https://www.linkedin.com/company-beta/157240?pathWildcard=157240"
-								target="_blank" rel="nofollow"> <img src="${context}/image/linkedin_logo.jpg"/></a>
-						<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
-						<a href="https://www.instagram.com/capgemini/ "
-								target="_blank" rel="nofollow"> <img src="${context}/image/instgram_logo.png"/></a>
-					</div>
-				</td>
-			</tr>
+			<td align="center" colspan="3">
+				<div
+					style="bottom: 10px; position: fixed; align: center; padding-left: 45%">
+
+					<a href="https://www.facebook.com/CapgeminiIndia/" target="_blank"
+						rel="nofollow"> <img src="${context}/image/facebook_logo.png" style="width: 11%;height: 11%" />
+					</a> <span> &nbsp;&nbsp;&nbsp;</span> <a
+						href="https://twitter.com/Capgemini" target="_blank"
+						rel="nofollow"> <img src="${context}/image/twitter_logo.png" style="width: 11%;height: 11%"/></a>
+					<span> &nbsp;&nbsp;&nbsp;</span> <a
+						href="https://www.linkedin.com/company-beta/157240?pathWildcard=157240"
+						target="_blank" rel="nofollow"> <img
+						src="${context}/image/linkedin_logo.jpg" style="width: 11%;height: 11%" /></a> <span>
+						&nbsp;&nbsp;&nbsp;</span> <a
+						href="https://www.instagram.com/capgemini/ " target="_blank"
+						rel="nofollow"> <img src="${context}/image/instgram_logo.png" style="width: 11%;height: 11%"/></a>
+				</div>
+			</td>
+		</tr>
 	</table>
 </body>
 </html>

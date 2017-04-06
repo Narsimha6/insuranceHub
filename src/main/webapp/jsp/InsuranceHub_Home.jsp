@@ -38,7 +38,7 @@ html, body {
 	min-height: auto;
 	min-width: 950px;
 	max-width: 2000px;
-}
+ }
 
 @font-face {
 	font-family: avenir65;
@@ -51,7 +51,7 @@ html, body {
 }
 
 div {
-	font-family: avenir65;
+	font-family: avenir65
 }
 
 td {
@@ -63,15 +63,9 @@ td {
 	<table style="width: 100%; padding-top: 10px;">
 
 		<tr>
-			<td width="30%"><img
-				src="${context}/image/insurancehub_logo.png" align="left"
-				style="padding-top: 0px; padding-left: 20px;"></td>
-			<td align="center"><br> <a
-				style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;"
-				href="${context}/jsp/ContactUS.jsp">About</a></td>
-			<td align="right" width="30%"><img
-				src="${context}/image/capgemini logo.png" alt="" align="right"
-				style="padding-top: 8px; padding-right: 40px;"></td>
+			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="height: 71%;width: 83%;padding-left: 7%;padding-top: 10px"  ></td>
+			<td align="left"><br> <a style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;padding-left: 58px ;font-size: 13px" href="${context}/jsp/ContactUS.jsp">About</a></td>
+			<td align="right" width="30%"><img src="${context}/image/capgemini logo.png" style="height: 74%;width: 58%;padding-right: 10%;margin-top: 12px"></td>
 		</tr>
 
 		<tr>
@@ -113,31 +107,31 @@ td {
 			</td>
 
 		</tr>
-		<tr>
+		<!-- <tr>
 			<td>
 				<div>&nbsp;</div>
 			</td>
 
-		</tr>
+		</tr> -->
 		<tr>
 			<td colspan="3">
 				<div>
 					<span
-						style="font-size: 50px; COLOR: #ffffff; padding-left: 50px; padding-bottom: 200px">Capgemini
+						style="font-size: 40px; COLOR: #ffffff; padding-left: 50px; padding-bottom: 200px;font-weight: normal;">Capgemini
 						Insurance Hub</span>
 
 					<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 
 					<a href="${context}/home"><img src="${context}/image/next.png"
 						alt="" align="right"
-						style="padding-top: 15px; padding-right: 20px; padding-bottom: 10px;" /></a>
+						style="padding-top: 15px; padding-right: 20px; padding-bottom: 10px;height: 5%;width: 5%" /></a>
 
 				</div>
 			</td>
 		</tr>
 
 		<tr>
-			<td style="font-size: 20px; color: #42b6f4; padding-left: 55px;">Explore.
+			<td style="font-size: 20px; color: #42b6f4; padding-left: 55px;font-weight: normal;">Explore.
 				Innovate. Co-create</td>
 
 		</tr>
@@ -186,17 +180,17 @@ td {
 					style="bottom: 10px; position: fixed; align: center; padding-left: 45%">
 
 					<a href="https://www.facebook.com/CapgeminiIndia/" target="_blank"
-						rel="nofollow"> <img src="${context}/image/facebook_logo.png" />
-					</a> <span> &nbsp;&nbsp;&nbsp;&nbsp;</span> <a
+						rel="nofollow"> <img src="${context}/image/facebook_logo.png" style="width: 11%;height: 11%" />
+					</a> <span> &nbsp;&nbsp;&nbsp;</span> <a
 						href="https://twitter.com/Capgemini" target="_blank"
-						rel="nofollow"> <img src="${context}/image/twitter_logo.png" /></a>
-					<span> &nbsp;&nbsp;&nbsp;&nbsp;</span> <a
+						rel="nofollow"> <img src="${context}/image/twitter_logo.png" style="width: 11%;height: 11%"/></a>
+					<span> &nbsp;&nbsp;&nbsp;</span> <a
 						href="https://www.linkedin.com/company-beta/157240?pathWildcard=157240"
 						target="_blank" rel="nofollow"> <img
-						src="${context}/image/linkedin_logo.jpg" /></a> <span>
-						&nbsp;&nbsp;&nbsp;&nbsp;</span> <a
+						src="${context}/image/linkedin_logo.jpg" style="width: 11%;height: 11%" /></a> <span>
+						&nbsp;&nbsp;&nbsp;</span> <a
 						href="https://www.instagram.com/capgemini/ " target="_blank"
-						rel="nofollow"> <img src="${context}/image/instgram_logo.png" /></a>
+						rel="nofollow"> <img src="${context}/image/instgram_logo.png" style="width: 11%;height: 11%"/></a>
 				</div>
 			</td>
 		</tr>
