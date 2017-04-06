@@ -71,7 +71,7 @@
 					style="position: absolute; display: block; background: url('${context}/image/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 			</div>
 			<div data-u="slides"
-				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 800px; height: 300px;">
+				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width: 850px; height: 300px;">
 				<div>
 					<a
 						href="javascript:popup('${context}/getArtifact/767', 900, 700)">
