@@ -21,9 +21,9 @@
 <script type="text/javascript" src="${context}/js/jssor.slider.js"></script>
 
 <!-- SmartMenus jQuery plugin -->
-<script type="text/javascript" src="${context}/js/jquery.smartmenus.js"></script>
+<script type="text/javascript" src="/js/jquery.smartmenus.js"></script>
 
-<script src="${context}/js/javascript.js" type="text/javascript"></script>
+<script src="/js/javascript.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <style type="text/css">
 html, body {

@@ -28,7 +28,7 @@ function popup(url, x, y) {
 </script>
 <style type="text/css">
 html, body {
-	background: url(${context}/image/Home_background_img.jpg);
+	background: url('/image/Home_background_img.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
