@@ -50,10 +50,7 @@ html, body {
 	height: auto;
 	min-height: 100%;
 	background-color: #EDEDED;
-	min-width: 67%;
-	max-width: 100%;
 	margin: auto;
-	font-family:joglekar65;
 }
 
 div.header {

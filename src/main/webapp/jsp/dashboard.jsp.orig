@@ -70,12 +70,7 @@ function loadCategoryPage(screenName) {
 				src="${context}/image/capgemini logo.png" alt="" align="right"
 				style="padding-top: 8px; padding-right: 40px; postion:static;"></td>
 		</tr>
-		<tr>
-			<td>
-					
-				<span> &nbsp;</span>
-			</td>
-		</tr>
+
 	</table>
 	
 	<table>
@@ -92,7 +87,7 @@ function loadCategoryPage(screenName) {
 			<td>
 				
 				<div style="padding-left: 90px;  postion:static;">
-				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:27px;padding-left:70px; margin-bottom:35px;"/></a>	
+				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:30px;padding-left:70px; margin-bottom:35px;"/></a>	
 				 </div>
 			
 			</td>
@@ -121,17 +116,18 @@ function loadCategoryPage(screenName) {
 				 <div style="padding-left: 80px;">
 				 <!-- <a href="${context}/getCategoryContents/PROPERTY_CASUALITY"> -->
 				  <!-- <a href="${context}/jsp/PandC_Page.html"> -->
-				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:32px; position:statics; padding-bottom:21px;"/></a>
+				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:18px; position:statics; padding-bottom:21px;"/></a>
 				 </div>
 			</td>
 			<td>
 				<div style="padding-left: 70px;">
-				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:12px;padding-left:85px;  postion:static;  margin-bottom:5px;"/></a>	
+				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:4px;padding-left:85px;  postion:static;  margin-bottom:5px;"/></a>	
 				 </div>
 			</td>
 		</tr>
 		<tr>
 		</table>
+<<<<<<< Updated upstream
 		<table style="width: 100%">
 			<tr>
 				<td align="center" >
@@ -151,6 +147,28 @@ function loadCategoryPage(screenName) {
 					</div>
 				</td>
 			</tr>
+=======
+		<table width="100%">
+		<tr>
+			<td align="center" >
+				<div align="center" style="postion:static;">
+					
+					<a href="https://www.facebook.com/CapgeminiIndia/"
+							target="_blank" rel="nofollow"> <img src="${context}/image/facebook_logo.png"/> </a>
+					<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<a href="https://twitter.com/Capgemini"
+							 target="_blank" rel="nofollow"> <img src="${context}/image/twitter_logo.png"/></a>
+					<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<a href="https://www.linkedin.com/company-beta/157240?pathWildcard=157240"
+							target="_blank" rel="nofollow"> <img src="${context}/image/linkedin_logo.jpg"/></a>
+					<span> &nbsp;&nbsp;&nbsp;&nbsp;</span>
+					<a href="https://www.instagram.com/capgemini/ "
+							target="_blank" rel="nofollow"> <img src="${context}/image/instgram_logo.png"/></a>
+				</div>
+			</td>
+		</tr>
+	
+>>>>>>> Stashed changes
 	</table>
 </body>
 </html>
