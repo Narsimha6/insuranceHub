@@ -28,14 +28,14 @@
 	
 		<div>
 			<ul class="breadcrumb">
-				<li><a href="${context}/home">Home</a></li>
+				<li><a href="${context}/">Home</a></li>
 				<li class="active">About</li>
 			</ul>
 		</div>
 		<div>&nbsp;</div>
 		<div style="padding-left: 10px;">
 			<p>InsuranceHub provides an integrated platform for demonstrating
-				Capgemini’s insurance solutions. InsuranceHub is organized as Life &
+				Capgemini's insurance solutions. InsuranceHub is organized as Life &
 				Pensions, Property & Casualty, Health and Knowledge Hub.</p>
 			<p>These three lines of business primarily focus on Insurance
 				Value Chain Front Office, Underwriting & Policy Administration and

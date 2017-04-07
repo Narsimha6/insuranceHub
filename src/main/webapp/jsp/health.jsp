@@ -65,7 +65,7 @@
 			<div data-u="loading"
 				style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
 				<div
-					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
 				<div
 					style="position: absolute; display: block; background: url('${context}/image/loading.gif') no-repeat center center; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
 			</div>
@@ -73,7 +73,7 @@
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px;">
 				<div >
 					<a
-						href="javascript:popup('${context}/getArtifact/697', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/1006', 900, 700)">
 						<img data-u="image"
 						src="${context}/image/Scroll_images/WARM.png" />
 					</a>

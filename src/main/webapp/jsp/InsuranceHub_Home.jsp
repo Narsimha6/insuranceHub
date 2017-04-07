@@ -117,14 +117,14 @@ td {
 			<td colspan="3">
 				<div>
 					<span
-						style="font-size: 40px; COLOR: #ffffff; padding-left: 50px; padding-bottom: 200px;font-weight: normal;">Capgemini
+						style="font-size: 55px; COLOR: #ffffff; padding-left: 50px; padding-bottom: 200px;font-weight: normal;">Capgemini
 						Insurance Hub</span>
 
 					<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 
 					<a href="${context}/home"><img src="${context}/image/next.png"
 						alt="" align="right"
-						style="padding-top: 15px; padding-right: 20px; padding-bottom: 10px;height: 5%;width: 5%" /></a>
+						style="padding-top: 20px; padding-right: 20px; padding-bottom: 10px;height: 5%;width: 5%" /></a>
 
 				</div>
 			</td>
@@ -132,7 +132,7 @@ td {
 
 		<tr>
 			<td style="font-size: 20px; color: #42b6f4; padding-left: 55px;font-weight: normal;">Explore.
-				Innovate. Co-create</td>
+				Innovate. Cocreate</td>
 
 		</tr>
 
