@@ -9,4 +9,6 @@ public interface ArtifactService {
 	ArtifactsMaster getAllArtifacts(Long artifactId);
 
 	Map<String, List<ArtifactsMaster>> getCategoryContents(String categoryName);
+
+	ArtifactsMaster getArtifactData(Long artifactId);
 }

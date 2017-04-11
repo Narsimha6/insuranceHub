@@ -98,4 +98,10 @@ public class ArtifactServiceImpl implements ArtifactService {
 		}
 		return null;
 	}
+
+	@Override
+	public ArtifactsMaster getArtifactData(Long artifactId) {
+		ArtifactsMaster artifactMaster = artifactsDao.findOne(artifactId);
+		return artifactMaster;
+	}
 }

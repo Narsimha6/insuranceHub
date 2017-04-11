@@ -65,6 +65,16 @@ public class ArtifactsMaster implements Serializable{
 	@Column(name="SORT_ORDER")
 	private Long sortOrder;
 	
+	@Column(name="AUTHOR_NAME")
+	private String authorName;
+	
+	@Column(name="AUTHOR_DESIGNATION")
+	private String authorDesignation;
+	
+	@Column(name="HTML_CONTENT")
+	@Lob @Basic(fetch=LAZY)
+	private String htmlContent;
+	
 	@Transient
 	private String menuName;
 	
@@ -202,6 +212,29 @@ public class ArtifactsMaster implements Serializable{
 		this.sortOrder = sortOrder;
 	}
 	
+	public String getAuthorName() {
+		return authorName;
+	}
+	
+	public void setAuthorName(String authorName) {
+		this.authorName = authorName;
+	}
+	
+	public String getAuthorDesignation() {
+		return authorDesignation;
+	}
+	
+	public void setAuthorDesignation(String authorDesignation) {
+		this.authorDesignation = authorDesignation;
+	}
+	
+	public String getHtmlContent() {
+		return htmlContent;
+	}
+	
+	public void setHtmlContent(String htmlContent) {
+		this.htmlContent = htmlContent;
+	}
 	@Override
 	public String toString() {
 		return "ArtifactsMaster [artifactId=" + artifactId + ", artifactName=" + artifactName + ", artifactType="

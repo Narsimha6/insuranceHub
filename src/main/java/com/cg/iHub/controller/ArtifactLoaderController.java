@@ -56,6 +56,23 @@ public class ArtifactLoaderController {
 			throw new IllegalStateException(e);
 		}
 	}
+	
+	@RequestMapping(value="/getArtifactData/{artifactId}",method = RequestMethod.GET)
+	public ArtifactsMaster  getArtifactData(HttpServletResponse response, @PathVariable Long artifactId) {
+		ArtifactsMaster artifact = artifactsService.getArtifactData(artifactId);
+		return artifact;
+		/*if(artifact==null ) return null;
+		String artifactType = artifact.getArtifactType();
+		
+		response.setContentType(getContentType(artifactType));
+		
+		try {
+			response.getOutputStream().write(artifact.getArtifactData());
+		} catch (Exception e) {
+			logger.debug("Request could not be completed at this moment. Please try again.:"+e.getMessage());
+			throw new IllegalStateException(e);
+		}*/
+	}
 
 	@RequestMapping(value="/getCategoryContents/{categoryName}",method = RequestMethod.GET)
 	public ModelAndView getCategoryContents(@PathVariable String categoryName) {
