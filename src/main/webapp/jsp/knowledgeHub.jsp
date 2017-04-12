@@ -87,7 +87,7 @@
 				<div data-p="68.75">
 					<a
 						href="javascript:popup('${context}/getArtifact/737', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/Digital Insurance Trends.png" />
+						<img data-u="image" src="${context}/image/Scroll_images/Top Trends in Insurance.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
