@@ -236,7 +236,7 @@ span {
 		 <tr>
 			<td align="center" colspan="3">
 				<div style="color: #ffffff; font-size:18px;">
-				<a href="mailto:insurancehub.fsgbu@capgemini.com" style="color: #ffffff;" >  
+				<a href="mailto:insurancehub.fssbu@capgemini.com" style="color: #ffffff;" >  
 					<img src="${context}/image/common/Mail.png" /> &nbsp; Contact Us  
 				</a>
 				</div>

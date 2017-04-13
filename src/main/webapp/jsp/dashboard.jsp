@@ -131,7 +131,7 @@ function loadCategoryPage(screenName) {
 		<tr>
 		</table>
 		<table style="width: 100%">
-			<tr>
+			<!-- <tr>
 			<td align="center" colspan="3">
 				<div
 					style="bottom: 10px; position: fixed; align: center; padding-left: 45%">
@@ -148,6 +148,33 @@ function loadCategoryPage(screenName) {
 						&nbsp;&nbsp;&nbsp;</span> <a
 						href="https://www.instagram.com/capgemini/ " target="_blank"
 						rel="nofollow"> <img src="${context}/image/instgram_logo.png" style="width: 11%;height: 11%"/></a>
+				</div>
+			</td>
+		</tr> -->
+		<tr>
+			<td>
+					
+				<span> &nbsp;</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+					
+				<span> &nbsp;</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+					
+				<span> &nbsp;</span>
+			</td>
+		</tr>
+		 <tr>
+			<td align="center" colspan="3">
+				<div style="color: #ffffff; font-size:18px;">
+				<a href="mailto:insurancehub.fssbu@capgemini.com" style="color: #ffffff;" >  
+					<img src="${context}/image/common/Mail.png" /> &nbsp; Contact Us  
+				</a>
 				</div>
 			</td>
 		</tr>
