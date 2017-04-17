@@ -8,6 +8,7 @@ import java.util.Map;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
+import javax.transaction.Transactional;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Service;
 
 import com.cg.iHub.dao.ArtifactsDao;
 import com.cg.iHub.model.ArtifactsMaster;
+import com.cg.iHub.model.SectionMaster;
 import com.cg.iHub.utils.CategoryENUM;
 @Service
 public class ArtifactServiceImpl implements ArtifactService {
@@ -30,7 +32,7 @@ public class ArtifactServiceImpl implements ArtifactService {
 	public ArtifactsMaster getAllArtifacts(Long artifactId) {
 		ArtifactsMaster artifact = null;
 		try{
-			artifact = entityManager.find(ArtifactsMaster.class, artifactId);
+			artifact = (ArtifactsMaster) entityManager.find(ArtifactsMaster.class, artifactId);
 		}catch(NoResultException e){
 			logger.warn("No results to the query executed :"+e.getMessage());
 		}
@@ -71,7 +73,6 @@ public class ArtifactServiceImpl implements ArtifactService {
 						String sectionName = dataObjArr[8]!=null?(String)dataObjArr[8]:null;
 						artifact.setSectionName(dataObjArr[8]!=null?(String)dataObjArr[8]:null);
 						artifact.setSectionWidth(dataObjArr[9]!=null?(String)dataObjArr[9]:null);
-//						artifactList.add(artifact);
 						List<ArtifactsMaster> tempList = null;
 						if(dataMap.containsKey(sectionName)){
 							tempList = dataMap.get(sectionName);
@@ -103,5 +104,49 @@ public class ArtifactServiceImpl implements ArtifactService {
 	public ArtifactsMaster getArtifactData(Long artifactId) {
 		ArtifactsMaster artifactMaster = artifactsDao.findOne(artifactId);
 		return artifactMaster;
+	}
+
+	@Override
+	public Map<String, List<SectionMaster>> getMenuSections() {
+
+		String queryStr = "select m.menu_id, m.MENU_NAME, s.SECTION_ID, s.SECTION_NAME from IZONE.IHUB_MENU m "
+				+" inner join IZONE.IHUB_SECTION s on m.MENU_ID=s.MENU_ID ";
+		Query query = entityManager.createNativeQuery(queryStr);
+		Map<String, List<SectionMaster>> dataMap = null;
+		try{
+			List dataList = query.getResultList();
+			if(dataList!=null && dataList.size()>0){
+				dataMap = new LinkedHashMap<String, List<SectionMaster>>();
+				for (Object obj : dataList) {
+					Object[] dataObjArr = (Object[]) obj;
+					if(dataObjArr!=null && dataObjArr.length>0){
+						SectionMaster section = new SectionMaster();
+						section.setMenuId(dataObjArr[0]!=null?Long.valueOf(dataObjArr[0].toString()):null);
+						String menuName = dataObjArr[1]!=null?(String)dataObjArr[1]:null;
+						section.setSectionId(dataObjArr[2]!=null?Long.valueOf(dataObjArr[2].toString()):null);
+						section.setSectionName(dataObjArr[3]!=null?(String)dataObjArr[3]:null);
+						List<SectionMaster> tempList = null;
+						if(dataMap.containsKey(menuName)){
+							tempList = dataMap.get(menuName);
+						} else {
+							tempList = new ArrayList<SectionMaster>();
+						}
+						tempList.add(section);
+						dataMap.put(menuName, tempList);
+					}
+				}
+			}
+		}catch(NoResultException e){
+			logger.warn("No results to the query executed :"+e.getMessage());
+		}
+		entityManager.close();
+		return dataMap;
+	}
+
+	@Override
+	@Transactional
+	public Boolean saveArtifact(ArtifactsMaster artifact) {
+		entityManager.merge(artifact);
+		return Boolean.TRUE;
 	}
 }

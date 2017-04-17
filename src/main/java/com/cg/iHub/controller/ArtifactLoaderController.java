@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.cg.iHub.model.ArtifactsMaster;
+import com.cg.iHub.model.SectionMaster;
 import com.cg.iHub.service.ArtifactService;
 import com.cg.iHub.utils.CategoryENUM;
 
@@ -61,17 +62,20 @@ public class ArtifactLoaderController {
 	public ArtifactsMaster  getArtifactData(HttpServletResponse response, @PathVariable Long artifactId) {
 		ArtifactsMaster artifact = artifactsService.getArtifactData(artifactId);
 		return artifact;
-		/*if(artifact==null ) return null;
-		String artifactType = artifact.getArtifactType();
-		
-		response.setContentType(getContentType(artifactType));
-		
-		try {
-			response.getOutputStream().write(artifact.getArtifactData());
-		} catch (Exception e) {
-			logger.debug("Request could not be completed at this moment. Please try again.:"+e.getMessage());
-			throw new IllegalStateException(e);
-		}*/
+	}
+	
+	@RequestMapping(value="/getMenuSections",method = RequestMethod.GET)
+	public Map<String, List<SectionMaster>>  getMenuSections() {
+		Map<String, List<SectionMaster>> menuSectionMap = artifactsService.getMenuSections();
+		return menuSectionMap;
+	}
+	
+	@RequestMapping(value="/saveArtifact",method = RequestMethod.POST)
+	public Boolean saveArtifact(@PathVariable ArtifactsMaster artifact) {
+		if(artifact == null){
+			return Boolean.FALSE;
+		}
+		return artifactsService.saveArtifact(artifact);
 	}
 
 	@RequestMapping(value="/getCategoryContents/{categoryName}",method = RequestMethod.GET)
