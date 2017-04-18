@@ -67,32 +67,32 @@
 				<div
 					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
 				<div
-					style="position: absolute; display: block; background: url('\${context}/image/loading.gif\') no-repeat center center; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
+					style="position: absolute; display: block; background: url('\${context}/image/loading.gif\') no-repeat center center; top: 0px; left: 0px; width: 80%; height: 100%;"></div>
 			</div>
 			<div data-u="slides"
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px;">
 				
 				<div data-p="68.75" data-po="70% 50%">
 					<a
-						href="javascript:popup('${context}/getArtifact/1001',900, 700)">
+						href="javascript:popup('${context}/getArtifact/78',900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/World Fintech Report 2017.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/738', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/50', 900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/World Insurance Report 2016.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/737', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/49', 900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/Top Trends in Insurance.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/677', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/40', 900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/Leveraging Blockchain TTII.png" />
 					</a>
 				</div>

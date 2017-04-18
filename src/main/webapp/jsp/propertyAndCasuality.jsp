@@ -81,7 +81,7 @@
 				</div>
 				<div data-p="68.75" data-po="70% 30%">
 					<a
-						href="javascript:popup('${context}/getArtifact/744', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/104', 900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/Smart Home.png" />
 					</a>
 				</div>
@@ -93,13 +93,13 @@
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/743', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/51', 900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/Insurance on the go.png" />
 					</a>
 				</div>
 				<div data-p="68.75">
 					<a
-						href="javascript:popup('${context}/getArtifact/814', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/82', 900, 700)">
 						<img data-u="image" src="${context}/image/Scroll_images/Insurance Insights.png" />
 					</a>
 				</div>

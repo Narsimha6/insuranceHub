@@ -73,7 +73,7 @@
 				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px;">
 				<div >
 					<a
-						href="javascript:popup('${context}/getArtifact/1006', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/74', 900, 700)">
 						<img data-u="image"
 						src="${context}/image/Scroll_images/WARM.png" />
 					</a>

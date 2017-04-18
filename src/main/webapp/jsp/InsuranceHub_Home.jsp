@@ -116,7 +116,7 @@ span {
 		<tr>
 			<td colspan="2" align="right" width="95%">
 				
-				<marquee behavior="alternate">	<span style="align: center; font-size: 35px; color: #42b6f4;">Explore. Innovate. Co-create</span></marquee>
+				<marquee behavior="alternate">	<span style="align: center; font-size: 35px; color: #42b6f4;">Explore. Innovate. Co-create.</span></marquee>
 					<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 			</td>
 			<td align="right" width="5%">

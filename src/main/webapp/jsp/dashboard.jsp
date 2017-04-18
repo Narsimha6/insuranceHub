@@ -98,7 +98,7 @@ function loadCategoryPage(screenName) {
 		<tr>
 			<td>
 				<span >
-					 <a href="${context}"> <img src="${context}/image/previous.png" alt="" align="left" style="padding-top:15px;  postion:fixed;height: 50px;width: 50px"/></a>
+					 <a href="${context}"> <img src="${context}/image/previous.png" alt="" align="left" style="padding-top:15px;  postion:fixed; margin-left:10px;"/></a>
 				</span>	
 			</td>
 			

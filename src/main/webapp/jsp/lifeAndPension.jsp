@@ -81,7 +81,7 @@
 				</div>
 				<div data-p="68.75" data-po="70% 50%">
 					<a
-						href="javascript:popup('${context}/getArtifact/813', 900, 700)">
+						href="javascript:popup('${context}/getArtifact/55', 900, 700)">
 						<img data-u="image"
 						src="${context}/image/Scroll_images/Mobile Insurance.png" />
 					</a>
