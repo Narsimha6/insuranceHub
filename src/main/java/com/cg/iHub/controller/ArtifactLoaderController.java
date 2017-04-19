@@ -59,9 +59,11 @@ public class ArtifactLoaderController {
 	}
 	
 	@RequestMapping(value="/getArtifactData/{artifactId}",method = RequestMethod.GET)
-	public ArtifactsMaster  getArtifactData(HttpServletResponse response, @PathVariable Long artifactId) {
+	public ModelAndView  getArtifactData(HttpServletResponse response, @PathVariable Long artifactId) {
 		ArtifactsMaster artifact = artifactsService.getArtifactData(artifactId);
-		return artifact;
+		ModelAndView view = new ModelAndView("commonArticleView");
+		view.addObject("artifact", artifact);
+		return view;
 	}
 	
 	@RequestMapping(value="/getMenuSections",method = RequestMethod.GET)

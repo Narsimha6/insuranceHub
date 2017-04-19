@@ -103,7 +103,33 @@ public class ArtifactServiceImpl implements ArtifactService {
 	@Override
 	public ArtifactsMaster getArtifactData(Long artifactId) {
 		ArtifactsMaster artifactMaster = artifactsDao.findOne(artifactId);
+		Map<String, String> menuSectionNameMap = getMenuSectionName(
+				artifactMaster.getMenuId(), artifactMaster.getSectionId());
+		artifactMaster.setMenuName(menuSectionNameMap.get("MENU_NAME"));
+		artifactMaster.setSectionName(menuSectionNameMap.get("SECTION_NAME"));
 		return artifactMaster;
+	}
+
+	private Map<String, String> getMenuSectionName(Long menuId, Long sectionId) {
+		String queryStr = "select m.MENU_NAME, s.SECTION_NAME from IZONE.IHUB_MENU m "
+				+" inner join IZONE.IHUB_SECTION s on m.MENU_ID=s.MENU_ID "
+				+ " WHERE m.menu_id="+menuId +" AND section_id= "+sectionId;
+		Query query = entityManager.createNativeQuery(queryStr);
+		Map<String, String> dataMap = null;
+		try{
+			Object dataList = query.getSingleResult();
+			if(dataList!=null ){
+				dataMap = new LinkedHashMap<String, String>();
+				Object[] dataObjArr = (Object[]) dataList;
+				if(dataObjArr!=null && dataObjArr.length>0){
+					dataMap.put("MENU_NAME",dataObjArr[0]!=null?dataObjArr[0].toString():null);
+					dataMap.put("SECTION_NAME",dataObjArr[1]!=null?dataObjArr[1].toString():null);
+				}
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return dataMap;
 	}
 
 	@Override
