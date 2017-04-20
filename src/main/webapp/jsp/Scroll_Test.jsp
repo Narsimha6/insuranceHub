@@ -5,13 +5,10 @@
 <html lang="en">
 <html>
 <head>
-<title>Bootstrap Carousel</title>
-<link rel="stylesheet"
-	href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="${context}/css/bootstrap.min.css" type="text/css">
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script
-	src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="${context}/js/bootstrap.min.js" type="text/javascript"></script>
 
 <style>
 h3 {
@@ -25,23 +22,23 @@ img {
 }
 
 .carousel-inner {
-	background-color: #C1E0FF;
+	background-color: #ffffff	;
 }
 
 .carousel-caption {
 	font-size: 2em;
-	right: 10%;
-	left: 60%;
-	top: 30%;
-	bottom: 30%;
-	text-align: left;
+	right: 0%;
+	left: 70%;
+	top: 0%;
+	bottom: 0%;
+	
 	text-shadow: none;
 }
 
 .carousel-indicators {
 	font-size: 2em;
 	bottom: -1%;
-	text-align: left;
+	text-align: right;
 	text-shadow: none;
 }
 </style>
@@ -49,10 +46,9 @@ img {
 </head>
 <body>
 	<div class="container">
-		<h1>Bootstrap Carousel demo</h1>
 		<!--The main div for carousel-->
 		<div id="carousel-demo" class="carousel slide" data-ride="carousel"
-			data-interval="2000">
+			data-interval="5000">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
