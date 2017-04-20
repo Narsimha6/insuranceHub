@@ -47,8 +47,8 @@
 	<div class="header">
 		<img src="${context}/image/insurancehub_logo.png" align="left"
 			style="padding-left: 20px;"> <img
-			src="${context}/image/capgemini logo.png"
-			style="padding-top: 25px; padding-right: 40px;" align="right">
+			src="${context}/image/capgemini_logo1.png"
+			style="padding-top: 15px; padding-right: 40px;" align="right">
 	</div>
 
 	<div
@@ -60,7 +60,7 @@
 			</ul>
 		</div>
 		<div>&nbsp;</div>
-				<div id="jssor_html5_AdWords"
+		<div id="jssor_html5_AdWords"
 			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px; margin-bottom:20px;">
 			<!-- Loading Screen -->
 			<div data-u="loading"

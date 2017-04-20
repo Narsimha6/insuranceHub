@@ -27,7 +27,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <style type="text/css">
 html, body {
-	background: url(${context}/image/iHub_Landing_Page.jpg);
+	background: url('${context}/image/common/Second screen.jpeg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -66,7 +66,7 @@ function loadCategoryPage(screenName) {
 		<tr>
 			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 7%;padding-top: 10px"  ></td>
 			<td align="left"><br>&nbsp;</td>
-			<td align="right" width="30%"><img src="${context}/image/capgemini logo.png" style="padding-right: 10%;margin-top: 12px"></td>
+			<td align="right" width="30%"><img src="${context}/image/capgemini_logo1.png" style="padding-right: 10%;margin-top: 12px"></td>
 		</tr>
 		<tr>
 			<td>
@@ -76,60 +76,33 @@ function loadCategoryPage(screenName) {
 		</tr>
 	</table>
 	
-	<table>
-		<tr>
-			<td>
-					
-				<span> &nbsp;</span>
-			</td>
-			<td>
-				 <div style="padding-left: 100px;  postion:static;">
-				   <a href="${context}/getCategoryContents/PROPERTY_CASUALITY">	<img src="${context}/image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:0px; postion:static;"/></a>	
-				 </div>
-			</td>
-			<td>
+	
+				 <div style="margin-left:850px;  postion:static; align: right;">
+				   <a href="${context}/getCategoryContents/PROPERTY_CASUALITY">	<img src="${context}/image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:3px; postion:static;"/></a>	
 				
-				<div style="padding-left: 90px;  postion:static;">
-				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:27px;padding-left:70px; margin-bottom:35px;"/></a>	
+				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:0px;padding-left:70px; margin-bottom:5px;"/></a>	
 				 </div>
 			
-			</td>
-		</tr>
-		<tr>
-			<td>
-				<span >
-					 <a href="${context}"> <img src="${context}/image/previous.png" alt="" align="left" style="padding-top:15px;  postion:fixed; margin-left:10px;"/></a>
-				</span>	
-			</td>
+		
+				<div >
+					 <a href="${context}"> <img src="${context}/image/previous_arrow.png" alt="" align="left" style="padding-top:15px;  postion:fixed; margin-left:10px;"/></a>
+				</div>	
 			
-			<td>
-				<span> &nbsp;</span>
-			</td>
+				<div> &nbsp;</div>
+		
+				<div> &nbsp;</div>
+		
+		
+				<div> &nbsp;</div>
 			
-			<td>
-				<span> &nbsp;</span>
-			</td>
-			
-		</tr>
-		<tr>
-			<td>
-				<span> &nbsp;</span>
-			</td>
-			<td>
 				 <div style="padding-left: 80px;">
 				 <!-- <a href="${context}/getCategoryContents/PROPERTY_CASUALITY"> -->
 				  <!-- <a href="${context}/jsp/PandC_Page.html"> -->
-				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="padding-right:3px;padding-left:32px; position:statics; padding-bottom:21px;"/></a>
+				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="margin-left:51.2%; padding-left:32px; position:statics; "/></a>
+				
+				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:15px;padding-left:65px;  margin-top: 3px; postion:static;  ;"/></a>	
 				 </div>
-			</td>
-			<td>
-				<div style="padding-left: 70px;">
-				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:12px;padding-left:85px;  postion:static;  margin-bottom:5px;"/></a>	
-				 </div>
-			</td>
-		</tr>
-		<tr>
-		</table>
+			
 		<table style="width: 100%">
 			<!-- <tr>
 			<td align="center" colspan="3">
@@ -169,11 +142,29 @@ function loadCategoryPage(screenName) {
 				<span> &nbsp;</span>
 			</td>
 		</tr>
+			<tr>
+			<td>
+					
+				<span> &nbsp;</span>
+			</td>
+		</tr>
+			<tr>
+			<td>
+					
+				<span> &nbsp;</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+					
+				<span> &nbsp;</span>
+			</td>
+		</tr>
 		 <tr>
 			<td align="center" colspan="3">
-				<div style="color: #ffffff; font-size:18px;">
-				<a href="mailto:insurancehub.fssbu@capgemini.com" style="color: #ffffff;" >  
-					<img src="${context}/image/common/Mail.png" /> &nbsp; Contact Us  
+				<div>
+				<a href="mailto:insurancehub.fssbu@capgemini.com" >  
+					<span class="btn btn--linkblue btn--medium"> Contact Us </span> 
 				</a>
 				</div>
 			</td>

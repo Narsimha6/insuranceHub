@@ -28,7 +28,7 @@ function popup(url, x, y) {
 </script>
 <style type="text/css">
 html, body {
-	background: url(${context}/image/Home_background_img.jpg);
+	background: url('${context}/image/common/Opening screen.jpeg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -63,9 +63,9 @@ span {
 	<table style="width: 100%; padding-top: 10px;">
 
 		<tr>
-			<td width="60%" colspan="2"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 7%;padding-top: 10px"  ></td>
+			<td width="75%" colspan="2"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 2%;padding-top: 10px"  ></td>
 			<!--  <td align="left"><br> <a style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;padding-left: 58px ;font-size: 13px" href="${context}/jsp/ContactUS.jsp">About</a></td>-->
-			<td align="right" width="40%"><img src="${context}/image/capgemini logo.png" style="margin-top: 12px; margin-right:15px;"></td>
+			<td align="right" width="20%"><img src="${context}/image/capgemini_logo1.png" style="margin-top: 12px; margin-right:25px;"></td>
 		</tr>
 
 		<tr>
@@ -114,14 +114,14 @@ span {
 
 		</tr> -->
 		<tr>
-			<td colspan="2" align="right" width="95%">
+			<td colspan="3" align="right" style="padding-right:50px;">
 				
-				<marquee behavior="alternate">	<span style="align: center; font-size: 35px; color: #42b6f4;">Explore. Innovate. Co-create.</span></marquee>
+				<span style="align: right; font-size: 35px; color: #42b6f4;"> Explore. Innovate. Co-create.</span>
 					<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 			</td>
 			<td align="right" width="5%">
 
-					<a href="${context}/home"><img src="${context}/image/next.png"
+					<a href="${context}/home"><img src="${context}/image/next_arrow.png"
 						alt="" align="right"
 						style="padding-top: 20px; padding-right: 20px; padding-bottom: 10px;" /></a>
 
@@ -235,9 +235,9 @@ span {
 		</tr>
 		 <tr>
 			<td align="center" colspan="3">
-				<div style="color: #ffffff; font-size:18px;">
-				<a href="mailto:insurancehub.fssbu@capgemini.com" style="color: #ffffff;" >  
-					<img src="${context}/image/common/Mail.png" /> &nbsp; Contact Us  
+				<div>
+				<a href="mailto:insurancehub.fssbu@capgemini.com" >  
+					<span class="btn btn--linkblue btn--medium"> Contact Us </span> 
 				</a>
 				</div>
 			</td>

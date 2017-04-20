@@ -61,7 +61,12 @@ public class ArtifactLoaderController {
 	@RequestMapping(value="/getArtifactData/{artifactId}",method = RequestMethod.GET)
 	public ModelAndView  getArtifactData(HttpServletResponse response, @PathVariable Long artifactId) {
 		ArtifactsMaster artifact = artifactsService.getArtifactData(artifactId);
-		ModelAndView view = new ModelAndView("commonArticleView");
+		ModelAndView view = null;
+		if(artifactId == 12){
+			 view = new ModelAndView("Scroll_Test");
+		} else {
+			 view = new ModelAndView("commonArticleView");
+		}
 		view.addObject("artifact", artifact);
 		return view;
 	}
@@ -96,7 +101,7 @@ public class ArtifactLoaderController {
 			modelAndView = new ModelAndView("propertyAndCasuality");
 		} else if(categoryName.equals(CategoryENUM.THOUGHT_LEADERSHIP.getDescription())){
 			modelAndView = new ModelAndView("knowledgeHub");
-		}
+		} 
 		modelAndView.addObject("artifactDataMap", artifactDataMap);
 		modelAndView.addObject("sectionNames", artifactDataMap.keySet());
 		System.out.println(artifactDataMap.get("sessionWidth"));
