@@ -7,6 +7,10 @@
 <title>insurancehub:Property&Casuality</title>
 <link href="${context}/css/Style.css" rel="stylesheet" type="text/css" />
 <link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
+<link href="${context}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="${context}/js/bootstrap.min.js" type="text/javascript"></script>
 <script language="javascript"
 	src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
 <script src="${context}/js/jquery.touchSlider.js" type="text/javascript"></script>
@@ -18,6 +22,7 @@
 <script src="${context}/js/Corosal_New.js" type="text/javascript"></script>
 
 <script type="text/javascript" src="${context}/js/jquery-ui.js"></script>
+
 <script>
 	function popup(url, x, y) {
 		pupWindow = window
@@ -40,7 +45,59 @@
 		window.scrollTo(0, 100);
 	}
 </script>
+<style>
+.carousel-inner {
+	background-color: #eee	;
+}
 
+.carousel-caption {
+	font-size: 1em;
+	right: 0%;
+	left: 66%;
+	top: 0%;
+	bottom: 0%;
+	text-shadow: none;
+}
+
+.carousel-indicators {
+	font-size: 2em;
+	bottom: -1%;
+	text-align: right;
+	text-shadow: none;
+}
+
+@font-face {
+	font-family: avenir65;
+	src: url(${context}/css/fonts/regular/avenir65.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: avenir45;
+	src: url(${context}/css/fonts/regular/avenir45.ttf) format('truetype');
+}
+
+span {
+	font-family: Avenir;
+	font-size:16px;
+	color: #3b444f;
+	font-weight:600;
+}
+
+p {
+	font-family: avenir45;
+	font-size:12px;
+	color: #67747c;
+}
+.carousel-indicators li{
+	display:inline-block;width:12px;height:12px;
+	margin:1px;text-indent:-999px;
+	border:1px solid #333;
+	border-radius:10px;
+	cursor:pointer;
+	background-color:#FFC000;
+	
+}
+</style>
 </head>
 <body>
 	<div class="header">
@@ -59,72 +116,85 @@
 			</ul>
 		</div>
 
-		<div>&nbsp;</div>
-		
-		<div id="jssor_html5_AdWords"
-			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px; margin-bottom:20px;">
-			<!-- Loading Screen -->
-			<div data-u="loading"
-				style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
-				<div
-					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
-				<div
-					style="position: absolute; display: block; background: url('\${context}/image/loading.gif\') no-repeat center center; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
-			</div>
-			<div data-u="slides"
-				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px;">
-				<div>
+	<!--  Start of Carsoual Scroll images  -->
+		<div class="container" style="width:865px; height: 300px; margin-bottom:20px;">
+		<!--The main div for carousel-->
+		<div id="carousel-demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-demo" data-slide-to="1"></li>
+				<li data-target="#carousel-demo" data-slide-to="2"></li>
+				<li data-target="#carousel-demo" data-slide-to="3"></li>
+				<li data-target="#carousel-demo" data-slide-to="4"></li>
+				
+			</ol>
+
+			<!-- Sliding images statring here -->
+			<div class="carousel-inner">
+				<div class="item active">
 					<a
-						href="javascript:popup('${context}/getArtifact/747', 900, 700)">
-						<img data-u="image"
-						src="${context}/image/Scroll_images/UBI.png" />
+						href="javascript:popup('${context}/getArtifact/135', 900, 700)">
+						<img width="70%" src="${context}/image/Scroll_images/UBI.png" />
+					
+					<div class="carousel-caption">
+						<h3>Usage Based Insurance (UBI)</h3>
+						<p>A mobile application which monitors and measures driving pattern and behavior to potentially earn a discount on premium</p>
+					</div>
 					</a>
 				</div>
-				<div data-p="68.75" data-po="70% 30%">
+				<div class="item">
 					<a
 						href="javascript:popup('${context}/getArtifact/104', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/Smart Home.png" />
+						<img width="70%" src="${context}/image/Scroll_images/SmartHome.png" />
+						<div class="carousel-caption">
+						<h3>SmartHome </h3>
+						<p>SmartHome is a gamified solution supported by IoT devices, providing  coverage to a user's home, property or even their pets</p>
+						</div>
 					</a>
 				</div>
-				<div data-p="68.75">
+				<div class="item">
 					<a
 						href="javascript:popup('${context}/getArtifact/745', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/Traverse.png" />
+						<img width="70%" src="${context}/image/Scroll_images/Traverse.png" />
 					</a>
+					<div class="carousel-caption">
+						<h3>Traverse - Travel Insurance</h3>
+						<p>An advanced travel management application to help plan and protect your holidays</p>
+					</div>
 				</div>
-				<div data-p="68.75">
+				<div class="item">
 					<a
 						href="javascript:popup('${context}/getArtifact/51', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/Insurance on the go.png" />
+						<img width="70%"  src="${context}/image/Scroll_images/Insurance on the go.png" />
 					</a>
+					<div class="carousel-caption">
+						<h3>Insurance On The Go</h3>
+						<p>Mobile application designed to complement Guidewire suite reducing cost and bringing process efficiency resulting in customer satisfaction</p>
+					</div>
 				</div>
-				<div data-p="68.75">
+				<div class="item">
 					<a
 						href="javascript:popup('${context}/getArtifact/82', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/Insurance Insights.png" />
+						<img width="70%"  src="${context}/image/Scroll_images/Insurance Insights.png" />
 					</a>
+					<div class="carousel-caption">
+						<h3>Insurance Insights</h3>
+						<p>Data Reporting tool which offers actionable insights based on defined KPI's</p>
+					</div>
 				</div>
-				
+
 			</div>
-			<!-- Bullet Navigator -->
-			<table style="width: 90%">
-				<tr>
-					<td>
-						<div data-u="navigator" class="jssorb05" data-autocenter="1">
-							<!-- bullet navigator item prototype -->
-							<div data-u="prototype"></div>
-						</div>
-					</td>
-				</tr>
-			</table>
-			<!-- Arrow Navigator -->
-			<span data-u="arrowleft" class="jssora12l"
-				style="top: 0px; left: 0px; width: 30px; height: 46px;"
-				data-autocenter="2"></span> <span data-u="arrowright"
-				class="jssora12r"
-				style="top: 0px; right: 0px; width: 30px; height: 46px;"
-				data-autocenter="2"></span>
-		</div> 
+
+			<!-- Next / Previous controls here -->
+			<a class="left carousel-control" href="#carousel-demo"
+				data-slide="prev"> <span class="icon-prev"></span>
+			</a> 
+			<a class="right carousel-control" href="#carousel-demo"
+				data-slide="next"> <span class="icon-next"></span>
+			</a>
+		</div>
+	</div> <!--  End of Carsoual Scroll Images -->
 
 		<!--  Start of Artifacts  -->
 

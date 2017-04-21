@@ -116,7 +116,7 @@ span {
 		<tr>
 			<td colspan="3" align="right" style="padding-right:50px;">
 				
-				<span style="align: right; font-size: 35px; color: #42b6f4;"> Explore. Innovate. Co-create.</span>
+				<span style="align: right; font-size: 35px; color: #42b6f4;"> Engage. Innovate. Co-create.</span>
 					<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 			</td>
 			<td align="right" width="5%">
