@@ -57,6 +57,7 @@
 	top: 0%;
 	bottom: 0%;
 	text-shadow: none;
+	background-color: #fff;
 }
 
 .carousel-indicators {
@@ -88,14 +89,14 @@ p {
 	font-size:12px;
 	color: #67747c;
 }
-.carousel-indicators li{
-	display:inline-block;width:12px;height:12px;
-	margin:1px;text-indent:-999px;
-	border:1px solid #333;
-	border-radius:10px;
-	cursor:pointer;
-	background-color:#FFC000;
-	
+
+.carousel-indicators .active{
+	margin:0;width:12px;height:12px;
+	background-color:#FFC000
+}
+
+.carousel-caption .left {
+	text-align :left;
 }
 </style>
 </head>
@@ -103,8 +104,8 @@ p {
 	<div class="header">
 		<img src="${context}/image/insurancehub_logo.png" align="left"
 			style="padding-left: 20px;"> <img
-			src="${context}/image/capgemini_logo1.png"
-			style="padding-top: 15px; padding-right: 40px;" align="right">
+			src="${context}/image/capgemini_logo.png"
+			style="padding-top: 25px; padding-right: 40px;" align="right">
 	</div>
 
 	<div
@@ -117,7 +118,7 @@ p {
 		</div>
 
 	<!--  Start of Carsoual Scroll images  -->
-		<div class="container" style="width:865px; height: 300px; margin-bottom:20px;">
+		<div class="container" style="width:850px; height: 300px; margin-bottom:20px;">
 		<!--The main div for carousel-->
 		<div id="carousel-demo" class="carousel slide" data-ride="carousel" data-interval="5000">
 			<!-- Indicators -->
@@ -139,7 +140,7 @@ p {
 					
 					<div class="carousel-caption">
 						<h3>Usage Based Insurance (UBI)</h3>
-						<p>A mobile application which monitors and measures driving pattern and behavior to potentially earn a discount on premium</p>
+						<p class="left">A mobile application which monitors and measures driving pattern and behavior to potentially earn a discount on premium</p>
 					</div>
 					</a>
 				</div>
@@ -149,7 +150,7 @@ p {
 						<img width="70%" src="${context}/image/Scroll_images/SmartHome.png" />
 						<div class="carousel-caption">
 						<h3>SmartHome </h3>
-						<p>SmartHome is a gamified solution supported by IoT devices, providing  coverage to a user's home, property or even their pets</p>
+						<p class="left">SmartHome is a gamified solution supported by IoT devices, providing  coverage to a user's home, property or even their pets</p>
 						</div>
 					</a>
 				</div>
@@ -160,7 +161,7 @@ p {
 					</a>
 					<div class="carousel-caption">
 						<h3>Traverse - Travel Insurance</h3>
-						<p>An advanced travel management application to help plan and protect your holidays</p>
+						<p class="left">An advanced travel management application to help plan and protect your holidays</p>
 					</div>
 				</div>
 				<div class="item">
@@ -170,7 +171,7 @@ p {
 					</a>
 					<div class="carousel-caption">
 						<h3>Insurance On The Go</h3>
-						<p>Mobile application designed to complement Guidewire suite reducing cost and bringing process efficiency resulting in customer satisfaction</p>
+						<p class="left">Mobile application designed to complement Guidewire suite reducing cost and bringing process efficiency resulting in customer satisfaction</p>
 					</div>
 				</div>
 				<div class="item">
@@ -180,7 +181,7 @@ p {
 					</a>
 					<div class="carousel-caption">
 						<h3>Insurance Insights</h3>
-						<p>Data Reporting tool which offers actionable insights based on defined KPI's</p>
+						<p class="left">Data Reporting tool which offers actionable insights based on defined KPI's</p>
 					</div>
 				</div>
 

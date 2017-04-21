@@ -9,6 +9,10 @@
 <link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
 <script language="javascript"
 	src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
+<link href="${context}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="${context}/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="${context}/js/jquery.touchSlider.js" type="text/javascript"></script>
 <script type="text/javascript" src="${context}/js/jquery.smartmenus.js"></script>
 <script type="text/javascript" src="${context}/js/jquery-1.12.4.js"></script>
@@ -40,14 +44,67 @@
 		window.scrollTo(0, 100);
 	}
 </script>
+<style>
+.carousel-inner {
+	background-color: #eee	;
+}
 
+.carousel-caption {
+	font-size: 1em;
+	right: 0%;
+	left: 66%;
+	top: 0%;
+	bottom: 0%;
+	text-shadow: none;
+	background-color: #fff;
+}
+
+.carousel-indicators {
+	font-size: 2em;
+	bottom: -1%;
+	text-align: right;
+	text-shadow: none;
+}
+
+@font-face {
+	font-family: avenir65;
+	src: url(${context}/css/fonts/regular/avenir65.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: avenir45;
+	src: url(${context}/css/fonts/regular/avenir45.ttf) format('truetype');
+}
+
+span {
+	font-family: Avenir;
+	font-size:16px;
+	color: #3b444f;
+	font-weight:600;
+}
+
+p {
+	font-family: avenir45;
+	font-size:12px;
+	color: #67747c;
+}
+
+.carousel-indicators .active{
+	margin:0;width:12px;height:12px;
+	background-color:#9c33ff
+}
+
+.carousel-caption .left {
+	text-align :left;
+}
+</style>
 </head>
 <body>
 	<div class="header">
 		<img src="${context}/image/insurancehub_logo.png" align="left"
 			style="padding-left: 20px;"> <img
-			src="${context}/image/capgemini_logo1.png"
-			style="padding-top: 15px; padding-right: 40px;" align="right">
+			src="${context}/image/capgemini_logo.png"
+			style="padding-top: 25px; padding-right: 40px;" align="right">
 	</div>
 
 	<div
@@ -58,65 +115,75 @@
 				<li class="active">Thought Leadership</li>
 			</ul>
 		</div>
-		<div>&nbsp;</div>
-		<div id="jssor_html5_AdWords"
-			style="position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px; margin-bottom:20px;">
-			<!-- Loading Screen -->
-			<div data-u="loading"
-				style="position: absolute; top: 0px; left: 0px; background-color: rgba(0, 0, 0, 0.7);">
-				<div
-					style="filter: alpha(opacity = 70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 90%; height: 100%;"></div>
-				<div
-					style="position: absolute; display: block; background: url('\${context}/image/loading.gif\') no-repeat center center; top: 0px; left: 0px; width: 80%; height: 100%;"></div>
-			</div>
-			<div data-u="slides"
-				style="cursor: default; position: relative; margin: auto; top: 0px; left: 0px; overflow: hidden; visibility; width:850px; height: 300px;">
-				
-				<div data-p="68.75" data-po="70% 50%">
+		
+		<!--  Start of Carsoual Scroll images  -->
+		<div class="container" style="width:850px; height: 300px; margin-bottom:20px;">
+		<!--The main div for carousel-->
+		<div id="carousel-demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-demo" data-slide-to="1"></li>
+				<li data-target="#carousel-demo" data-slide-to="2"></li>
+				<li data-target="#carousel-demo" data-slide-to="3"></li>
+			</ol>
+
+			<!-- Sliding images statring here -->
+			<div class="carousel-inner">
+				<div class="item active">
 					<a
 						href="javascript:popup('${context}/getArtifact/78',900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/World Fintech Report 2017.png" />
+						<img width="70%" src="${context}/image/Scroll_images/World Fintech Report 2017.png" />
+					<div class="carousel-caption">
+						<h3>World Fintech Report 2017</h3>
+						<p class="left">World Fintech Report 2017</p>
+					</div>
 					</a>
 				</div>
-				<div data-p="68.75">
+				<div class="item">
 					<a
 						href="javascript:popup('${context}/getArtifact/50', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/World Insurance Report 2016.png" />
+						<img width="70%" src="${context}/image/Scroll_images/World Insurance Report 2016.png" />
+						<div class="carousel-caption">
+						<h3>World Insurance Report 2016 </h3>
+						<p class="left">World Insurance Report 2016</p>
+						</div>
 					</a>
 				</div>
-				<div data-p="68.75">
+				<div class="item">
 					<a
 						href="javascript:popup('${context}/getArtifact/49', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/Top Trends in Insurance.png" />
+						<img width="70%" src="${context}/image/Scroll_images/Top Trends in Insurance.png"  />
 					</a>
+					<div class="carousel-caption">
+						<h3>Top Trends in Insurance</h3>
+						<p class="left">Connected technologies and data analytics are the two key forces driving the insurance industry evolution</p>
+					</div>
 				</div>
-				<div data-p="68.75">
+				<div class="item">
 					<a
 						href="javascript:popup('${context}/getArtifact/40', 900, 700)">
-						<img data-u="image" src="${context}/image/Scroll_images/Leveraging Blockchain TTII.png" />
+						<img width="70%"  src="${context}/image/Scroll_images/Leveraging Blockchain TTII.png" />
 					</a>
+					<div class="carousel-caption">
+						<h3>Leveraging Blockchain to Transform Insurance Industry</h3>
+						<p class="left">Driving the transformation leading to huge process-efficiency and cost-savings potential that spans the entire insurance value chain</p>
+					</div>
 				</div>
-			</div>
-			<!-- Bullet Navigator -->
-			<table style="width: 100%">
-				<tr>
-					<td>
-						<div data-u="navigator" class="jssorb05" data-autocenter="1">
-							<!-- bullet navigator item prototype -->
-							<div data-u="prototype"></div>
-						</div>
-					</td>
-				</tr>
-			</table>
-			<!-- Arrow Navigator -->
-			<span data-u="arrowleft" class="jssora12l"
-				style="top: 0px; left: 0px; width: 30px; height: 46px;"
-				data-autocenter="2"></span> <span data-u="arrowright"
-				class="jssora12r"
-				style="top: 0px; right: 0px; width: 30px; height: 46px;"
-				data-autocenter="2"></span>
-		</div>
 
+			</div>
+
+			<!-- Next / Previous controls here -->
+			<a class="left carousel-control" href="#carousel-demo"
+				data-slide="prev"> <span class="icon-prev"></span>
+			</a> 
+			<a class="right carousel-control" href="#carousel-demo"
+				data-slide="next"> <span class="icon-next"></span>
+			</a>
+		</div>
+	</div> <!--  End of Carsoual Scroll Images -->
+		
+		
 		<!--  Start of Artifacts  -->
 
 		<c:if test="${not empty artifactDataMap}">

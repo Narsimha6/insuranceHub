@@ -7,24 +7,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>insurancehub:Dashboard</title>
-<link href="${context}/css/Style.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet"
-	href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<title>Insurance Hub</title>
-<script language="javascript"
-	src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
-<script language="javascript"
-	src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<script type="text/javascript" src="${context}/js/jquery-loader.js"></script>
-<script type="text/javascript" src="${context}/js/jssor.js"></script>
-<script type="text/javascript" src="${context}/js/jssor.slider.js"></script>
-
-<!-- SmartMenus jQuery plugin -->
-<script type="text/javascript" src="/js/jquery.smartmenus.js"></script>
-
-<script src="/js/javascript.js" type="text/javascript"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 html, body {
 	background: url('${context}/image/common/Second screen.jpeg');
@@ -66,7 +49,7 @@ function loadCategoryPage(screenName) {
 		<tr>
 			<td width="30%"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 7%;padding-top: 10px"  ></td>
 			<td align="left"><br>&nbsp;</td>
-			<td align="right" width="30%"><img src="${context}/image/capgemini_logo1.png" style="padding-right: 10%;margin-top: 12px"></td>
+			<td align="right" width="30%"><img src="${context}/image/capgemini_logo.png" style="padding-right: 10%;margin-top: 12px"></td>
 		</tr>
 		<tr>
 			<td>
@@ -75,32 +58,30 @@ function loadCategoryPage(screenName) {
 			</td>
 		</tr>
 	</table>
-	
-	
 				 <div style="margin-left:850px;  postion:static; align: right;">
 				   <a href="${context}/getCategoryContents/PROPERTY_CASUALITY">	<img src="${context}/image/property&casualty_image.png" align="left" style="padding-right:3px;padding-left:0px;padding-top:3px; postion:static;"/></a>	
 				
 				  <a href="${context}/getCategoryContents/HEALTH">	<img src="${context}/image/health_image.png" align="middle" style="padding-top:0px;padding-left:70px; margin-bottom:5px;"/></a>	
 				 </div>
 			
-		
+				<div> &nbsp;</div>
+				<div> &nbsp;</div>
+				<div> &nbsp;</div>
 				<div >
 					 <a href="${context}"> <img src="${context}/image/previous_arrow.png" alt="" align="left" style="padding-top:15px;  postion:fixed; margin-left:10px;"/></a>
 				</div>	
 			
 				<div> &nbsp;</div>
-		
+				<div> &nbsp;</div>
+				<div> &nbsp;</div>
 				<div> &nbsp;</div>
 		
-		
-				<div> &nbsp;</div>
-			
 				 <div style="padding-left: 80px;">
 				 <!-- <a href="${context}/getCategoryContents/PROPERTY_CASUALITY"> -->
 				  <!-- <a href="${context}/jsp/PandC_Page.html"> -->
 				 <a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png" align="left" style="margin-left:51.2%; padding-left:32px; position:statics; "/></a>
 				
-				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:15px;padding-left:65px;  margin-top: 3px; postion:static;  ;"/></a>	
+				 <a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png" align="middle" style="padding-bottom:15px;padding-left:65px; padding-top:5px; margin-top: 3px; postion:static;  ;"/></a>	
 				 </div>
 			
 		<table style="width: 100%">
@@ -160,8 +141,9 @@ function loadCategoryPage(screenName) {
 				<span> &nbsp;</span>
 			</td>
 		</tr>
+		
 		 <tr>
-			<td align="center" colspan="3">
+			<td align="center" colspan="3" style="position:static;">
 				<div>
 				<a href="mailto:insurancehub.fssbu@capgemini.com" >  
 					<span class="btn btn--linkblue btn--medium"> Contact Us </span> 

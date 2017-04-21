@@ -6,19 +6,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>insurancehub</title>
-<script language="javascript"
-	src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
-<script language="javascript"
-	src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-<link href="${context}/css/Style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="${context}/js/jquery-loader.js"></script>
-<script type="text/javascript" src="${context}/js/jssor.js"></script>
-<script type="text/javascript" src="${context}/js/jssor.slider.js"></script>
 
-<!-- SmartMenus jQuery plugin -->
-<script type="text/javascript" src="${context}/js/jquery.smartmenus.js"></script>
+<link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
 
-<script src="${context}/js/javascript.js" type="text/javascript"></script>
+
 <script>
 function popup(url, x, y) {
 	pupWindow = window
@@ -63,60 +54,83 @@ span {
 	<table style="width: 100%; padding-top: 10px;">
 
 		<tr>
-			<td width="75%" colspan="2"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 2%;padding-top: 10px"  ></td>
+			<td width="75%" colspan="3"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 2%;padding-top: 10px"  ></td>
 			<!--  <td align="left"><br> <a style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;padding-left: 58px ;font-size: 13px" href="${context}/jsp/ContactUS.jsp">About</a></td>-->
-			<td align="right" width="20%"><img src="${context}/image/capgemini_logo1.png" style="margin-top: 12px; margin-right:25px;"></td>
+			<td align="right" width="20%"><img src="${context}/image/capgemini_logo.png" style="margin-top: 12px; margin-right:30px;"></td>
 		</tr>
 
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
-		<!-- <tr>
-			<td>
+		<tr>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
-		</tr> -->
+		</tr>
 		<tr>
-			<td colspan="3" align="right" style="padding-right:50px;">
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
+
+		</tr>
+		<tr>
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3" align="right" >
 				
-				<span style="align: right; font-size: 35px; color: #42b6f4;"> Engage. Innovate. Co-create.</span>
+				<span style="align: right; font-size: 30px; color: #42b6f4;"> Engage. Innovate. Co-create.</span>
 					<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 			</td>
 			<td align="right" width="5%">
@@ -124,91 +138,92 @@ span {
 					<a href="${context}/home"><img src="${context}/image/next_arrow.png"
 						alt="" align="right"
 						style="padding-top: 20px; padding-right: 20px; padding-bottom: 10px;" /></a>
-
-				
 			</td>
 			
 			
 		</tr>
 
-		
-
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
 		</tr>
 		<tr>
-			<td>
+			<td colspan="4">
 				<div>&nbsp;</div>
 			</td>
 
@@ -234,7 +249,7 @@ span {
 			</td>
 		</tr>
 		 <tr>
-			<td align="center" colspan="3">
+			<td align="center" colspan="4" style="position:static;">
 				<div>
 				<a href="mailto:insurancehub.fssbu@capgemini.com" >  
 					<span class="btn btn--linkblue btn--medium"> Contact Us </span> 

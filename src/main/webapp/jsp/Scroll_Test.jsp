@@ -13,16 +13,16 @@
 <style>
 h3 {
 	font-size: 20px;
-	font-family: Verdana;
+	font-family: avenir45;
 	color: #515151;
 }
 
 img {
-	width: 40%;
+	width: 70%;
 }
 
 .carousel-inner {
-	background-color: #ffffff	;
+	background-color: #eee	;
 }
 
 .carousel-caption {
