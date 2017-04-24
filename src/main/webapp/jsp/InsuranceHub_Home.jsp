@@ -54,11 +54,12 @@ span {
 	<table style="width: 100%; padding-top: 10px;">
 
 		<tr>
-			<td width="75%" colspan="3"><img src="${context}/image/insurancehub_logo.png"style="padding-left: 2%;padding-top: 10px"  ></td>
-			<!--  <td align="left"><br> <a style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;padding-left: 58px ;font-size: 13px" href="${context}/jsp/ContactUS.jsp">About</a></td>-->
-			<td align="right" width="20%"><img src="${context}/image/capgemini_logo.png" style="margin-top: 12px; margin-right:30px;"></td>
+			<td width="100%" colspan="2"><img src="/iHub/image/insurancehub_logo.png" style="padding-left: 2%;padding-top: 10px"> </td>
+			<!--  <td align="left"><br> <a style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;padding-left: 58px ;font-size: 13px" href="/iHub/jsp/ContactUS.jsp">About</a></td>-->
+			<td colspan="2">	<img src="/iHub/image/capgemini_logo.png" style="margin-top: 12px; margin-right:30px;"></td>
 		</tr>
-
+	</table>
+	<table>
 		<tr>
 			<td colspan="4">
 				<div>&nbsp;</div>
@@ -128,9 +129,9 @@ span {
 			</td>
 		</tr>
 		<tr>
-			<td colspan="3" align="right" >
+			<td colspan="4" align="right" >
 				
-				<span style="align: right; font-size: 30px; color: #42b6f4;"> Engage. Innovate. Co-create.</span>
+				<span style="align: right; font-size: 32px; color: #42b6f4; margin-right:80px;"> Engage. Innovate. Co-create.</span>
 					<!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 			</td>
 			<td align="right" width="5%">
