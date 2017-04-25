@@ -10,7 +10,7 @@
 <link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 html, body {
-	background: url('${context}/image/common/Second screen.jpeg');
+	background: url('${context}/image/common/Second screen.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

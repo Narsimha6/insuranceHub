@@ -19,7 +19,7 @@ function popup(url, x, y) {
 </script>
 <style type="text/css">
 html, body {
-	background: url('${context}/image/common/Opening screen.jpeg');
+	background: url('${context}/image/common/Opening screen.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
