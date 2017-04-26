@@ -5,6 +5,9 @@
 <html lang="en">
 <head>
 <title>insurancehub:Property&Casuality</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="XA-UA-Compitable" content="IE=edge">
 <link href="${context}/css/Style.css" rel="stylesheet" type="text/css" />
 <link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
 <link href="${context}/css/bootstrap.min.css" rel="stylesheet" type="text/css">

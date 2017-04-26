@@ -81,7 +81,7 @@ td {
 				<div style="margin: auto; background-color: #f5f5f5; margin-top: 2px; overflow:hidden; width: 66%;position: relative;"   >
 					<div class="textpanel" align="center">
 						<img style="height: 304px; width:100%;"
-							src="/image/insurance_solution_large2.jpg">
+							src="${context}/image/insurance_solution_large2.jpg">
 							<table style="padding: 2px;border-style: solid;border-color: white; margin-left: 268px" >
 								<tr>
 									<td style="width: 10%" >&nbsp;</td>
