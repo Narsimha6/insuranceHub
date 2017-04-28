@@ -10,21 +10,10 @@
 <meta http-equiv="XA-UA-Compitable" content="IE=edge">
 <link href="${context}/css/Style.css" rel="stylesheet" type="text/css" />
 <link href="${context}/css/new-10.css" rel="stylesheet" type="text/css" />
-<script language="javascript"
-	src="https://code.jquery.com/jquery-1.8.1.min.js"></script>
 <link href="${context}/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<script
-	src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="${context}/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="${context}/js/jquery.touchSlider.js" type="text/javascript"></script>
-<script type="text/javascript" src="${context}/js/jquery.smartmenus.js"></script>
-<script type="text/javascript" src="${context}/js/jquery-1.12.4.js"></script>
-<script src="${context}/js/jquery-1.11.3.min.js" type="text/javascript"></script>
-<script src="${context}/js/jssor.slider-22.2.16.mini.js"
-	type="text/javascript"></script>
-<script src="${context}/js/Corosal_New.js" type="text/javascript"></script>
 
-<script type="text/javascript" src="${context}/js/jquery-ui.js"></script>
 <script>
 	function popup(url, x, y) {
 		pupWindow = window
