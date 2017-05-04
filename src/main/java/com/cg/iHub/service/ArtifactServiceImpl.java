@@ -1,6 +1,7 @@
 package com.cg.iHub.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,6 +19,7 @@ import com.cg.iHub.dao.ArtifactsDao;
 import com.cg.iHub.model.ArtifactsMaster;
 import com.cg.iHub.model.SectionMaster;
 import com.cg.iHub.utils.CategoryENUM;
+import com.sun.org.apache.xpath.internal.axes.HasPositionalPredChecker;
 @Service
 public class ArtifactServiceImpl implements ArtifactService {
 	static Logger logger = Logger.getLogger(ArtifactServiceImpl.class);
@@ -136,7 +138,7 @@ public class ArtifactServiceImpl implements ArtifactService {
 	public Map<String, List<SectionMaster>> getMenuSections() {
 
 		String queryStr = "select m.menu_id, m.MENU_NAME, s.SECTION_ID, s.SECTION_NAME from IZONE.IHUB_MENU m "
-				+" inner join IZONE.IHUB_SECTION s on m.MENU_ID=s.MENU_ID ";
+				+" inner join IZONE.IHUB_SECTION s on m.MENU_ID=s.MENU_ID order by m.menu_id";
 		Query query = entityManager.createNativeQuery(queryStr);
 		Map<String, List<SectionMaster>> dataMap = null;
 		try{
@@ -174,5 +176,55 @@ public class ArtifactServiceImpl implements ArtifactService {
 	public Boolean saveArtifact(ArtifactsMaster artifact) {
 		entityManager.merge(artifact);
 		return Boolean.TRUE;
+	}
+	
+	@Override
+	public Map<String, String> getLobData(){
+		String queryStr= "select menu_id, menu_name from ihub_menu ORDER by menu_id";
+		Query query = entityManager.createNativeQuery(queryStr);
+		Map<String,String> dataMap = new HashMap<String, String>();
+		try{
+			List dataList = query.getResultList();
+			if(dataList!=null && dataList.size()>0){
+				for (Object obj : dataList) {
+					Object[] dataObjArr = (Object[]) obj;
+					if(dataObjArr!=null && dataObjArr.length>0){
+						dataMap.put(String.valueOf(Long.valueOf(dataObjArr[0].toString())), (String)dataObjArr[1]);
+					}
+				}
+			}
+		}catch(NoResultException e){
+			logger.warn("No results to the query executed :"+e.getMessage());
+		}
+		entityManager.close();
+		return dataMap;
+	}
+	
+	@Override
+	public Map<String, List<String>> getMapSubType(){
+		String queryStr= "select m.menu_id, s.SECTION_ID, s.SECTION_NAME from IZONE.IHUB_MENU m inner join IZONE.IHUB_SECTION s on m.MENU_ID=s.MENU_ID order by m.menu_id";
+		Query query = entityManager.createNativeQuery(queryStr);
+		Map<String,List<String>> dataMap = new HashMap<String, List<String>>();
+		List lstSectionData=null;
+		String key = null;
+		try{
+			List dataList = query.getResultList();
+			if(dataList!=null && dataList.size()>0){
+				for (Object obj : dataList) {
+					lstSectionData = new ArrayList<String>();
+					Object[] dataObjArr = (Object[]) obj;
+					key = String.valueOf(Long.valueOf(dataObjArr[0].toString()));
+					lstSectionData.add(String.valueOf(Long.valueOf(dataObjArr[1].toString())));
+					lstSectionData.add((String)dataObjArr[2]);
+					dataMap.put(key, lstSectionData);
+				}
+			}
+		}catch(NoResultException e){
+			logger.warn("No results to the query executed :"+e.getMessage());
+		}
+		entityManager.close();
+		
+		return dataMap;
+		
 	}
 }

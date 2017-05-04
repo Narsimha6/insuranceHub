@@ -1371,18 +1371,18 @@ ul.contactDetails, ul.contactDetails li{
         .jssora12l.jssora12lds { background-position: -16px -37px; opacity: .3; pointer-events: none; }
         .jssora12r.jssora12rds { background-position: -75px -37px; opacity: .3; pointer-events: none; }
         
-        .back-to-top {
-			position: fixed;
+       /*  .back-to-top {
+			position: relative;
 			bottom: 2em;
 			right: 0px;
 			text-decoration: none;
 			color: #000000;
-			/* background-color: rgba(235, 235, 235, 0.80); */
+			background-color: rgba(235, 235, 235, 0.80);
 			font-size: 12px;
 			padding: 1em;
 			display: none;
 		}
 
 		.back-to-top:hover {	
-			/* background-color: rgba(135, 135, 135, 0.50); */
-		}	
+			background-color: rgba(135, 135, 135, 0.50);
+		}	 */

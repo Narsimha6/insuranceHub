@@ -10,10 +10,15 @@ public interface ArtifactService {
 	ArtifactsMaster getAllArtifacts(Long artifactId);
 
 	Map<String, List<ArtifactsMaster>> getCategoryContents(String categoryName);
+	
+	Map<String, String> getLobData(); 
 
 	ArtifactsMaster getArtifactData(Long artifactId);
 
 	Map<String, List<SectionMaster>> getMenuSections();
 
 	Boolean saveArtifact(ArtifactsMaster artifact);
+	
+	Map<String, List<String>> getMapSubType();
+	
 }

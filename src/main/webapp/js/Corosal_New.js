@@ -48,7 +48,7 @@ jQuery(document).ready(function ($) {
             
             /*Top Button Scroll*/
             
-            var offset = 220;
+           /* var offset = 220;
     		var duration = 500;
     		jQuery(window).scroll(function() {
     			if (jQuery(this).scrollTop() > offset) {
@@ -62,5 +62,5 @@ jQuery(document).ready(function ($) {
     			event.preventDefault();
     			jQuery('html, body').animate({scrollTop: 0}, duration);
     			return false;
-    		})
+    		})*/
         });
