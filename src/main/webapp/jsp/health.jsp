@@ -233,9 +233,9 @@ p {
 			</div>
 		</c:if>
 	</div>
-	<div style="text-align: right;">
+	<div style="text-align: right; width: 100%">
 		<span style="width: 100%; padding-right: 203px"><a href="#"
-			class="back-to-top"><img style="width: 50px; height: 50px"
+			class=""><img style="width: 50px; height: 50px;margin-left: 96%" 
 				src="${context}/image/btop.png"></a></span>
 	</div>
 </body>
