@@ -84,7 +84,7 @@ p {
 }
 
 .carousel-indicators .active{
-	margin:0;width:12px;height:12px;
+	margin:0;width:14px;height:14px;
 	background-color:#FFC000
 }
 
@@ -96,9 +96,9 @@ p {
 <body>
 	<div class="header">
 		<img src="${context}/image/insurancehub_logo.png" align="left"
-			style="padding-left: 20px;"> <img
+			style="padding-left: 20px; width: 350px;height:88px"> <img
 			src="${context}/image/capgemini_logo.png"
-			style="padding-top: 25px; padding-right: 40px;" align="right">
+			style="padding-top: 25px; padding-right: 40px; width:250px;height:50px" align="right">
 	</div>
 
 	<div
