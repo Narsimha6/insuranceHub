@@ -231,7 +231,20 @@ span {
 
 		</tr>
 		<tr>
-			<td colspan="4" align="center" style="position: static; padding-top:5px;">
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
+
+		</tr><tr>
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
+
+		</tr>
+		
+		
+		<tr>
+			<td colspan="4" align="center" style="position: static; padding-top:5px; vertical-align: bottom;">
 				<div>
 					<a href="mailto:insurancehub.fssbu@capgemini.com"> <span
 						class="btn btn--linkblue btn--medium"> Contact Us </span>
