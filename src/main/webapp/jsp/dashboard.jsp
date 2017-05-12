@@ -74,16 +74,16 @@ span {
 										<td style="width: 55%">&nbsp;</td>
 										<td style="width: 15%"><a href="${context}/getCategoryContents/PROPERTY_CASUALITY"><img  src="${context}/image/property&casualty_image.png"/></a></td>
 										<td style="width: 5%">&nbsp;</td>
-										<td style="width: 25%"><a href="${context}/getCategoryContents/HEALTH">	<img style="padding-bottom: 13px" src="${context}/image/health_image.png"/></a></td>
+										<td style="width: 25%"><a href="${context}/getCategoryContents/LIFE_PENSION">	<img style="padding-bottom: 20px" src="${context}/image/life&pension_image.png"/></a></td>
 										<td style="width: 10%">&nbsp;</td>
 									</tr>
 									<tr><td>&nbsp;</td></tr>
 									<tr><td>&nbsp;</td></tr>
 									<tr>
 										<td>&nbsp;</td>	
-										<td><a href="${context}/getCategoryContents/LIFE_PENSION"><img src="${context}/image/life&pension_image.png"/></a></td>
+										<td><a href="${context}/getCategoryContents/HEALTH"><img src="${context}/image/health_image.png"/></a></td>
 										<td>&nbsp;</td>	
-										<td><a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img src="${context}/image/knowledgehub_image.png"/></a></td>
+										<td><a href="${context}/getCategoryContents/THOUGHT_LEADERSHIP"> <img style="padding-bottom: 6px;" src="${context}/image/knowledgehub_image.png"/></a></td>
 										<td>&nbsp;</td>	
 									</tr>
 								</table>
