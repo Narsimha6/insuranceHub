@@ -83,7 +83,7 @@ p {
 
 .carousel-indicators .active{
 	margin:0;width:14px;height:14px;
-	background-color:#9c33ff
+	background-color:#8063A2
 }
 
 .carousel-caption .left {
@@ -187,7 +187,7 @@ p {
 							style="color: black; font-size: 20px; text-align: left; margin-top:20px;">${data.key}</span>
 
 						<div>
-							<hr width="${data.value[0].sectionWidth}" align="left" style="border-top: 5px solid #9c33ff;margin-left:7px; margin-bottom:20px; margin-top:0px;">
+							<hr width="${data.value[0].sectionWidth}" align="left" style="border-top: 5px solid #8063A2;margin-left:7px; margin-bottom:20px; margin-top:0px;">
 						</div>
 						<c:forEach var="listValue" items="${data.value}" begin="0" end="4">
 							<article
