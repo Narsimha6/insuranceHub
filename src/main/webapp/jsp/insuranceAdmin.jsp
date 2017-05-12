@@ -28,6 +28,25 @@
 				.open(url, 'name', 'width=' + x + ',height=' + y + '');
 		pupWindow.focus();
 	}
+	
+	function getArtifactData(value){
+		
+		$.ajax({
+			type : 'POST',
+			url : '${context}/getAdminContents',
+			cache : false,
+			success : function(response) {
+				hideLoader();
+				$(tr).find('#btnAutoSubmitRow').addClass('hide-class');
+				$(tr).find('#btnAutoEditRow').removeClass('hide-class');
+				$("#lblMsg").removeClass('hide-class');
+				$(".edit-control").prop('disabled',false);
+				$(".edit-control").removeClass('btn-disabled');
+			},
+			error:function(response){
+			}
+		});
+	}
 </script>
 <style type="text/css">
 div.header {
@@ -88,7 +107,7 @@ td {
 									<c:forEach var="listValue" items="${sectionData.value}">
 										<c:if test="${not empty listValue.menuId}">
 											<c:if test="${listValue.menuId == menuData.key}">
-												<li value="${listValue.sectionId}"><a href="#" >${listValue.sectionName}</a></li>
+												<li value="${listValue.sectionId}" onclick="getArtifactData(this.value)"><a href="#" >${listValue.sectionName}</a></li>
 											</c:if>		
 										</c:if>
 									</c:forEach>
@@ -99,7 +118,35 @@ td {
 				</ul>
 			</div>
 		</div>
-		<jsp:include page="UserManagement.jsp"></jsp:include>
+		<div style="width: 100%">
+			<div>Artifact Details</div>
+			<table style="width: 100%;" border="1">
+				<thead>
+					<tr>
+						<th width="5%">Artifact Id</th>
+						<th width="20%">Artifact Name</th>
+						<th width="20%"> Artifact Comment</th>
+						<th width="10%">Active Status</th>
+						<th width="10%">Author</th>
+						<th width="10%">Author Description</th>
+						<th width="10%">HTML Content</th>
+						<th width="5%">Sort order</th>
+						<th width="10%">Section Name</th>
+					</tr>
+					<tr>
+						<td><input id="artifactId" value="" size="7" disabled="disabled"> </td>
+						<td><input id="artifactName" value="" size="35"> </td>
+						<td><input id="artifactComment" value="" size="35"> </td>
+						<td><input id="activeStatus" value="" size="16"> </td>
+						<td><input id="activeStatus" value="" size="16"> </td>
+						<td><input id="activeStatus" value="" size="16"> </td>
+						<td><input id="activeStatus" value="" size="16"> </td>
+						<td><input id="activeStatus" value="" size="7"> </td>
+						<td><input id="activeStatus" value="" size="16"> </td>
+					</tr>
+				</thead>
+			</table>
+		</div>
 	</div>
 </body>
 </html>

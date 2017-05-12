@@ -19,7 +19,6 @@ import com.cg.iHub.dao.ArtifactsDao;
 import com.cg.iHub.model.ArtifactsMaster;
 import com.cg.iHub.model.SectionMaster;
 import com.cg.iHub.utils.CategoryENUM;
-import com.sun.org.apache.xpath.internal.axes.HasPositionalPredChecker;
 @Service
 public class ArtifactServiceImpl implements ArtifactService {
 	static Logger logger = Logger.getLogger(ArtifactServiceImpl.class);
@@ -137,8 +136,7 @@ public class ArtifactServiceImpl implements ArtifactService {
 	@Override
 	public Map<String, List<SectionMaster>> getMenuSections() {
 
-		String queryStr = "select m.menu_id, m.MENU_NAME, s.SECTION_ID, s.SECTION_NAME from IZONE.IHUB_MENU m "
-				+" inner join IZONE.IHUB_SECTION s on m.MENU_ID=s.MENU_ID order by m.menu_id";
+		String queryStr = "select m.menu_id, m.MENU_NAME, s.SECTION_ID, s.SECTION_NAME from IZONE.IHUB_MENU m inner join IZONE.IHUB_SECTION s on m.MENU_ID=s.MENU_ID  where s.is_active='Y' order by m.menu_id";
 		Query query = entityManager.createNativeQuery(queryStr);
 		Map<String, List<SectionMaster>> dataMap = null;
 		try{
