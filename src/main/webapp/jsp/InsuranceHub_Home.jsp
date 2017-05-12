@@ -134,7 +134,7 @@ span {
 		</tr>
 		<tr>
 			<td colspan="3" align="right" style="padding-top: 17px"><span
-				style="align: right; font-size: 32px; color: #42b6f4; margin-right: 80px;">
+				style="align: right; font-size: 32px; color: #42b6f4; margin-right: 73px;">
 					Engage. Innovate. Co-create.</span> <!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 			</td>
 			<td align="right" width="5%"><a href="${context}/home"><img
