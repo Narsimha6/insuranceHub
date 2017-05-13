@@ -68,8 +68,7 @@ span {
 									<tr><td>&nbsp;</td></tr>
 									<tr><td>&nbsp;</td></tr>
 									<tr><td>&nbsp;</td></tr>
-									<tr><td>&nbsp;</td></tr>
-									<tr><td>&nbsp;</td></tr>
+									
 									<tr>
 										<td style="width: 55%">&nbsp;</td>
 										<td style="width: 15%"><a href="${context}/getCategoryContents/PROPERTY_CASUALITY"><img  src="${context}/image/property&casualty_image.png"/></a></td>
