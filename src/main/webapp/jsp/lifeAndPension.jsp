@@ -144,7 +144,7 @@ p {
 						href="javascript:popup('${context}/getArtifact/55', 900, 700)">
 						<img width="70%" src="${context}/image/Scroll_images/Mobile Insurance.png"  />
 						<div class="carousel-caption">
-						<h3>iATM</h3>
+						<h3>Mobile Insurance</h3>
 						<p class="left">Mobile solution for easy policy administration</p>
 						</div>
 					</a>
