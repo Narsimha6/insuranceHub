@@ -16,7 +16,7 @@
 	function popup(url, x, y) {
 		pupWindow = window
 				.open(url, 'name', 'width=' + x + ',height=' + y + '');
-		pupWindow.focus();
+		pupWindow.focus();	
 	}
 </script>
 <script src="jquery.fittext.js"></script>
@@ -65,8 +65,8 @@ span {
 				src="/iHub/image/insurancehub_logo.png"
 				style="padding-left: 2%; padding-top: 10px; width: 350px; height: 88px"></td>
 			<!--  <td align="left"><br> <a style="color: #FFFFFF; font-family: Avenir; padding-bottom: 10px; padding-top: 10px;padding-left: 58px ;font-size: 13px" href="/iHub/jsp/ContactUS.jsp">About</a></td>-->
-			<td colspan="2"><img src="/iHub/image/capgemini_logo.png"
-				style="margin-top: 7px; margin-right: 30px; width: 250px; height: 50px"></td>
+			<td colspan="2"><img src="/iHub/image/capgemini_logo_white.png"
+				style="margin-top: 30px; margin-right: 30px; width: 250px; height: 50px"></td>
 		</tr>
 	</table>
 	<table>
@@ -140,7 +140,7 @@ span {
 		</tr>
 		<tr>
 			<td colspan="3" align="right" style="padding-top: 17px"><span
-				style="align: right; font-size: 32px; color: #42b6f4; margin-right: 73px;">
+				style="align: right; font-size: 32px; color: #ffffff; margin-right: 73px;">
 					Engage. Innovate. Co-create.</span> <!--   <a href="/iHub/jsp/IHub_Landing_Page.html"> -->
 			</td>
 			<td align="right" width="5%"><a href="${context}/home"><img
@@ -248,13 +248,18 @@ span {
 			</td>
 
 		</tr>
+		<tr>
+			<td colspan="4">
+				<div>&nbsp;</div>
+			</td>
 
+		</tr>
 
 		<tr>
 			<td colspan="4" align="center"
 				style="position: static; padding-top: 5px; vertical-align: bottom;">
 				<div>
-					<span style="font-size:15px; color: #586370;"> Got an
+					<span style="font-size:15px; color: #ffffff;"> Got an
 						idea?</span> <a href="mailto:insurancehub.fssbu@capgemini.com"> <span
 						style="font-size:15px; color: #42b6f4;"> Let us Know
 					</span>

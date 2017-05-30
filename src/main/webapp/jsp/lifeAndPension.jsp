@@ -102,7 +102,7 @@ p {
 	<div class="header">
 		<img src="${context}/image/insurancehub_logo.png" align="left"
 			style="padding-left: 20px; width: 350px;height:88px"> <img
-			src="${context}/image/capgemini_logo.png"
+			src="${context}/image/capgemini_logo_white.png"
 			style="padding-top: 25px; padding-right: 40px; width:250px;height:50px" align="right">
 	</div>
 
